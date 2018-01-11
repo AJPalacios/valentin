@@ -1,3 +1,35 @@
+/*Fonts*/
+
+@font-face{
+  font-family: peace-sans;
+  src: url('../fonts/peace/Peace Sans/Peace Sans.otf');
+}
+@font-face{
+  font-family: banda-bold;
+  src: url('../fonts/banda/Banda Bold/BandaBold-Bold.otf');
+}
+@font-face{
+  font-family: banda-bold-italic;
+  src: url('../fonts/banda/Banda Bold/BandaBold-BoldItalic.otf');
+}
+
+
+/*Fuentes de Tic tac*/
+.peace-sans{
+  font-family: peace-sans;
+}
+.banda-bold{
+  font-family: banda-bold;
+}
+.banda-bold-italic{
+  font-family: banda-bold-italic;
+}
+/*Fuentes de Tic tac*/
+
+
+/*Fonts*/
+
+
 /*MENU*/
 .menuShadowSecciones {
   overflow-y: hidden !important;
@@ -30,3 +62,53 @@ ul li {
   top: 30%;
 }
 /*MENU*/
+
+
+/*Logotipo tictac*/
+
+.logotipo{
+
+  width: 9%;
+  top: 5%;
+  margin-top: 5%;
+
+}
+
+
+/*Logotipo tictac*/
+
+
+h1{
+  font-family: banda-bold;
+  font-size: 3em;
+  color: white;
+
+}
+
+/*Secciones background*/
+
+.section{
+  background-color: rgb(231, 65, 191) !important;
+}
+/*Secciones background*/
+
+/*Mouse scroll*/
+
+.mouse{
+    overflow: hidden;
+    position: relative;
+    top: 28em;
+}
+
+/*Positions*/
+
+.margin-top{
+  margin-top: 3%;
+}
+.relative{
+  position: relative;
+}
+
+.tableCell{
+ display: block;
+}
