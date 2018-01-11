@@ -1,0 +1,32 @@
+/*MENU*/
+.menuShadowSecciones {
+  overflow-y: hidden !important;
+}
+.menuTicTac{
+  background: -moz-linear-gradient(left, rgba(0,0,0,0) 1%, rgba(92,8,138,0.82) 50%);
+  background: -webkit-linear-gradient(left, rgba(0,0,0,0) 1%,rgba(92,8,138,0.82) 50%);
+  background: linear-gradient(to right, rgba(0,0,0,0) 1%,rgba(92,8,138,0.82) 50%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#d15c088a',GradientType=1 );
+  height: 100vh;
+  z-index: 99999;
+  position: fixed;
+  top: 0%;
+  right: -200px;
+  list-style:none;
+}
+
+#iconos{
+  width: 40%;	
+ /* -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+  -webkit-transition-timing-function: ease;*/
+}
+/*
+#iconos:hover {
+  width: 45%;
+}*/
+ul li {
+  position: relative;
+  top: 30%;
+}
+/*MENU*/
