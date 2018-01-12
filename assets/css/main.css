@@ -31,6 +31,13 @@
 .banda-regular{
   font-family: 'banda-regular';
 }
+
+/*font colors*/
+
+.white{
+	color: white;
+}
+
 /*Fuentes de Tic tac*/
 .thin-cintillo{
   font-size: 2em !important;
@@ -201,6 +208,9 @@ h1{
 .relative{
   position: relative;
 }
+.absolute{
+	position: absolute;
+}
 
 .tableCell{
  display: block;
@@ -208,6 +218,69 @@ h1{
 
 .full-height{
   height: 100vh;
+}
+
+/*second text*/
+.product-description{
+		z-index: 500;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+		width: 20%;
+		height: 20%;
+}
+.first-text-description-te{
+	color: #ae5722;
+	text-align: justify;
+}
+.product-description-globo{
+		color: #ff3e70;
+		z-index: 500;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+		width: 20%;
+		height: 20%;
+}
+.first-text-description-choco{
+	color: #9e4934;
+	text-align: justify;
+}
+.product-description-choco{
+		color: #9e4934;
+		z-index: 500;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+		width: 20%;
+		height: 20%;
+}
+.first-text-description-globo{
+	color: #ff3e70;
+	text-align: justify;
+}
+
+.product-description-teddy{
+		z-index: 500;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+		width: 20%;
+		height: 20%;
+}
+
+.first-text-description-teddy{
+	color: #ff99eb;
+	text-align: justify;
+	letter-spacing: 3px;
+}
+.first-text-description{
+	color: #731b54;
+	text-align: justify;
+}
+.second-text-description{
+	font-size: 1.5em !important;
+	text-align: justify;
 }
 
 /*cintillo*/
