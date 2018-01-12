@@ -1,21 +1,22 @@
-
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Un San Valentin Diferente</title>
-    
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" type="text/css">
     <!--<link rel="stylesheet" href="css/bootstrap-theme.min.css" type="text/css">-->
 	<link rel="stylesheet" href="./assets/css/lightbox.css" type="text/css" media="screen">
-    
-	<link rel="stylesheet" type="text/css" href="./assets/css/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="./assets/css/jquery.fullPage.css?v=1.1" />
 	<link rel="stylesheet" type="text/css" href="./assets/css/reset.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/backgrounds.css" />
-    
+    <link rel="stylesheet" href="./assets/css/animate.css" type="text/css">
+    <link rel="stylesheet" href="./assets/css/hover.css" type="text/css">
     <link rel="stylesheet" href="./assets/css/main.css">
+    
+    <link rel="stylesheet" href="./assets/css/main.css?version=1.1">
+
 
 	<!--[if IE]>
 		<script type="text/javascript">
@@ -33,13 +34,67 @@
 
 			var pepe = $.fn.fullpage({
 				slidesColor: ['#428BCA', '#5CB85C', '#5BC0DE', '#F0AD4E', '#FF530D', '#FFFFFF'], // Bootstrap
-				anchors: ['home', 'page', 'gallery', 'aboutus', 'contact', 'lastPage'],
+				anchors: ['home', 'postales', 'ecommerce', 'tictacticas', 'tictacs', 'lastPage'],
 				menu: '#menu'
 			});
 		});
 	</script>
 
     <style type="text/css">
+        #section0{
+            background: #b22eb7;
+        }
+        .logotipo {
+            margin-bottom: -10px;
+            margin-top: 20px;
+            max-width: 8%;
+        }
+        .h1 {
+            color: #FFFFFF;
+            font-size: 3em !important;
+            text-transform: uppercase;
+            z-index: 100;
+        }
+        .lampara {
+            height: 250px;
+            position: fixed;
+            left: 41%;
+        }
+        .banca {
+            height: 250px;
+
+        }
+        .basura {
+            height: 250px;
+            position: fixed;
+            right: 39%;
+        }
+        .UnSanValentinDiferente {
+            width: 50%;
+            position: relative;
+            top: -60px;
+        }
+        .scroll {
+            width: 25px;
+            position: fixed;
+            bottom: 0;
+        }
+        #section3 {
+            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f34973+0,cf4290+100 */
+background: rgb(243,73,115); /* Old browsers */
+background: -moz-linear-gradient(left, rgba(243,73,115,1) 0%, rgba(207,66,144,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, rgba(243,73,115,1) 0%,rgba(207,66,144,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, rgba(243,73,115,1) 0%,rgba(207,66,144,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f34973', endColorstr='#cf4290',GradientType=1 ); /* IE6-9 */
+        }
+        .tictacticas {
+            text-transform: uppercase;
+            margin-top: 5%;
+        }
+        .tictacticasP {
+            color: #FFFFFF;
+            font-size: 1em !important;
+        }
         input, textarea { opacity:0.8;}
         #navbar-collapse-1 { font-size: medium;}
         .section.table { margin: 0;}
@@ -67,76 +122,71 @@
 <body>
 
     <div class="menuShadowSecciones">
-            <div class="shadow">
-                <ul class="menuTicTac">
-                    <li>
-                        <a href="#home">
-                            <img src="http://www.saits.xyz/unsanvalentindiferente/wp-content/uploads/2018/01/inicio-tictac.png" id="iconos">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#postales">
-                            <img src="http://www.saits.xyz/unsanvalentindiferente/wp-content/uploads/2018/01/postales-tictac.png" id="iconos">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#ecommerce">
-                            <img src="http://www.saits.xyz/unsanvalentindiferente/wp-content/uploads/2018/01/ecommerce-tictac.png" id="iconos">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#tictacticas">
-                            <img src="http://www.saits.xyz/unsanvalentindiferente/wp-content/uploads/2018/01/tictacticas-tictac.png" id="iconos">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#tictacs">
-                            <img src="http://www.saits.xyz/unsanvalentindiferente/wp-content/uploads/2018/01/productos-tictac.png" id="iconos">
-                        </a>
-                    </li>
-                </ul>
-            </div>
+        <div class="shadow">
+            <ul class="menuTicTac">
+                <li>
+                    <a href="#home">
+                        <img src="http://www.saits.xyz/unsanvalentindiferente/wp-content/uploads/2018/01/inicio-tictac.png" id="iconos">
+                    </a>
+                </li>
+                <li>
+                    <a href="#postales">
+                        <img src="http://www.saits.xyz/unsanvalentindiferente/wp-content/uploads/2018/01/postales-tictac.png" id="iconos">
+                    </a>
+                </li>
+                <li>
+                    <a href="#ecommerce">
+                        <img src="http://www.saits.xyz/unsanvalentindiferente/wp-content/uploads/2018/01/ecommerce-tictac.png" id="iconos">
+                    </a>
+                </li>
+                <li>
+                    <a href="#tictacticas">
+                        <img src="http://www.saits.xyz/unsanvalentindiferente/wp-content/uploads/2018/01/tictacticas-tictac.png" id="iconos">
+                    </a>
+                </li>
+                <li>
+                    <a href="#tictacs">
+                        <img src="http://www.saits.xyz/unsanvalentindiferente/wp-content/uploads/2018/01/productos-tictac.png" id="iconos">
+                    </a>
+                </li>
+            </ul>
         </div>
-        <!--Menu-->
-
+    </div>
+    <!--Menu-->
+    
+    <!--Inicio-->
     <div class="section" id="section0">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
-                    <img class="logotipo" src="./assets/img/inicio/logotipo-tictac.png" alt="tic-tac-logo">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <h1 class="margin-top">ESTE 14 DE FEBRERO TERMINA ESA RELACIÓN QUE TE QUITA LA FRESCURA</h1>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row align-items-end">
-                <div class="col-xs-12">
-                    <img class="mouse" width="104px" height="268px" src="./assets/img/inicio/mouse-scroll.png" alt="">
+                    <img src="assets/img/inicio/logotipo-tictac.png" class="logotipo animated fadeInDownBig" alt="TicTac Logotipo">
+                    <h1 class="h1 banda-bold">
+                        Este 14 de febrero temina esa relación<br>que te quita la frescura
+                    </h1>
+                    <div class="row lampara-banca-basura">
+                        <div class="col-xs-4">
+                            <img src="assets/img/inicio/lampara.png" class="lampara animated fadeInLeftBig" alt="UnSanValentinDiferente">
+                        </div>
+                        <div class="col-xs-4">
+                            <img src="assets/img/inicio/banca.png" class="banca animated zoomIn" alt="UnSanValentinDiferente">
+                        </div>
+                        <div class="col-xs-4">
+                            <img src="assets/img/inicio/basura.png" class="basura animated fadeInRightBig" alt="UnSanValentinDiferente">
+                        </div>
+                        <img src="assets/img/inicio/unsanvalentindiferente.png" class="UnSanValentinDiferente animated fadeInUpBig" alt="UnSanValentinDiferente">
+                        <br>
+                        <a href="#postales">
+                            <img src="assets/img/inicio/scroll.png" class="scroll animated pulse infinite" alt="UnSanValentinDiferente">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <!--Inicio-->
 
-
+    <!--Postales-->
     <div class="section" id="section1">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 bg-content">
-                    <h1>Page</h1>
-                    <p>Your creative page..</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="section" id="section2">
 
         <div class="slide">
             <div class="container">
@@ -188,17 +238,123 @@
 
     </div>
 
+    <!--Postales-->
 
-    <div class="section" id="section3">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 bg-content">
-                    <h1>About us</h1>
-                    <p>Your portfolio...</p>
+    <div class="section" id="section2">
+        <div class="slide">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 bg-content">
+                        <h1>Lightbox Gallery</h1>
+                        <p>Slide left or right, and click the number.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 bg-content">
+                        <h1>Gallery</h1>
+                        <!--<p><a href=""><img src="fullPage/1.png" alt="..." class="img-responsive" style="margin:auto;"></a></p>-->
+                        <p>
+                            <a href="./assets/img/ecommerce/perfume.png" data-lightbox="gallery1" >
+                                <img width="40%" src="./assets/img/ecommerce/perfume.png" alt="Gallery One" title="Gallery One" class="img-responsive" style="margin:auto;">
+                            </a>
+                        <span style="display:none"><a href="./assets/img/ecommerce/perfume.png"  data-lightbox="gallery1"> </a>
+                        </span>
+                    </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 bg-content">
+                        <h1>Gallery</h1>
+                        <p>
+                            <a href="./assets/img/ecommerce/te.png" data-lightbox="gallery2">
+                                <img width="40%" src="./assets/img/ecommerce/te.png" alt="Gallery Two" title="Gallery Two" class="img-responsive" style="margin:auto;">
+                            </a>
+                            <span style="display:none"><a href="./assets/img/ecommerce/te.png" data-lightbox="gallery2">  
+                            </a>
+                            </span>
+                    </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 bg-content">
+                        <h1>Gallery</h1>
+                        <p>
+                            <a href="./assets/img/ecommerce/teddy-bear.png" data-lightbox="gallery3" >
+                            <img width="40%" src="./assets/img/ecommerce/teddy-bear.png" alt="Gallery Three" title="Gallery Three" class="img-responsive" style="margin:auto;"></a>
+                            <span style="display:none">
+                            <a href="./assets/img/ecommerce/teddy-bear.png" data-lightbox="gallery3" > </a><a href="./assets/img/ecommerce/teddy-bear.png" data-lightbox="gallery3" > 
+                            </a>
+                            <a href="./assets/img/ecommerce/teddy-bear.png" data-lightbox="gallery3" > </a><a href="fullPage/bg1.jpg" data-lightbox="gallery3" > </a>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 bg-content">
+                        <h1>Gallery</h1>
+                        <p>
+                            <a href="./assets/img/ecommerce/globos.png" data-lightbox="gallery3">
+                            <img width="40%" src="./assets/img/ecommerce/globos.png" alt="Gallery Three"  class="img-responsive" style="margin:auto;"></a>
+                            <span style="display:none">
+                            <a href="./assets/img/ecommerce/globos.png" data-lightbox="gallery3" > </a><a href="./assets/img/ecommerce/teddy-bear.png" data-lightbox="gallery3"> 
+                            </a>
+                            <a href="./assets/img/ecommerce/globos.png" data-lightbox="gallery3"> </a><a href="fullPage/bg1.jpg" data-lightbox="gallery3"> </a>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 bg-content">
+                        <h1>Gallery</h1>
+                        <p>
+                            <a href="./assets/img/ecommerce/chocolates.png" data-lightbox="gallery3">
+                            <img width="40%" src="./assets/img/ecommerce/chocolates.png" alt="Gallery Three"s="img-responsive" style="margin:auto;"></a>
+                            <span style="display:none">
+                            <a href="./assets/img/ecommerce/chocolates.png" data-lightbox="gallery3"> </a><a href="./assets/img/ecommerce/teddy-bear.png" data-lightbox="gallery3"> 
+                            </a>
+                            <a href="./assets/img/ecommerce/chocolates.png" data-lightbox="gallery3"> </a><a href="fullPage/bg1.jpg" data-lightbox="gallery3"> </a>
+                            </span>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <!--Tictacticas-->
+    <div class="section" id="section3">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1 class="peace-sans tictacticas">Tictácticas</h1>
+                    <p class="tictacticasP banda-bold">BASTA, NO HAY MEJOR MANERA DE CELEBRAR EL AMOR, QUE ALEJÁNDOTE DE ALGUIEN QUE TE QUITA LA FRESCURA.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Tictacticas-->
 
 
     <div class="section" id="section4">
