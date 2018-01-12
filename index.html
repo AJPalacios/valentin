@@ -42,6 +42,57 @@
         #section0{
             background: #b22eb7;
         }
+        .logotipo {
+            margin-bottom: -10px;
+            margin-top: 20px;
+            max-width: 8%;
+        }
+        .h1 {
+            color: #FFFFFF;
+            font-size: 3em !important;
+            text-transform: uppercase;
+            z-index: 100;
+        }
+        .lampara {
+            height: 250px;
+            position: fixed;
+            left: 41%;
+        }
+        .banca {
+            height: 250px;
+
+        }
+        .basura {
+            height: 250px;
+            position: fixed;
+            right: 39%;
+        }
+        .UnSanValentinDiferente {
+            width: 50%;
+            position: relative;
+            top: -60px;
+        }
+        .scroll {
+            width: 25px;
+            position: fixed;
+            bottom: 0;
+        }
+        #section3 {
+            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f34973+0,cf4290+100 */
+background: rgb(243,73,115); /* Old browsers */
+background: -moz-linear-gradient(left, rgba(243,73,115,1) 0%, rgba(207,66,144,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, rgba(243,73,115,1) 0%,rgba(207,66,144,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, rgba(243,73,115,1) 0%,rgba(207,66,144,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f34973', endColorstr='#cf4290',GradientType=1 ); /* IE6-9 */
+        }
+        .tictacticas {
+            text-transform: uppercase;
+            margin-top: 5%;
+        }
+        .tictacticasP {
+            color: #FFFFFF;
+            font-size: 1em !important;
+        }
         input, textarea { opacity:0.8;}
         #navbar-collapse-1 { font-size: medium;}
         .section.table { margin: 0;}
@@ -100,30 +151,37 @@
         </div>
     </div>
     <!--Menu-->
-
+    
+    <!--Inicio-->
     <div class="section" id="section0">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
-                    <img class="logotipo" src="./assets/img/inicio/logotipo-tictac.png" alt="tic-tac-logo">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <h1 class="margin-top">ESTE 14 DE FEBRERO TERMINA ESA RELACIÓN QUE TE QUITA LA FRESCURA</h1>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row align-items-end">
-                <div class="col-xs-12">
-                    <img class="mouse" width="104px" height="268px" src="./assets/img/inicio/mouse-scroll.png" alt="">
+                    <img src="assets/img/inicio/logotipo-tictac.png" class="logotipo animated fadeInDownBig" alt="TicTac Logotipo">
+                    <h1 class="h1 banda-bold">
+                        Este 14 de febrero temina esa relación<br>que te quita la frescura
+                    </h1>
+                    <div class="row lampara-banca-basura">
+                        <div class="col-xs-4">
+                            <img src="assets/img/inicio/lampara.png" class="lampara animated fadeInLeftBig" alt="UnSanValentinDiferente">
+                        </div>
+                        <div class="col-xs-4">
+                            <img src="assets/img/inicio/banca.png" class="banca animated zoomIn" alt="UnSanValentinDiferente">
+                        </div>
+                        <div class="col-xs-4">
+                            <img src="assets/img/inicio/basura.png" class="basura animated fadeInRightBig" alt="UnSanValentinDiferente">
+                        </div>
+                        <img src="assets/img/inicio/unsanvalentindiferente.png" class="UnSanValentinDiferente animated fadeInUpBig" alt="UnSanValentinDiferente">
+                        <br>
+                        <a href="#postales">
+                            <img src="assets/img/inicio/scroll.png" class="scroll animated pulse infinite" alt="UnSanValentinDiferente">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <!--Inicio-->
 
 
     <div class="section" id="section1">
@@ -229,17 +287,18 @@
 
     </div>
 
-
+    <!--Tictacticas-->
     <div class="section" id="section3">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12 bg-content">
-                    <h1>About us</h1>
-                    <p>Your portfolio...</p>
+                <div class="col-xs-12">
+                    <h1 class="peace-sans tictacticas">Tictácticas</h1>
+                    <p class="tictacticasP banda-bold">BASTA, NO HAY MEJOR MANERA DE CELEBRAR EL AMOR, QUE ALEJÁNDOTE DE ALGUIEN QUE TE QUITA LA FRESCURA.</p>
                 </div>
             </div>
         </div>
     </div>
+    <!--Tictacticas-->
 
 
     <div class="section" id="section4">

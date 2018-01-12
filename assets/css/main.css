@@ -16,13 +16,13 @@
 
 /*Fuentes de Tic tac*/
 .peace-sans{
-  font-family: peace-sans;
+  font-family: 'peace-sans';
 }
 .banda-bold{
-  font-family: banda-bold;
+  font-family: 'banda-bold';
 }
 .banda-bold-italic{
-  font-family: banda-bold-italic;
+  font-family: 'banda-bold-italic';
 }
 /*Fuentes de Tic tac*/
 
@@ -79,7 +79,7 @@ ul li {
 
 
 h1{
-  font-family: banda-bold;
+  font-family: 'banda-bold';
   font-size: 3em;
   color: white;
 
