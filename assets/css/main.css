@@ -36,6 +36,39 @@
   font-size: 2em !important;
 }
 
+
+.tictacticas {
+    text-transform: uppercase;
+    margin-top: 5%;
+}
+
+.ecommerce-title{
+	text-transform: uppercase;;
+	margin-top: 5%;
+	color: white;
+}
+.te-title{
+	text-transform: uppercase;;
+	margin-top: 5%;
+	color: white;
+}
+.teddy-title{
+	text-transform: uppercase;;
+	margin-top: 5%;
+	color: white;
+}
+.globos-title{
+	text-transform: uppercase;;
+	margin-top: 5%;
+	color: white;
+}
+.chocolates-title{
+	text-transform: uppercase;;
+	margin-top: 5%;
+	color: white;
+}
+
+
 /*Font colors*/
 
 .pink-cintillo{
@@ -143,6 +176,12 @@ h1{
 }
 
 /*Secciones background*/
+
+/*Secciones imagenes ecommerce*/
+
+.center-img{
+	margin-top: 5% !important;
+}
 
 /*Mouse scroll*/
 
