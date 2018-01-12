@@ -13,9 +13,9 @@ html, body {
 #superContainer {
     height: 100%;
     position: relative;
-	
+
 	/* Touch detection for Windows 8 */
-	-ms-touch-action: none; 
+	-ms-touch-action: none;
 }
 .section {
     position: relative;
@@ -64,13 +64,13 @@ html, body {
     margin-top: -38px;
 }
 .controlArrow.prev {
-    left: 40%;
+    left: 46%;
     width: 0;
     border-width: 38.5px 34px 38.5px 0;
     border-color: transparent #fff transparent transparent;
 }
 .controlArrow.next {
-    right: 50%;
+    right: 45%;
     border-width: 38.5px 0 38.5px 34px;
     border-color: transparent transparent transparent #fff;
 }
