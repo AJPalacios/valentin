@@ -13,8 +13,8 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/backgrounds.css" />
     <link rel="stylesheet" href="./assets/css/animate.css" type="text/css">
     <link rel="stylesheet" href="./assets/css/hover.css" type="text/css">
-
     <link rel="stylesheet" href="./assets/css/main.css?version=1.1">
+    <script type="text/javascript" src="./assets/js/html5lightbox/html5lightbox.js"></script>
 
 
 	<!--[if IE]>
@@ -109,6 +109,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f34973', end
             width: 92%;
             position: relative;
             left: 5%;
+        }
+        .play1, .play2, .play3 {
+            position: absolute;
+        }
+        #html5-watermark { display:none !important; }
+        .play1 {
+            top: 39%;
+            left: 45%;
+            width: 20%;
+        }
+        .play2, .play3 {
+            left: 39%;
+    width: 20%;
+    top: 25%;
         }
         .video2, .video3 {
             width: 50%;
@@ -383,14 +397,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f34973', end
                     <div class="col-lg-12">
                         <div class="col-lg-6 positionRelativeTictacticas">
                             <img src="assets/img/tictacticas/galatzia-1.png" class="video1" alt="Tictácticas">
+                            <a href="https://www.youtube.com/embed/AHg4yyLLv6E?rel=0" data-showsocial="true" class="html5lightbox" title="Tictácticas">
+                                <img src="assets/img/tictacticas/chevron-tictacticas.png" class="play1" alt="Tictácticas">
+                            </a>
                         </div>
                         <div class="col-lg-6 positionRelativeTictacticas2">
                             <div class="col-lg-12">
                                 <img src="assets/img/tictacticas/galatzia-2.png" class="video2" alt="Tictácticas">
+                                <a href="https://www.youtube.com/embed/AHg4yyLLv6E?rel=0" data-showsocial="true" class="html5lightbox" title="Tictácticas">
+                                    <img src="assets/img/tictacticas/chevron-tictacticas.png" class="play2" alt="Tictácticas">
+                                </a>
                             </div>
                             <br>
                             <div class="col-lg-12">
                                 <img src="assets/img/tictacticas/galatzia-3.png" class="video3" alt="Tictácticas">
+                                <a href="https://www.youtube.com/embed/AHg4yyLLv6E?rel=0" data-showsocial="true" class="html5lightbox" title="Tictácticas">
+                                    <img src="assets/img/tictacticas/chevron-tictacticas.png" class="play3" alt="Tictácticas">
+                                </a>
                             </div>
                         </div>
                     </div>
