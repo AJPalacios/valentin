@@ -29,10 +29,12 @@
   font-family: 'banda-bold-italic';
 }
 .banda-regular{
-  font: 'banda-regular';
+  font-family: 'banda-regular';
 }
 /*Fuentes de Tic tac*/
-
+.thin-cintillo{
+  font-size: 2em !important;
+}
 
 /*Font colors*/
 
@@ -101,6 +103,16 @@ h1{
 .section{
   background-color: rgb(231, 65, 191) !important;
 }
+
+.background-perfume{
+  background: rgb(174,43,184); /* Old browsers */
+  background: -moz-linear-gradient(45deg, rgba(174,43,184,1) 0%, rgba(250,181,122,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, rgba(174,43,184,1) 0%,rgba(250,181,122,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, rgba(174,43,184,1) 0%,rgba(250,181,122,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ae2bb8', endColorstr='#fab57a',GradientType=1 ); 
+}
+
+
 /*Secciones background*/
 
 /*Mouse scroll*/
