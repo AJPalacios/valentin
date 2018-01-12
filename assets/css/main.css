@@ -1,15 +1,15 @@
 /*Fonts*/
 
 @font-face{
-  font-family: peace-sans;
+  font-family: 'peace-sans';
   src: url('../fonts/peace/Peace Sans/Peace Sans.otf');
 }
 @font-face{
-  font-family: banda-bold;
+  font-family: 'banda-bold';
   src: url('../fonts/banda/Banda Bold/BandaBold-Bold.otf');
 }
 @font-face{
-  font-family: banda-bold-italic;
+  font-family: 'banda-bold-italic';
   src: url('../fonts/banda/Banda Bold/BandaBold-BoldItalic.otf');
 }
 
