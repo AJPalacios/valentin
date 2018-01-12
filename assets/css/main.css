@@ -101,7 +101,9 @@ h1{
 }
 
 /*Positions*/
-
+.top1{
+  margin-top: 5%;
+}
 .margin-top{
   margin-top: 3%;
 }
@@ -111,4 +113,14 @@ h1{
 
 .tableCell{
  display: block;
+}
+
+/*cintillo*/
+
+.cintillo{
+  width: 100%;
+  position: absolute;
+  background-color:  white;
+  height: 10em;
+  z-index: 200;
 }
