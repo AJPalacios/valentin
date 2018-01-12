@@ -12,6 +12,10 @@
   font-family: 'banda-bold-italic';
   src: url('../fonts/banda/Banda Bold/BandaBold-BoldItalic.otf');
 }
+@font-face{
+  font-family: 'banda-regular';
+  src: url('../fonts/banda/Banda Regular/BandaRegular.otf');
+}
 
 
 /*Fuentes de Tic tac*/
@@ -24,10 +28,17 @@
 .banda-bold-italic{
   font-family: 'banda-bold-italic';
 }
+.banda-regular{
+  font: 'banda-regular';
+}
 /*Fuentes de Tic tac*/
 
 
-/*Fonts*/
+/*Font colors*/
+
+.pink-cintillo{
+  color: #873d83;
+}
 
 
 /*MENU*/
@@ -118,9 +129,11 @@ h1{
 /*cintillo*/
 
 .cintillo{
+  padding: 30px;
+  bottom: 0;
   width: 100%;
   position: absolute;
   background-color:  white;
   height: 10em;
-  z-index: 200;
+  z-index: 100;
 }
