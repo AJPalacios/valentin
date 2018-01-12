@@ -31,7 +31,11 @@
  }
 
 .section .bg-content {
+<<<<<<< Updated upstream
    /* background: rgb(174,43,184);*/
+=======
+    background: rgb(174,43,184);
+>>>>>>> Stashed changes
     -webkit-border-radius: 7px;
     -moz-border-radius: 7px;
     border-radius: 7px;
