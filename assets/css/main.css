@@ -128,7 +128,7 @@ ul li {
   margin-top: 5%;
 
 }
-
+ 
 
 /*Logotipo tictac*/
 
@@ -344,4 +344,79 @@ h1{
   background-color:  white;
   height: 10em;
   z-index: 100;
+}
+
+
+/*Responsive*/
+
+@media only screen and(max-width: 960px) and(min-width: 500px) {
+  .video1{
+    color: aqua;
+    width: 75%;
+    left: 0%;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width : 1200px) {
+  .logotipo {
+      margin-bottom: 0;
+      margin-top: 5%;
+      min-width: 15%;
+  }
+  .h1 {
+      font-size: 3em;
+      z-index: 100;
+  }
+  .UnSanValentinDiferente {
+      margin-bottom: -60px;
+      margin-top: -50px;
+      min-width: 80%;
+  }
+  .h2 {
+      font-size: 2.5em;
+  }
+}
+@media screen and (min-width: 780px) and (max-width: 1024px) {
+  .logotipo{
+      width: 15%;
+      margin-top: 5%;
+      margin-bottom: 0;
+  }
+  .h1 {
+      font-size: 2.5em;
+  }
+  .UnSanValentinDiferente {
+      width: 80%;
+      margin-top: -5%;
+      margin-bottom: -5%;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 780px) {
+  .logotipo{
+      width: 20%;
+      margin-top: 5%;
+      margin-bottom: 5%;
+  }
+  .h1 {
+      font-size: 2em;
+  }
+  .UnSanValentinDiferente {
+      margin-top: 0;
+      margin-bottom: 0;
+      width: 70%;
+  }                
+}
+@media screen and (max-width: 480px) {
+  .logotipo{
+      width: 35%;
+      margin-top: 5%;
+      margin-bottom: 5%;
+  }
+  .h1 {
+      font-size: 2em;
+  }
+  .UnSanValentinDiferente {
+      width: 80%;
+      margin-top: 5%;
+      margin-bottom: 5%;
+  }                
 }
