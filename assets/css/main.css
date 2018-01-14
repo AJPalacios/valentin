@@ -354,10 +354,47 @@ h1{
   #perfume-ecommerce{
     width: 40%;
   }
+  #te-ecommerce{
+    width: 38%;
+  }
+|#teddy-ecommerce{
+  width: 40%;
+}
+#globos-ecommerce{
+  width: 25%
+}
+#choco-ecommerce{
+  width: 25%;
+}
   .product-description{
     z-index: 500;
     position: absolute;
-    top: 45%;
+    top: 40%;
+    left: 15%;
+    width: 30%;
+    height: 20%;
+  }
+  .product-description-teddy{
+    z-index: 500;
+    position: absolute;
+    top: 43%;
+    left: 15%;
+    width: 30%;
+    height: 20%;
+  }
+
+  .product-description-globo{
+    z-index: 500;
+    position: absolute;
+    top: 43%;
+    left: 15%;
+    width: 30%;
+    height: 20%;
+  }
+  .product-description-choco{
+    z-index: 500;
+    position: absolute;
+    top: 40%;
     left: 15%;
     width: 30%;
     height: 20%;
@@ -369,7 +406,7 @@ h1{
   		border-color: white;
   		background-color: transparent;
       color: white;
-      padding: 5px 32px;
+      padding: 10px 32px;
       text-align: center;
       text-decoration: none;
       display: inline-block;
@@ -380,21 +417,7 @@ h1{
   		float: left;
   }
 
-  #te-ecommerce{
-    width: 40%;
-  }
 
-  #teddy-ecommerce{
-    width: 35%;
-  }
-  .product-description-teddy{
-  		z-index: 500;
-      position: absolute;
-      top: 45%;
-      left: 15%;
-  		width: 16%;
-  		height: 20%;
-  }
 
 }
 
