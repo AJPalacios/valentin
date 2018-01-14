@@ -768,8 +768,8 @@ h1{
     z-index: 500;
     position: absolute;
     top: 45%;
-    left: 18%;
-    width: 65%;
+    left: 8%;
+    width: 84%;
     height: 20%;
   }
   .first-text-description{
@@ -788,8 +788,8 @@ h1{
   		z-index: 500;
       position: absolute;
       top: 45%;
-      left: 22%;
-  		width: 55%;
+      left: 8%;
+  		width: 84%;
   		height: 20%;
   }
   .first-text-description-teddy{
@@ -801,9 +801,9 @@ h1{
   		color: #ff3e70;
   		z-index: 500;
       position: absolute;
-      top: 50%;
-      left: 20%;
-  		width: 60%;
+      top: 45%;
+      left: 8%;
+  		width: 84%;
   		height: 20%;
   }
   .first-text-description-globo{
@@ -819,9 +819,9 @@ h1{
   		color: #9e4934;
   		z-index: 500;
       position: absolute;
-      top: 44%;
-      left: 25%;
-  		width: 48%;
+      top: 41%;
+      left: 17%;
+  		width: 64%;
   		height: 20%;
   }
 
