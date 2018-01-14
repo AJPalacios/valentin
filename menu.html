@@ -1,0 +1,84 @@
+<style>
+	body {
+		background-color: #FE0EA1;
+	}
+	.imagenMenuResponsive {
+		width: 30%;
+		position: fixed;
+		right: 0.5em;
+		top: 0.5em;
+	}
+	.imagenMenuResponsiveInt {
+		    width: 98%;
+	}
+	.sidenav {
+		height: 100%;
+		width: 0;
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		right: 0;
+		background: -moz-linear-gradient(left, rgba(0,0,0,0) 1%, rgba(92,8,138,0.82) 50%);
+		background: -webkit-linear-gradient(left, rgba(0,0,0,0) 1%,rgba(92,8,138,0.82) 50%);
+		background: linear-gradient(to right, rgba(0,0,0,0) 1%,rgba(92,8,138,0.82) 50%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#d15c088a',GradientType=1 );
+		overflow-x: hidden;
+		overflow-: hidden;
+		transition: 0.5s;
+		padding-top: 60px;
+	}
+	.sidenav a {
+		display: block;
+		transition: 0.3s;
+	}
+	.sidenav .closebtn {
+		position: absolute;
+		top: 0;
+		right: 25px;
+		font-size: 3.5em;
+		margin-left: 50px;
+		color: #fff;
+		text-decoration: none;
+		}
+	#main {
+		transition: margin-left .5s;
+	}
+	@media screen and (max-height: 450px) {
+		.sidenav {padding-top: 15px;}
+	}
+	</style>
+</head>
+<div id="mySidenav" class="sidenav">
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	<a href="#">
+		<img src="./assets/img/menu/inicio-tictac.png" class="imagenMenuResponsiveInt">
+	</a>
+	<a href="#">
+		<img src="./assets/img/menu/postales-tictac.png" class="imagenMenuResponsiveInt">
+	</a>
+	<a href="#">
+		<img src="./assets/img/menu/ecommerce-tictac.png" class="imagenMenuResponsiveInt">
+	</a>
+	<a href="#">
+		<img src="./assets/img/menu/tictacticas-tictac.png" class="imagenMenuResponsiveInt">
+	</a>
+	<a href="#">
+		<img src="./assets/img/menu/productos-tictac.png" class="imagenMenuResponsiveInt">
+	</a>
+</div>
+<div id="main">
+	<a style="cursor:pointer;" onclick="openNav()">
+		<img src="./assets/img/menu/menu-tictac.png" alt="" class="imagenMenuResponsive">
+	</a>
+	</span>
+</div>
+<script>
+	function openNav() {
+		document.getElementById("mySidenav").style.width = "250px";
+		document.getElementById("main").style.marginLeft = "250px";
+	}
+	function closeNav() {
+		document.getElementById("mySidenav").style.width = "0";
+		document.getElementById("main").style.marginLeft= "0";
+	}
+</script>
