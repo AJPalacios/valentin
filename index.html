@@ -3,16 +3,16 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;">
 	<title>Un San Valentin Diferente</title>
 	<link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
 	<!--<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">-->
 	<link rel="stylesheet" type="text/css" href="./assets/css/jquery.fullPage.css?v=1.2" />
 	<link rel="stylesheet" type="text/css" href="./assets/css/reset.css" />
 	<link rel="stylesheet" type="text/css" href="./assets/css/backgrounds.css" />
-	<link rel="stylesheet" href="./assets/css/animate.css" type="text/css">
-	<link rel="stylesheet" href="./assets/css/hover.css" type="text/css">
-	<link rel="stylesheet" href="./assets/css/main.css?version=1.4">
+	<link rel="stylesheet" type="text/css" href="./assets/css/animate.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/hover.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/main.css?version=1.4">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.0/jquery.js"></script>
 	<script type="text/javascript" src="./assets/js/html5lightbox/html5lightbox.js"></script>
 	<!--[if IE]>
@@ -26,19 +26,19 @@
 		$(document).ready(function() {
 			$('.dropdown-toggle').dropdown();
 			var pepe = $.fn.fullpage({
-				slidesColor: ['#428BCA', '#5CB85C', '#5BC0DE', '#F0AD4E', '#FF530D', '#FFFFFF'], // Bootstrap
-				anchors: ['home', 'postales', 'ecommerce', 'tictacticas', 'tictacs', 'lastPage'],
+				slidesColor: ['#428BCA', '#5CB85C', '#5BC0DE', '#F0AD4E', '#FF530D'], // Bootstrap
+				anchors: ['home', 'postales', 'ecommerce', 'tictacticas', 'tictacs'],
 				menu: '#menu'
 			});
 		});
 	</script>
 	<script type="text/javascript">
-	$(window).load(function(){
-		/*Al terminar de cargar el sitio, primero se va la animación del Preloader*/
-		$("#loader").fadeOut();
-		/*Medio segundo despues, se va poco a poco el fondo del preloader*/
-		$("#loader-wrapper").delay(500).fadeOut("slow")
-	});
+		$(window).load(function(){
+			/*Al terminar de cargar el sitio, primero se va la animación del Preloader*/
+			$("#loader").fadeOut();
+			/*Medio segundo despues, se va poco a poco el fondo del preloader*/
+			$("#loader-wrapper").delay(500).fadeOut("slow")
+		});
 	</script>
 
 	<style type="text/css">
@@ -218,6 +218,21 @@
 		    top: 50%;
 		    left: 62%;
 		}
+		.boton-legales {
+			font-size: 1.2em;
+			position: fixed;
+		    bottom: 2%;
+		    right: 1.2%;
+		    border: 2px solid #ffffff;
+		    border-radius: 20px;
+		    padding: 10px;
+		    z-index: 99999;
+		    color: #fff;
+		}
+		.boton-legales:hover {
+			color: #fff !important;
+			text-decoration: none;
+		}
 		.section { margin: 0;}
 		.controlArrow { opacity: 0.5;}
 		.controlArrow:hover { opacity: 1;}
@@ -380,12 +395,12 @@
 						<div class="col-xs-4">
 							<img src="assets/img/inicio/basura.png" class="basura animated fadeInRightBig" alt="UnSanValentinDiferente">
 						</div>
+					</div>
 						<img src="assets/img/inicio/unsanvalentindiferente.png" class="UnSanValentinDiferente animated fadeInUpBig" alt="UnSanValentinDiferente">
 						<br>
 						<a href="#postales">
 							<img src="assets/img/inicio/scroll.png" class="scroll animated pulse infinite" alt="UnSanValentinDiferente">
 						</a>
-					</div>
 				</div>
 			</div>
 		</div>
@@ -774,6 +789,11 @@
 						});
 						$("#beep-two").attr("id", "beep-two0");
 					</script>
+				</div>
+				<div class="col-lg-12">
+					<a class="boton-legales banda-regular" href="legales.html">
+						Legales
+					</a>
 				</div>
 			</div>
 		</div>
