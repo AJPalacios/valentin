@@ -552,7 +552,7 @@ function loadHtml5LightBox(jsFolder) {
                     if (inst.options.showfacebook) socialCode += '<div class="html5-social-btn' + (inst.options.socialrotateeffect ? " html5-rotate" : "") + ' html5-social-facebook" style="' + socialBtnCSS + '"><div class="mh-icon-facebook" style="' + socialCSS + 'background-color:#3b5998;"></div></div>';
                     if (inst.options.showtwitter) socialCode += '<div class="html5-social-btn' + (inst.options.socialrotateeffect ?
                         " html5-rotate" : "") + ' html5-social-twitter" style="' + socialBtnCSS + '"><div class="mh-icon-twitter" style="' + socialCSS + 'background-color:#03b3ee;"></div></div>';
-                    if (inst.options.showpinterest) socialCode += '<div class="html5-social-btn' + (inst.options.socialrotateeffect ? " html5-rotate" : "") + ' html5-social-pinterest" style="' + socialBtnCSS + '"><div class="hidden mh-icon-pinterest" style="' + socialCSS + 'background-color:#c92228;"></div></div>';
+                    if (inst.options.showpinterest) socialCode += '<div class="html5-social-btn' + (inst.options.socialrotateeffect ? " html5-rotate" : "") + ' html5-social-pinterest" style="' + socialBtnCSS + '"><div class=" mh-icon-pinterest" style="' + socialCSS + 'background-color:#c92228;"></div></div>';
                     socialCode += '<div style="clear:both;"></div></div>';
                     inst.$lightboxBox.append(socialCode);
                     $(".html5-social-btn", inst.$lightbox).click(function() {
@@ -583,7 +583,7 @@ function loadHtml5LightBox(jsFolder) {
                            window.open("https://www.facebook.com/sharer/sharer.php?u=" + shareMedia, "_blank");
                          }
                         else if ($(this).hasClass("html5-social-twitter")) window.open("https://twitter.com/share?url=" + shareMedia, "_blank");
-                        else if ($(this).hasClass("html5-social-pinterest")) window.open("https://pinterest.com/pin/create/bookmarklet/?media=" + encodeURIComponent(shareMedia) + "&url=" + encodeURIComponent(shareUrl) + "&description=" + encodeURIComponent(shareTitle) + "&is_video=" + (isVideo ? "true" : "false"), "_blank");
+                        else if ($(this).hasClass("html5-social-pinterest")) window.open("whatsapp://send?text=Mira esta postal -" + shareMedia, "_blank");
                         else if ($(this).hasClass("html5-social-email")) window.open("mailto:?subject=" + encodeURIComponent(shareTitle) + "&body=Check out this: " + encodeURIComponent(shareUrl));
                         return false
                     })
