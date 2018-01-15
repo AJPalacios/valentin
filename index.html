@@ -26,8 +26,9 @@
 		$(document).ready(function() {
 			$('.dropdown-toggle').dropdown();
 			var pepe = $.fn.fullpage({
-				slidesColor: ['#428BCA', '#5CB85C', '#5BC0DE', '#F0AD4E', '#FF530D'], // Bootstrap
-				anchors: ['inicio', 'postales', 'ecommerce', 'tictacticas', 'productos'],
+				slidesColor: ['#FC69BF', '#FC69BF', '#FC69BF', '#FC69BF', '#FC69BF'], // Bootstrap
+				// Si se le deja este parametro no hace bien la función de linkeo el menu, PERO HACE EFECTO DE TRANSICION
+				// anchors: ['inicio', 'postales', 'ecommerce', 'tictacticas', 'productos'],
 				menu: '#menu'
 			});
 		});
@@ -67,6 +68,7 @@
 		}
 		#loader{
 			display: block;
+			/*content: url('http://3.bp.blogspot.com/-tgQ96hd6NJI/VeenZ1Lk8PI/AAAAAAAAAK4/Vx5L5w0SXQo/s1600/gif.gif');*/
 			content: url("./assets/img/inicio/logotipo-tictac.png");
 			position: relative;
 			left: 40%;
@@ -75,18 +77,24 @@
 		}
 		/* PRELOADER */
 		#section0{
-			background: #b22eb7;
+			background: rgb(209,43,189);
+			background: -moz-linear-gradient(45deg, rgba(209,43,189,1) 0%, rgba(255,118,160,1) 100%);
+			background: -webkit-linear-gradient(45deg, rgba(209,43,189,1) 0%,rgba(255,118,160,1) 100%);
+			background: linear-gradient(45deg, rgba(209,43,189,1) 0%,rgba(255,118,160,1) 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d12bbd', endColorstr='#ff76a0',GradientType=1 );
 		}
 		.logotipo {
 			margin-bottom: -10px;
 			margin-top: 20px;
-			max-width: 8%;
+			width: 8%;
 		}
 		.h1 {
 			color: #FFFFFF;
 			font-size: 3em !important;
 			text-transform: uppercase;
 			z-index: 100;
+			margin-top: 3%;
+			margin-bottom: 1%;
 		}
 		.lampara {
 			height: 250px;
@@ -111,24 +119,31 @@
 			position: fixed;
 			bottom: 0;
 		}
+		#section1 {
+			background: rgb(197,0,90);
+			background: -moz-linear-gradient(45deg, rgba(197,0,90,1) 0%, rgba(141,43,182,1) 100%);
+			background: -webkit-linear-gradient(45deg, rgba(197,0,90,1) 0%,rgba(141,43,182,1) 100%);
+			background: linear-gradient(45deg, rgba(197,0,90,1) 0%,rgba(141,43,182,1) 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c5005a', endColorstr='#8d2bb6',GradientType=1 );
+		}
 		#section3 {
-			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f34973+0,cf4290+100 */
-			background: rgb(243,73,115); /* Old browsers */
-			background: -moz-linear-gradient(left, rgba(243,73,115,1) 0%, rgba(207,66,144,1) 100%); /* FF3.6-15 */
-			background: -webkit-linear-gradient(left, rgba(243,73,115,1) 0%,rgba(207,66,144,1) 100%); /* Chrome10-25,Safari5.1-6 */
-			background: linear-gradient(to right, rgba(243,73,115,1) 0%,rgba(207,66,144,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f34973', endColorstr='#cf4290',GradientType=1 ); /* IE6-9 */
+			background: rgb(243,73,115);
+			background: -moz-linear-gradient(left, rgba(243,73,115,1) 0%, rgba(207,66,144,1) 100%);
+			background: -webkit-linear-gradient(left, rgba(243,73,115,1) 0%,rgba(207,66,144,1) 100%);
+			background: linear-gradient(to right, rgba(243,73,115,1) 0%,rgba(207,66,144,1) 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f34973', endColorstr='#cf4290',GradientType=1 );
 		}
 		.tictacticas {
 			text-transform: uppercase;
 			margin-top: 5%;
+			color:#f7a0bf;
 		}
 		.tictacticasP {
 			color: #FFFFFF;
 			font-size: 1.8em !important;
 		}
 		.collectionvideos {
-			margin-top: 2.5em;
+			margin-top: 6em;
 		}
 		.positionRelativeTictacticas {
 			position: relative;
@@ -286,11 +301,11 @@
 </head>
 <body>
 
-	<!--Preloader-->
+	<!--Preloader
 	<div id="loader-wrapper">
 		<div id="loader"></div>
 	</div>
-	<!--Preloader-->
+	Preloader-->
 
 	<!--Menu-->
 	<div id="mySidenav" class="sidenav visible-xs visible-sm hidden-md hidden-lg">
@@ -350,12 +365,116 @@
 	<!--Menu-->
 
 	<!--Inicio-->
-	<div class="section" id="section0">
-		<div class="container-fluid">
+	<div class="section " id="section0">
+		<div id="inicio" class="container-fluid">
 			<div class="row">
 				<div class="col-xs-12">
+					<style>
+						@media screen and (min-width: 779px) and (max-width: 1199px) {
+							.logotipo {
+								margin-bottom: -1%;
+								margin-top: 5%;
+								width: 15%;
+							}
+							.h1 {
+								color: #FFFFFF;
+								font-size: 2.5em !important;
+								text-transform: uppercase;
+								z-index: 100;
+							}
+							.lampara {
+								height: 250px;
+								position: fixed;
+								left: 32%;
+							}
+							.banca {
+								height: 250px;
+								position: fixed;
+								left: 35%;
+							}
+							.basura {
+								height: 250px;
+								position: fixed;
+								left: 50%;
+							}
+							.UnSanValentinDiferente {
+								width: 75%;
+								position: fixed;
+								top: 60%;
+								left: 10%;
+							}
+						}
+						@media screen and (min-width: 480px) and (max-width: 780px) {
+							.logotipo {
+								margin-bottom: 3%;
+								margin-top: 10%;
+								width: 25%;
+							}
+							.h1 {
+								color: #FFFFFF;
+								font-size: 3em !important;
+								text-transform: uppercase;
+								z-index: 100;
+							}
+							.lampara {
+								height: 250px;
+								position: fixed;
+								left: 32%;
+							}
+							.banca {
+								height: 250px;
+								position: fixed;
+								left: 35%;
+							}
+							.basura {
+								height: 250px;
+								position: fixed;
+								left: 50%;
+							}
+							.UnSanValentinDiferente {
+								width: 90%;
+								position: fixed;
+								top: 60%;
+								left: 5%;
+							}
+						}
+						@media screen and (max-width: 479px) {
+							.logotipo {
+								margin-bottom: 3%;
+								margin-top: 10%;
+								width: 25%;
+							}
+							.h1 {
+								color: #FFFFFF;
+								font-size: 3em !important;
+								text-transform: uppercase;
+								z-index: 100;
+							}
+							.lampara {
+								height: 250px;
+								position: fixed;
+								left: 24%;
+							}
+							.banca {
+								height: 250px;
+								position: fixed;
+								left: 29%;
+							}
+							.basura {
+								height: 250px;
+								position: fixed;
+								left: 56%;
+							}
+							.UnSanValentinDiferente {
+								width: 90%;
+								position: fixed;
+								top: 54%;
+								left: 5%;
+							}
+						}
+					</style>
 					<img src="assets/img/inicio/logotipo-tictac.png" class="logotipo animated fadeInDownBig" alt="TicTac Logotipo">
-					<h1 class="h1 banda-bold">
+					<h1 class="banda-bold h1">
 						Este 14 de febrero termina esa relación
 						<br>
 						que te quita la frescura
@@ -365,7 +484,7 @@
 							<img src="assets/img/inicio/lampara.png" class="lampara animated fadeInLeftBig" alt="UnSanValentinDiferente">
 						</div>
 						<div class="col-xs-4">
-							<img src="assets/img/inicio/banca.png" class="banca animated zoomIn" alt="UnSanValentinDiferente">
+							<img src="assets/img/inicio/banca.png" class="banca animated zoomInUp" alt="UnSanValentinDiferente">
 						</div>
 						<div class="col-xs-4">
 							<img src="assets/img/inicio/basura.png" class="basura animated fadeInRightBig" alt="UnSanValentinDiferente">
@@ -539,19 +658,19 @@
 							<div class="col-xs-12 col-lg-12 collectionPostales">
 								<div class="col-xs-9 col-md-10 col-lg-12">
 									<div class="col-lg-6 positionRelativeTictacticas postales1xs">
-										<a class="html5lightbox" data-showsocial="true" href="./assets/img/postales/calendario.jpg">
+										<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/calendario.jpg">
 											<img src="./assets/img/postales/calendario.jpg" class="video1 grayscale" alt="Tictácticas">
 										</a>
 									</div>
 									<div class="col-lg-6 positionRelativePostales2">
 										<div class="col-lg-12 postales2md postales2xs">
-											<a class="html5lightbox" data-showsocial="true" href="./assets/img/postales/cama.jpg">
+											<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/cama.jpg">
 												<img src="./assets/img/postales/cama.jpg" class="video2 grayscale" alt="Tictácticas">
 											</a>
 										</div>
 										<br>
 										<div class="col-lg-12 postales2md postales2xs">
-											<a class="html5lightbox" data-showsocial="true" href="./assets/img/postales/cerebro.jpg">
+											<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/cerebro.jpg">
 												<img src="./assets/img/postales/cerebro.jpg" class="video3 grayscale" alt="Tictácticas">
 											</a>
 										</div>
@@ -569,19 +688,19 @@
 							<div class="col-xs-12 col-lg-12 collectionPostales">
 								<div class="col-xs-9 col-md-10 col-lg-12">
 									<div class="col-lg-6 positionRelativeTictacticas postales1xs">
-										<a class="html5lightbox" data-showsocial="true" href="./assets/img/postales/cofre.jpg">
+										<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/cofre.jpg">
 											<img src="./assets/img/postales/cofre.jpg" class="video1 grayscale" alt="Tictácticas">
 										</a>
 									</div>
 									<div class="col-lg-6 positionRelativePostales2">
 										<div class="col-lg-12 postales2md postales2xs">
-											<a class="html5lightbox" data-showsocial="true" href="./assets/img/postales/libro.jpg">
+											<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/libro.jpg">
 												<img src="./assets/img/postales/libro.jpg" class="video2 grayscale" alt="Tictácticas">
 											</a>
 										</div>
 										<br>
 										<div class="col-lg-12 postales2md postales2xs">
-											<a class="html5lightbox" data-showsocial="true" href="./assets/img/postales/luna.jpg">
+											<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/luna.jpg">
 												<img src="./assets/img/postales/luna.jpg" class="video3 grayscale" alt="Tictácticas">
 											</a>
 										</div>
@@ -599,19 +718,19 @@
 							<div class="col-xs-12 col-lg-12 collectionPostales">
 								<div class="col-xs-9 col-md-10 col-lg-12">
 									<div class="col-lg-6 positionRelativeTictacticas postales1xs">
-										<a class="html5lightbox" data-showsocial="true" href="./assets/img/postales/maleta.jpg">
+										<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/maleta.jpg">
 											<img src="./assets/img/postales/maleta.jpg" class="video1 grayscale" alt="Tictácticas">
 										</a>
 									</div>
 									<div class="col-lg-6 positionRelativePostales2">
 										<div class="col-lg-12 postales2md postales2xs">
-											<a class="html5lightbox" data-showsocial="true" href="./assets/img/postales/mentiras.jpg">
+											<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/mentiras.jpg">
 												<img src="./assets/img/postales/mentiras.jpg" class="video2 grayscale" alt="Tictácticas">
 											</a>
 										</div>
 										<br>
 										<div class="col-lg-12 postales2md postales2xs">
-											<a class="html5lightbox" data-showsocial="true" href="./assets/img/postales/micro.jpg">
+											<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/micro.jpg">
 												<img src="./assets/img/postales/micro.jpg" class="video3 grayscale" alt="Tictácticas">
 											</a>
 										</div>
@@ -629,19 +748,19 @@
 							<div class="col-xs-12 col-lg-12 collectionPostales">
 								<div class="col-xs-9 col-md-10 col-lg-12">
 									<div class="col-lg-6 positionRelativeTictacticas postales1xs">
-										<a class="html5lightbox" data-showsocial="true" href="./assets/img/postales/salvavidas.jpg">
+										<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/salvavidas.jpg">
 											<img src="./assets/img/postales/salvavidas.jpg" class="video1 grayscale" alt="Tictácticas">
 										</a>
 									</div>
 									<div class="col-lg-6 positionRelativePostales2">
 										<div class="col-lg-12 postales2md postales2xs">
-											<a class="html5lightbox" data-showsocial="true" href="./assets/img/postales/serpiente.jpg">
+											<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/serpiente.jpg">
 												<img src="./assets/img/postales/serpiente.jpg" class="video2 grayscale" alt="Tictácticas">
 											</a>
 										</div>
 										<br>
 										<div class="col-lg-12 postales2md postales2xs">
-											<a class="html5lightbox" data-showsocial="true" href="./assets/img/postales/voto.jpg">
+											<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/voto.jpg">
 												<img src="./assets/img/postales/voto.jpg" class="video3 grayscale" alt="Tictácticas">
 											</a>
 										</div>
@@ -652,7 +771,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="slide hidden-lg">
+			<div class="slide hidden-lg hidden-md hidden-sm hidden-xs">
 				<div class="container">
 					<div class="row">
 						<!--<div class="">
@@ -693,15 +812,13 @@
 				<div class="row align-items-center">
 					<div class="col-xs-12 background-perfume">
 						<h2 class="peace-sans ecommerce-title">
-							PARA TI, A VER SI ATRAES A ALGUIEN QUE SÍ TE AGUANTE.
+							PARA TI, A VER SI ATRAES A ALGUIEN
+							<br>QUE SÍ TE AGUANTE.
 						</h2>
 						<p class="full-height">
 							<a href="./assets/img/ecommerce/perfume-tictac.png" data-showsocial="true" class="html5lightbox" >
-								<img id="perfume-ecommerce" width="30%" src="./assets/img/ecommerce/perfume.png" alt="Gallery One" title="Gallery One" class="img-responsive" style="margin:auto;">
+								<img id="perfume-ecommerce" width="36%" src="./assets/img/ecommerce/perfume.png" alt="Perfume Tictac" title="Perfume Tictac" class=" hvr-float-shadow img-responsive" style="margin:auto;">
 							</a>
-							<span style="display:none">
-								<a href="./assets/img/ecommerce/perfume.png"  data-lightbox="gallery1"></a>
-							</span>
 						</p>
 						<div class="product-description col-xs-12">
 							<p class="banda-regular white second-text-description">
@@ -710,16 +827,15 @@
 							<p class="peace-sans first-text-description">
 								ETERNITY NOT
 							</p>
-							<p class="banda-regular white second-text-description">
-								UNA LOCIÓN PARA OCULTAR ESE
-								<br>
-								HUMORCITO QUE TE CARGAS Y,
-								<br>
-								EN UNA DE ESAS, SE TE PEGUE
-								<br>
-								ALGUIEN QUE TE AGUANTE.
+							<br>
+							<p class="banda-bold white second-text-description">
+								UNA LOCIÓN PARA OCULTAR
+								<br>ESE HUMORCITO QUE TE
+								<br>CARGAS Y, EN UNA DE ESAS,
+								<br>SE TE PEGUE ALGUIEN QUE
+								<br>TE AGUANTE.
 							</p>
-							<a class="boton-comprar html5lightbox" data-showsocial="true" href="./assets/img/ecommerce/perfume-tictac.png">
+							<a class="hvr-float-shadow boton-comprar boton-comprar-texto html5lightbox" data-showsocial="true" href="./assets/img/ecommerce/perfume-tictac.png">
 								COMPARTE ESTE PRODUCTO
 							</a>
 						</div>
@@ -729,93 +845,33 @@
 		</div>
 		<div class="slide">
 			<div class="container-fluid">
-				<div class="row">
-					<div class="col-xs-12 background-te">
-						<h2 class="peace-sans te-title">
-							MILENARIA INFUSIÓN COMÚNMENTE UTILIZADA PARA APACIGUAR A LAS BESTIAS.
-						</h2>
-						<p class="full-height">
-							<a href="./assets/img/ecommerce/te-tictac.png" data-showsocial="true" class="html5lightbox">
-								<img id="te-ecommerce" width="30%" src="./assets/img/ecommerce/te.png" alt="Gallery Two" title="Gallery Two" class="img-responsive center-img" style="margin:auto;">
-							</a>
-							<span style="display:none">
-								<a href="./assets/img/ecommerce/te.png" data-lightbox="gallery2"></a>
-							</span>
-						</p>
-						<div class="product-description ">
-							<p class="banda-regular white second-text-description">
-								NO TE PUEDE FALTAR
-							</p>
-							<p class="peace-sans first-text-description-te">
-								TÉ ANTIESTRÉS
-							</p>
-							<p class="banda-regular white second-text-description">
-								FUERTE MEZCLA DE ANTIGUAS HIERBAS QUE PODRÍAS UTILIZAR PARA TU EQUILIBRIO MENTAL.
-								<br>
-								DIME SI TE FUNCIONA.
-							</p>
-							<a class="boton-comprar html5lightbox" data-showsocial="true" href="./assets/img/ecommerce/te-tictac.png">
-								COMPARTE ESTE PRODUCTO
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="slide">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-xs-12 background-teddy">
-						<h2 class="peace-sans teddy-title">
-							EN LAS MADRUGADAS HÁBLALE A ESTE OSO, A MI. YA NO ME BUSQUES.
-						</h2>
-						<p class="full-height">
-							<a href="./assets/img/ecommerce/teddy-bear-tictac.png" data-showsocial="true" class="html5lightbox" >
-								<img id="teddy-ecommerce" width="25%" src="./assets/img/ecommerce/teddy-bear.png" alt="Gallery Three" title="Gallery Three" class="img-responsive center-img" style="margin:auto;">
-							</a>
-						</p>
-						<div class="product-description-teddy">
-							<p class="banda-regular white second-text-description">
-								UN CLÁSICO
-							</p>
-							<p class="peace-sans first-text-description-teddy">
-								TEDDY BEAR
-							</p>
-							<p class="banda-regular white second-text-description">
-								CUÉNTALE TUS PENAS Y ARREPENTIMIENTOS.
-								SEGURAMENTE ÉL PODRÁ FINGIR MEJOR QUE TE ESCUCHA SIN TENER QUE HACERLO.
-							</p>
-							<a class="boton-comprar html5lightbox" data-showsocial="true" href="./assets/img/ecommerce/teddy-bear-tictac.png">
-								COMPARTE ESTE PRODUCTO
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="slide">
-			<div class="container-fluid">
-				<div class="row">
+				<div class="row align-items-center">
 					<div class="col-xs-12 background-globos">
 						<h2 class="peace-sans globos-title">
-							CON TODO CARIÑO, PARA QUE FLOTES LEJOS DE AQUÍ.
+							CON TODO CARIÑO,
+							<br>PARA QUE FLOTES LEJOS DE AQUÍ.
 						</h2>
 						<p class="full-height">
 							<a href="./assets/img/ecommerce/globos-tictac.png" data-showsocial="true" class="html5lightbox">
-								<img id="globos-ecommerce" width="30%" src="./assets/img/ecommerce/globos.png" alt="Gallery Three"  class="img-responsive center-img" style="margin:auto;">
+								<img id="globos-ecommerce" width="30%" src="./assets/img/ecommerce/globos.png" alt="Globos Tictac"  class=" hvr-float-shadow img-responsive" style="margin:auto;">
 							</a>
 						</p>
-						<div class="product-description-globo">
+						<div class="product-description-globo col-xs-12">
 							<p class="banda-regular second-text-description">
 								NO TE PUEDE FALTAR
 							</p>
 							<p class="peace-sans first-text-description-globo">
 								GLOBOS CON HELIO
 							</p>
-							<p class="banda-regular second-text-description">
-								RESPIRA EL HELIO Y A VER SI ASI LOGRAS SACARLE UNA SONRISA A ALGUIEN MÁS, NINGUNA GRACIA.
+							<br>
+							<p class="banda-bold second-text-description">
+								RESPIRA EL HELIO Y A VER
+								<br>SI ASI LOGRAS SACARLE
+								<br>UNA SONRISA A ALGUIEN MÁS,
+								<br>PORQUE A MÍ YA NO ME HACES
+								<br>NINGUNA GRACIA.
 							</p>
-							<a class="boton-comprar-globo html5lightbox" data-showsocial="true" href="./assets/img/ecommerce/globos-tictac.png" >
+							<a class="hvr-float-shadow boton-comprar-globo boton-comprar-texto html5lightbox" data-showsocial="true" href="./assets/img/ecommerce/globos-tictac.png" >
 								COMPARTE ESTE PRODUCTO
 							</a>
 						</div>
@@ -825,29 +881,33 @@
 		</div>
 		<div class="slide">
 			<div class="container-fluid">
-				<div class="row">
-					<div class="col-xs-12 background-chocolates">
-						<h2 class="peace-sans chocolates-title">
-							CON SUERTE, UN POCO DE DULZURA, AYUDARÁ CON EL PROBLEMA DE INTENSIDAD QUE TE CARGAS.
+				<div class="row align-items-center">
+					<div class="col-xs-12 background-teddy">
+						<h2 class="peace-sans teddy-title">
+							EN LAS MADRUGADAS HÁBLALE A ESTE OSO,
+							<br>A MI, YA NO ME BUSQUES.
 						</h2>
 						<p class="full-height">
-							<a href="./assets/img/ecommerce/chocolates-tictac.png" data-showsocial="true" class="html5lightbox">
-								<img id="choco-ecommerce" width="30%" src="./assets/img/ecommerce/chocolates.png" alt="Gallery Three" class="img-responsive center-img" style="margin:auto;">
+							<a href="./assets/img/ecommerce/teddy-bear-tictac.png" data-showsocial="true" class="html5lightbox" >
+								<img id="teddy-ecommerce" width="30%" src="./assets/img/ecommerce/teddy-bear.png" alt="Teddy Bear" title="Teddy Bear" class=" hvr-float-shadow img-responsive" style="margin:auto;">
 							</a>
 						</p>
-						<div class="product-description-choco">
-							<p class="banda-regular second-text-description">
+						<div class="product-description-teddy col-xs-12">
+							<p class="banda-regular white second-text-description">
 								UN CLÁSICO
 							</p>
-							<p class="peace-sans first-text-description-choco">
-								CHOCOLATES
+							<p class="peace-sans first-text-description-teddy">
+								TEDDY BEAR
 							</p>
-							<p class="banda-regular second-text-description">
-								EL PERFECTO OBSEQUIO PARA REMEDIAR CAUSAS PERDIDAS.
-								<br>
-								TE PRESENTO LA VERSIÓN CLÁSICA DEL CACAO Y DE TU INTOLERANCIA.
+							<br>
+							<p class="banda-bold white second-text-description">
+								CUÉNTALE TUS PENAS
+								<br>Y ARREPENTIMIENTOS.
+								<br>SEGURAMENTE ÉL PODRÁ FINGIR
+								<br>MEJOR QUE TE ESCUCHA SIN
+								<br>TENER QUE HACERLO.
 							</p>
-							<a class="boton-comprar-choco html5lightbox" data-showsocial="true" href="./assets/img/ecommerce/chocolates-tictac.png">
+							<a class="hvr-float-shadow boton-comprar boton-comprar-texto html5lightbox" data-showsocial="true" href="./assets/img/ecommerce/teddy-bear-tictac.png">
 								COMPARTE ESTE PRODUCTO
 							</a>
 						</div>
@@ -855,11 +915,83 @@
 				</div>
 			</div>
 		</div>
-		<div class="cintillo">
+		<div class="slide">
+			<div class="container-fluid">
+				<div class="row align-items-center">
+					<div class="col-xs-12 background-te">
+						<h2 class="peace-sans te-title">
+							MILENARIA INFUSIÓN COMÚNMENTE UTILIZADA
+							<br>PARA APACIGUAR A LAS BESTIAS.
+						</h2>
+						<p class="full-height">
+							<a href="./assets/img/ecommerce/te-tictac.png" data-showsocial="true" class="html5lightbox">
+								<img id="te-ecommerce" width="30%" src="./assets/img/ecommerce/te.png" alt="Té Tictac" title="Té Tictac" class=" hvr-float-shadow img-responsive" style="margin:auto;">
+							</a>
+						</p>
+						<div class="product-description col-xs-12">
+							<p class="banda-regular white second-text-description">
+								NO TE PUEDE FALTAR
+							</p>
+							<p class="peace-sans first-text-description-te">
+								TÉ ANTIESTRÉS
+							</p>
+							<br>
+							<p class="banda-bold white second-text-description">
+								FUERTE MEZCLA DE ANTIGUAS
+								<br>HIERBAS QUE PODRÍAS UTILIZAR
+								<br>PARA TU EQUILIBRIO MENTAL.
+								<br>DIME SI TE FUNCIONA.
+								<br>&nbsp;
+							</p>
+							<a class="hvr-float-shadow boton-comprar boton-comprar-texto html5lightbox" data-showsocial="true" href="./assets/img/ecommerce/te-tictac.png">
+								COMPARTE ESTE PRODUCTO
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="slide">
+			<div class="container-fluid">
+				<div class="row align-items-center">
+					<div class="col-xs-12 background-chocolates">
+						<h2 class="peace-sans chocolates-title">
+							CON SUERTE, UN POCO DE DULZURA, AYUDARÁ
+							<br>CON EL PROBLEMA DE INTENSIDAD QUE TE CARGAS.
+						</h2>
+						<p class="full-height">
+							<a href="./assets/img/ecommerce/chocolates-tictac.png" data-showsocial="true" class="html5lightbox">
+								<img id="choco-ecommerce" width="30%" src="./assets/img/ecommerce/chocolates.png" alt="Chocolates Tictac" class=" hvr-float-shadow img-responsive" style="margin:auto;">
+							</a>
+						</p>
+						<div class="product-description-choco col-xs-12">
+							<p class="banda-regular second-text-description">
+								UN CLÁSICO
+							</p>
+							<p class="peace-sans first-text-description-choco">
+								CHOCOLATES
+							</p>
+							<br>
+							<p class="banda-bold second-text-description">
+								EL PERFECTO OBSEQUIO
+								<br>PARA REMEDIAR CAUSAS PERDIDAS.
+								<br>TE PRESENTO LA VERSIÓN CLÁSICA
+								<br>DEL CACAO Y DE TU INTOLERANCIA.
+								<br>&nbsp;
+							</p>
+							<a class="hvr-float-shadow boton-comprar-choco boton-comprar-texto html5lightbox" data-showsocial="true" href="./assets/img/ecommerce/chocolates-tictac.png">
+								COMPARTE ESTE PRODUCTO
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="cintillo animated zoomInDown">
 			<div class="container middle-xs">
 				<div class="row align-items-center">
 					<div class="col-xs-12 col-md-12">
-						<p class="banda-regular thin-cintillo pink-cintillo">
+						<p class="banda-regular thin-cintillo pink-cintillo" style="text-transform: uppercase;">
 							EXPLORA LA “TIENDA” para que se lo envíes a esa persona que tanto quieres (fuera de tu vida)
 						</p>
 					</div>
@@ -871,7 +1003,7 @@
 
 	<!--Tictacticas-->
 	<div class="section" id="section3">
-		<div class="container">
+		<div id="tictacticas" class="container">
 			<div class="row">
 				<div class="col-xs-12">
 					<h1 class="peace-sans tictacticas">Tictácticas</h1>
@@ -965,18 +1097,86 @@
 
 	<!--Productos-->
 	<div class="section" id="section4">
-		<div class="container-fluid">
+		<div id="productos" class="container-fluid">
 			<div class="row">
 				<div class="col-lg-12">
 					<style>
 						@media only screen and (min-width: 1024px) and (max-width : 1199px) {
-			            }
-			            @media screen and (min-width: 780px) and (max-width: 1199px) {
-			            }
-			            @media screen and (min-width: 480px) and (max-width: 780px) {
-			            }
-			            @media screen and (max-width: 480px) {
-			            }
+						}
+						@media screen and (min-width: 780px) and (max-width: 1199px) {
+						}
+						@media screen and (min-width: 480px) and (max-width: 780px) {
+							#container-products {
+								position: relative;
+								height: 600px;
+							}
+							.cajitas {
+								width: 25% !important;
+							}
+							.yerbabuena {
+								position: absolute;
+								top: 30%;
+								left: 6%;
+							}
+							.menta {
+								position: absolute;
+								top: 30%;
+								left: 70%;
+							}
+							.naranja {
+								position: absolute;
+								top: 60%;
+								left: 22%;
+								z-index: 3;
+							}
+							.fresa {
+								position: absolute;
+								top: 60%;
+								left: 54%;
+								z-index: 3;
+							}
+							.arandano {
+								position: absolute;
+								top: 75%;
+								left: 38%;
+								z-index: 5;
+							}
+						}
+						@media screen and (max-width: 480px) {
+							#container-products {
+								position: relative;
+								height: 600px;
+							}
+							.cajitas {
+								width: 40% !important;
+							}
+							.yerbabuena {
+								position: absolute;
+								top: 15%;
+								left: 1%;
+							}
+							.menta {
+								position: absolute;
+								top: 15%;
+								right: 0%;
+							}
+							.naranja {
+								position: absolute;
+								top: 70%;
+								left: 0%;
+							}
+							.fresa {
+								position: absolute;
+								top: 70%;
+								left: 60%;
+							}
+							.arandano {
+								position: absolute;
+								top: 40%;
+								left: 30%;
+								z-index: 5;
+							}
+						}
 					</style>
 					<div id="container-products">
 						<a>
@@ -1018,7 +1218,7 @@
 					</script>
 				</div>
 				<div class="col-lg-12">
-					<a class="boton-legales banda-regular" href="legales.html">
+					<a class="boton-legales banda-regular hvr-float-shadow" href="legales.html">
 						Legales
 					</a>
 				</div>
@@ -1029,6 +1229,5 @@
 
 	<script src="./assets/js/bootstrap.min.js" type="text/javascript"></script>
 	<script src="./assets/js/lightbox-2.6.min.js" type="text/javascript"></script>
-
 </body>
 </html>
