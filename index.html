@@ -40,6 +40,16 @@
 			$("#loader-wrapper").delay(500).fadeOut("slow")
 		});
 	</script>
+	<script>
+		function openNav() {
+			document.getElementById("mySidenav").style.width = "250px";
+			document.getElementById("main").style.marginLeft = "250px";
+		}
+		function closeNav() {
+			document.getElementById("mySidenav").style.width = "0";
+			document.getElementById("main").style.marginLeft= "0";
+		}
+	</script>
 	<style type="text/css">
 		/* PRELOADER */
 		#loader-wrapper{
@@ -85,7 +95,6 @@
 		}
 		.banca {
 			height: 250px;
-
 		}
 		.basura {
 			height: 250px;
@@ -274,16 +283,6 @@
 			.sidenav {padding-top: 15px;}
 		}
 	</style>
-	<script>
-		function openNav() {
-			document.getElementById("mySidenav").style.width = "250px";
-			document.getElementById("main").style.marginLeft = "250px";
-		}
-		function closeNav() {
-			document.getElementById("mySidenav").style.width = "0";
-			document.getElementById("main").style.marginLeft= "0";
-		}
-	</script>
 </head>
 <body>
 
@@ -769,13 +768,20 @@
 								<img id="globos-ecommerce" width="30%" src="./assets/img/ecommerce/globos.png" alt="Gallery Three"  class="img-responsive center-img" style="margin:auto;">
 							</a>
 						</p>
-							<div class="product-description-globo">
-								<p class="banda-regular second-text-description">NO TE PUEDE FALTAR<p>
-									<p class="peace-sans first-text-description-globo">GLOBOS CON HELIO</p>
-									<p class="banda-regular second-text-description">RESPIRA EL HELIO Y A VER SI ASI LOGRAS SACARLE
-									UNA SONRISA A ALGUIEN MÁS, NINGUNA GRACIA.</p>
-									<a class="boton-comprar-globo html5lightbox" data-showsocial="true" href="./assets/img/ecommerce/globos-tictac.png" >COMPARTE ESTE PRODUCTO</a>
-							</div>
+						<div class="product-description-globo">
+							<p class="banda-regular second-text-description">
+								NO TE PUEDE FALTAR
+							</p>
+							<p class="peace-sans first-text-description-globo">
+								GLOBOS CON HELIO
+							</p>
+							<p class="banda-regular second-text-description">
+								RESPIRA EL HELIO Y A VER SI ASI LOGRAS SACARLE UNA SONRISA A ALGUIEN MÁS, NINGUNA GRACIA.
+							</p>
+							<a class="boton-comprar-globo html5lightbox" data-showsocial="true" href="./assets/img/ecommerce/globos-tictac.png" >
+								COMPARTE ESTE PRODUCTO
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -792,13 +798,22 @@
 								<img id="choco-ecommerce" width="30%" src="./assets/img/ecommerce/chocolates.png" alt="Gallery Three" class="img-responsive center-img" style="margin:auto;">
 							</a>
 						</p>
-							<div class="product-description-choco">
-								<p class="banda-regular second-text-description">UN CLÁSICO<p>
-									<p class="peace-sans first-text-description-choco">CHOCOLATES</p>
-									<p class="banda-regular second-text-description">EL PERFECTO OBSEQUIO PARA REMEDIAR CAUSAS PERDIDAS.<br>
-									TE PRESENTO LA VERSIÓN CLÁSICA DEL CACAO Y DE TU INTOLERANCIA.</p>
-									<a class="boton-comprar-choco html5lightbox" data-showsocial="true" href="./assets/img/ecommerce/chocolates-tictac.png">COMPARTE ESTE PRODUCTO</a>
-							</div>
+						<div class="product-description-choco">
+							<p class="banda-regular second-text-description">
+								UN CLÁSICO
+							</p>
+							<p class="peace-sans first-text-description-choco">
+								CHOCOLATES
+							</p>
+							<p class="banda-regular second-text-description">
+								EL PERFECTO OBSEQUIO PARA REMEDIAR CAUSAS PERDIDAS.
+								<br>
+								TE PRESENTO LA VERSIÓN CLÁSICA DEL CACAO Y DE TU INTOLERANCIA.
+							</p>
+							<a class="boton-comprar-choco html5lightbox" data-showsocial="true" href="./assets/img/ecommerce/chocolates-tictac.png">
+								COMPARTE ESTE PRODUCTO
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
