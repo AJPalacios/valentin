@@ -561,7 +561,7 @@ function loadHtml5LightBox(jsFolder) {
                         var shareMedia = inst.currentElem[ELEM_HREF];
                         console.log(shareMedia)
                         if (inst.currentElem[ELEM_TYPE] == 0) shareMedia = inst.absoluteUrl(inst.currentElem[ELEM_HREF]);
-                        else if (inst.currentElem[ELEM_TYPE] == 3) shareMedia = "https://www.youtube.com/embed/" + inst.getYoutubeId(inst.currentElem[ELEM_HREF]) +
+                        else if (inst.currentElem[ELEM_TYPE] == 3) shareMedia = "https://www.youtube.com/watch?v=" + inst.getYoutubeId(inst.currentElem[ELEM_HREF]) +
                             "/0.jpg";
                         else {
                             var lightboxLink = $('.html5lightbox[href="' + inst.currentElem[ELEM_HREF] + '"]');
