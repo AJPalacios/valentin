@@ -255,7 +255,7 @@ h1{
 .second-text-description{
 	font-size: 1.5em !important;
   text-align: left;
-  
+
 }
 .product-description{
     z-index: 500;
@@ -739,16 +739,17 @@ h1{
   }
 
   #perfume-ecommerce{
-    width: 45%;
+    width: 40%;
   }
   #te-ecommerce{
     width: 45%;
   }
   #teddy-ecommerce{
-    width:50%;
+    width:40%;
+		top: 6px;
   }
   #globos-ecommerce{
-    width: 50%;
+    width: 40%;
   }
   #choco-ecommerce{
     width: 40%;
@@ -776,9 +777,9 @@ h1{
   .product-description{
     z-index: 500;
     position: absolute;
-    top: 45%;
+    top: 40%;
     left: 8%;
-    width: 84%;
+    width: 85%;
     height: 20%;
   }
   .first-text-description{
@@ -796,9 +797,9 @@ h1{
   .product-description-teddy{
   		z-index: 500;
       position: absolute;
-      top: 45%;
+      top: 40%;
       left: 8%;
-  		width: 84%;
+  		width: 85%;
   		height: 20%;
   }
   .first-text-description-teddy{
@@ -810,9 +811,9 @@ h1{
   		color: #ff3e70;
   		z-index: 500;
       position: absolute;
-      top: 45%;
+      top: 40%;
       left: 8%;
-  		width: 84%;
+  		width: 85%;
   		height: 20%;
   }
   .first-text-description-globo{
@@ -828,9 +829,9 @@ h1{
   		color: #9e4934;
   		z-index: 500;
       position: absolute;
-      top: 41%;
-      left: 17%;
-  		width: 64%;
+      top: 40%;
+      left: 8%;
+  		width: 85%;
   		height: 20%;
   }
 
@@ -873,12 +874,12 @@ h1{
   		border-color: #9e4934;
   		background-color: transparent;
       color: #9e4934;
-      padding: 2px 23px;
+      padding: 6px 37px;
       text-align: center;
       text-decoration: none;
       display: inline-block;
       font-size: 11px;
-      margin: 15px 5px;
+      margin: 14px 19px;
       cursor: pointer;
       border-radius: 60px;
   		float: left;
