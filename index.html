@@ -489,6 +489,12 @@
 					.collectionPostales {
 						margin-top: 15%;
 					}
+					.controlArrow.prev {
+						display: none !important;
+						left: 40% !important;
+						border-width: 38.5px 0 38.5px 34px;
+						border-color: transparent transparent transparent #fff;
+					}
 	            }
 	            @media screen and (max-width: 480px) {
 	            	.positionRelativeTictacticas {
@@ -514,12 +520,13 @@
 						margin-top: 50%;
 					}
 					.controlArrow.prev {
-						left: 40%;
+						display: none !important;
+						left: 40% !important;
 						border-width: 38.5px 0 38.5px 34px;
 						border-color: transparent transparent transparent #fff;
 					}
 					.controlArrow.next {
-						right: 40%;
+						right: 40% !important;
 						border-width: 38.5px 0 38.5px 34px;
 						border-color: transparent transparent transparent #fff;
 					}
@@ -642,6 +649,36 @@
 								</div>
 							</div>
 						</div>
+					</div>
+				</div>
+			</div>
+			<div class="slide hidden-lg">
+				<div class="container">
+					<div class="row">
+						<!--<div class="">
+							<div class="col-xs-12 col-lg-12 collectionPostales">
+								<div class="col-xs-9 col-md-10 col-lg-12">
+									<div class="col-lg-6 positionRelativeTictacticas postales1xs">
+										<a class="html5lightbox" data-showsocial="true" href="./assets/img/postales/salvavidas.jpg">
+											<img src="./assets/img/postales/salvavidas.jpg" class="video1 grayscale" alt="Tictácticas">
+										</a>
+									</div>
+									<div class="col-lg-6 positionRelativePostales2">
+										<div class="col-lg-12 postales2md postales2xs">
+											<a class="html5lightbox" data-showsocial="true" href="./assets/img/postales/serpiente.jpg">
+												<img src="./assets/img/postales/serpiente.jpg" class="video2 grayscale" alt="Tictácticas">
+											</a>
+										</div>
+										<br>
+										<div class="col-lg-12 postales2md postales2xs">
+											<a class="html5lightbox" data-showsocial="true" href="./assets/img/postales/voto.jpg">
+												<img src="./assets/img/postales/voto.jpg" class="video3 grayscale" alt="Tictácticas">
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>-->
 					</div>
 				</div>
 			</div>
@@ -835,6 +872,136 @@
 	<!--Tictacticas-->
 	<div class="section" id="section3">
 		<div class="container">
+			<style>
+				.tituloPostales {
+				    position: fixed;
+				    left: 29%;
+				}
+				.copyPostales {
+					font-size: 1.8em !important;
+				}
+				.collectionPostales {
+				    margin-top: 2em;
+				}
+				.positionRelativePostales{
+					position: relative;
+					left: 11%;
+					z-index: 1;
+				}
+				.positionRelativePostales2 {
+					position: relative;
+					left: -4%;
+				}
+				.grayscale{
+			    	/* filter: url(filters.svg#grayscale); Firefox 3.5+ */
+			    	filter: gray; /* IE5+ */
+			    	-webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+			    	-webkit-transition: all .8s ease-in-out;
+			    }
+			    .grayscale:hover {
+			    	filter: none;
+			    	-webkit-filter: grayscale(0);
+			    	-webkit-transform: scale(1.01);
+				}
+	            @media only screen and (min-width: 1024px) and (max-width : 1199px) {
+	                .positionRelativeTictacticas {
+						position: relative;
+						left: -14%;
+						z-index: 1;
+						width: 75%;
+					}
+					.positionRelativePostales2 {
+						position: absolute;
+						top: 0%;
+						left: 30%;
+					}
+					.postales2md {
+						left: 15%;
+					}
+	            }
+	            @media screen and (min-width: 780px) and (max-width: 1024px) {
+	            	.positionRelativeTictacticas {
+						position: relative;
+						left: -14%;
+						z-index: 1;
+						width: 75%;
+					}
+					.positionRelativePostales2 {
+						position: absolute;
+						top: 0%;
+						left: 30%;
+					}
+					.postales1xs {
+						width: 95%;
+						left: -6%;
+					}
+					.postales2xs {
+						left: 50%;
+						width: 127%;
+					}
+					.collectionPostales {
+						margin-top: 15%;
+					}
+	            }
+	            @media screen and (min-width: 480px) and (max-width: 780px) {
+	            	.positionRelativeTictacticas {
+						position: relative;
+						left: -14%;
+						z-index: 1;
+						width: 75%;
+					}
+					.positionRelativePostales2 {
+						position: absolute;
+						top: 0%;
+						left: 30%;
+					}
+					.postales1xs {
+						width: 95%;
+						left: -6%;
+					}
+					.postales2xs {
+						left: 50%;
+						width: 127%;
+					}
+					.collectionPostales {
+						margin-top: 15%;
+					}
+	            }
+	            @media screen and (max-width: 480px) {
+	            	.positionRelativeTictacticas {
+						position: relative;
+						left: -14%;
+						z-index: 1;
+						width: 75%;
+					}
+					.positionRelativePostales2 {
+						position: absolute;
+						top: 0%;
+						left: 30%;
+					}
+					.postales1xs {
+						width: 95%;
+						left: -6%;
+					}
+					.postales2xs {
+						left: 50%;
+						width: 127%;
+					}
+	                .collectionPostales {
+						margin-top: 50%;
+					}
+					.controlArrow.prev {
+						left: 40%;
+						border-width: 38.5px 0 38.5px 34px;
+						border-color: transparent transparent transparent #fff;
+					}
+					.controlArrow.next {
+						right: 40%;
+						border-width: 38.5px 0 38.5px 34px;
+						border-color: transparent transparent transparent #fff;
+					}
+	            }
+			</style>
 			<div class="row">
 				<div class="col-xs-12">
 					<h1 class="peace-sans tictacticas">Tictácticas</h1>
