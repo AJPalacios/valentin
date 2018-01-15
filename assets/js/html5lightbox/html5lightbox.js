@@ -580,10 +580,10 @@ function loadHtml5LightBox(jsFolder) {
                         if ($(this).hasClass("html5-social-facebook")){
 
                           console.log(this)
-                           window.open("https://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(shareUrl) + "&t=" + encodeURIComponent(shareMedia), "_blank");
+                           window.open("https://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(shareUrl) + "&t=" + shareMedia, "_blank");
                          }
                         else if ($(this).hasClass("html5-social-twitter")) window.open("https://twitter.com/share?url=" +
-                            encodeURIComponent(shareUrl) + "&text=" + encodeURIComponent(shareMedia), "_blank");
+                            encodeURIComponent(shareUrl) + "&text=" + shareMedia, "_blank");
                         else if ($(this).hasClass("html5-social-pinterest")) window.open("https://pinterest.com/pin/create/bookmarklet/?media=" + encodeURIComponent(shareMedia) + "&url=" + encodeURIComponent(shareUrl) + "&description=" + encodeURIComponent(shareTitle) + "&is_video=" + (isVideo ? "true" : "false"), "_blank");
                         else if ($(this).hasClass("html5-social-email")) window.open("mailto:?subject=" + encodeURIComponent(shareTitle) + "&body=Check out this: " + encodeURIComponent(shareUrl));
                         return false
