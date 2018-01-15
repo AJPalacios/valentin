@@ -559,6 +559,7 @@ function loadHtml5LightBox(jsFolder) {
                         var shareUrl = window.location.href + (window.location.href.indexOf("?") < 0 ? "?" : "&") + "html5lightboxshare=" + encodeURIComponent(inst.currentElem[ELEM_HREF]);
                         var shareTitle = inst.currentElem[ELEM_TITLE];
                         var shareMedia = inst.currentElem[ELEM_HREF];
+                        console.log(shareMedia)
                         if (inst.currentElem[ELEM_TYPE] == 0) shareMedia = inst.absoluteUrl(inst.currentElem[ELEM_HREF]);
                         else if (inst.currentElem[ELEM_TYPE] == 3) shareMedia = "https://img.youtube.com/vi/" + inst.getYoutubeId(inst.currentElem[ELEM_HREF]) +
                             "/0.jpg";
@@ -576,9 +577,12 @@ function loadHtml5LightBox(jsFolder) {
                             inst.currentElem[ELEM_TYPE] == 2 || inst.currentElem[ELEM_TYPE] == 3 || inst.currentElem[ELEM_TYPE] == 4 || inst.currentElem[ELEM_TYPE] == 8 || inst.currentElem[ELEM_TYPE] == 9 || inst.currentElem[ELEM_TYPE] == 11 || inst.currentElem[ELEM_TYPE] == 12;
                         if (!shareTitle) shareTitle = "";
                         else shareTitle = inst.html2Text(shareTitle);
-                        if ($(this).hasClass("html5-social-facebook")) window.open("https://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(shareUrl) + "&t=" + encodeURIComponent(shareTitle), "_blank");
-                        else if ($(this).hasClass("html5-social-twitter")) window.open("https://twitter.com/share?url=" +
-                            encodeURIComponent(shareUrl) + "&text=" + encodeURIComponent(shareTitle), "_blank");
+                        if ($(this).hasClass("html5-social-facebook")){
+
+                          console.log(shareMedia)
+                           window.open("https://www.facebook.com/sharer/sharer.php?u=" + shareMedia, "_blank");
+                         }
+                        else if ($(this).hasClass("html5-social-twitter")) window.open("https://twitter.com/share?url=" + shareMedia, "_blank");
                         else if ($(this).hasClass("html5-social-pinterest")) window.open("https://pinterest.com/pin/create/bookmarklet/?media=" + encodeURIComponent(shareMedia) + "&url=" + encodeURIComponent(shareUrl) + "&description=" + encodeURIComponent(shareTitle) + "&is_video=" + (isVideo ? "true" : "false"), "_blank");
                         else if ($(this).hasClass("html5-social-email")) window.open("mailto:?subject=" + encodeURIComponent(shareTitle) + "&body=Check out this: " + encodeURIComponent(shareUrl));
                         return false
