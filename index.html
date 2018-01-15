@@ -496,10 +496,6 @@
 								top: 64%;
 								left: 5%;
 							}
-							/*postales*/
-							.margin-top {
-								margin-top: 5%;
-							}
 			            }
 					</style>
 					<img src="assets/img/inicio/logotipo-tictac.png" class="logotipo animated fadeInDownBig" alt="TicTac Logotipo">
@@ -533,18 +529,6 @@
 	<!--Postales-->
 	<div class="section" id="section1">
 		<div id="postales" class="col-lg-12 ">
-			<br class="visible-xs">
-			<br class="visible-xs">
-			<h1 class="peace-sans white margin-top header-seccion-postales">
-				POSTALES
-			</h1>
-			<p class="banda-regular white copyPostales">
-				TERMINA ESA RELACIÓN QUE TE QUITA LA FRESCURA CON UNA POSTAL
-				<br>
-				COMPARTE
-			</p>
-		</div>
-		<div>
 			<style>
 				.tituloPostales {
 				    position: fixed;
@@ -682,7 +666,34 @@
 						border-color: transparent transparent transparent #fff;
 					}
 	            }
+	            /*iPhone´s*/
+				@media screen and (max-width: 375px) {
+					/*postales*/
+					.collectionPostales {
+						margin-top: 27%;
+					}
+					.postales1xs {
+						width: 121%;
+						left: -24%;
+					}
+					.postales2xs {
+						left: 45%;
+						width: 168%;
+					}
+	            }
 			</style>
+			<br class="visible-xs">
+			<br class="visible-xs">
+			<h1 class="peace-sans white margin-top header-seccion-postales">
+				POSTALES
+			</h1>
+			<p class="banda-regular white copyPostales">
+				TERMINA ESA RELACIÓN QUE TE QUITA LA FRESCURA CON UNA POSTAL
+				<br>
+				COMPARTE
+			</p>
+		</div>
+		<div>
 			<div class="slide">
 				<div class="container">
 					<div class="row">
@@ -1035,6 +1046,12 @@
 
 	<!--Tictacticas-->
 	<div class="section" id="section3">
+		<style>
+			/*iPhone´s*/
+			@media screen and (max-width: 375px) {
+				
+			}
+		</style>
 		<div id="tictacticas" class="container">
 			<div class="row">
 				<div class="col-xs-12">
