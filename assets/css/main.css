@@ -39,9 +39,6 @@
 }
 
 /*Fuentes de Tic tac*/
-.thin-cintillo{
-  font-size: 2em !important;
-}
 
 
 .tictacticas {
@@ -49,37 +46,14 @@
     margin-top: 5%;
 }
 
-.ecommerce-title{
-	text-transform: uppercase;;
-	margin-top: 5%;
-	color: white;
-}
-.te-title{
-	text-transform: uppercase;;
-	margin-top: 5%;
-	color: white;
-}
-.teddy-title{
-	text-transform: uppercase;;
-	margin-top: 5%;
-	color: white;
-}
-.globos-title{
-	text-transform: uppercase;;
-	margin-top: 5%;
-	color: white;
-}
-.chocolates-title{
-	text-transform: uppercase;;
-	margin-top: 5%;
-	color: white;
-}
-
 
 /*Font colors*/
 
 .pink-cintillo{
   color: #873d83;
+}
+.thin-cintillo{
+  font-size: 2em !important;
 }
 
 
@@ -153,12 +127,12 @@ h1{
   background: linear-gradient(45deg, rgba(174,43,184,1) 0%,rgba(250,181,122,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ae2bb8', endColorstr='#fab57a',GradientType=1 );
 }
-.background-te{
-  background: rgb(238,155,99); /* Old browsers */
-  background: -moz-linear-gradient(45deg, rgba(238,155,99,1) 0%, rgba(238,155,99,1) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(45deg, rgba(238,155,99,1) 0%,rgba(165,189,133,1) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg, rgba(238,155,99,1) 0%,rgba(165,189,133,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ee9b63', endColorstr='#a5bd85',GradientType=1 );
+.background-globos{
+  background: rgb(255,216,219); /* Old browsers */
+  background: -moz-linear-gradient(45deg, rgba(255,216,119,1) 0%, rgba(250,65,125,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, rgba(255,216,125,1) 0%,rgba(250,65,125,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, rgba(255,216,119,1) 0%,rgba(250,65,125,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd877', endColorstr='#fa417d',GradientType=1 );
 }
 .background-teddy{
   background: rgb(203,51,101); /* Old browsers */
@@ -167,15 +141,13 @@ h1{
   background: linear-gradient(135deg, rgba(203,51,101,1) 0%,rgba(116,63,139,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb3365', endColorstr='#743f8b',GradientType=1 );
 }
-
-.background-globos{
-  background: rgb(255,216,219); /* Old browsers */
-  background: -moz-linear-gradient(45deg, rgba(255,216,119,1) 0%, rgba(250,65,125,1) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(45deg, rgba(255,216,125,1) 0%,rgba(250,65,125,1) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(45deg, rgba(255,216,119,1) 0%,rgba(250,65,125,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd877', endColorstr='#fa417d',GradientType=1 );
+.background-te{
+  background: rgb(238,155,99); /* Old browsers */
+  background: -moz-linear-gradient(45deg, rgba(238,155,99,1) 0%, rgba(238,155,99,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, rgba(238,155,99,1) 0%,rgba(165,189,133,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, rgba(238,155,99,1) 0%,rgba(165,189,133,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ee9b63', endColorstr='#a5bd85',GradientType=1 );
 }
-
 .background-chocolates{
   background: rgb(244,189,101); /* Old browsers */
   background: -moz-linear-gradient(45deg, rgba(244,189,101,1) 1%, rgba(252,115,88,1) 100%); /* FF3.6-15 */
@@ -222,70 +194,107 @@ h1{
   height: 100vh;
 }
 
+
+.ecommerce-title{
+  text-transform: uppercase;;
+  margin-top: 5%;
+  color: white;
+}
+.globos-title{
+  text-transform: uppercase;;
+  margin-top: 5%;
+  color: white;
+}
+.teddy-title{
+  text-transform: uppercase;;
+  margin-top: 5%;
+  color: white;
+}
+.te-title{
+  text-transform: uppercase;;
+  margin-top: 5%;
+  color: white;
+}
+.chocolates-title{
+  text-transform: uppercase;;
+  margin-top: 5%;
+  color: white;
+}
+
 /*second text*/
-.product-description{
-		z-index: 500;
-    position: absolute;
-    top: 50%;
-    left: 20%;
-		width: 20%;
-		height: 20%;
-}
-.first-text-description-te{
-	color: #ae5722;
-	text-align: justify;
-}
-.product-description-globo{
-		color: #ff3e70;
-		z-index: 500;
-    position: absolute;
-    top: 50%;
-    left: 20%;
-		width: 20%;
-		height: 20%;
-}
-.first-text-description-choco{
-	color: #9e4934;
-	text-align: justify;
-}
-.product-description-choco{
-		color: #9e4934;
-		z-index: 500;
-    position: absolute;
-    top: 50%;
-    left: 20%;
-		width: 25%;
-		height: 20%;
+.first-text-description{
+  color: #731b54;
+  font-size: 2em;
+  text-align: justify;
+  letter-spacing: 3px;
 }
 .first-text-description-globo{
-	color: #ff3e70;
-	text-align: justify;
+  color: #ff3e70;
+  font-size: 2em;
+  text-align: justify;
+  letter-spacing: 3px;
 }
-
-.product-description-teddy{
-		z-index: 500;
-    position: absolute;
-    top: 45%;
-    left: 20%;
-		width: 16%;
-		height: 20%;
-}
-
 .first-text-description-teddy{
-	color: #ff99eb;
-	text-align: justify;
-	letter-spacing: 3px;
+  color: #ff99eb;
+  font-size: 2em;
+  text-align: justify;
+  letter-spacing: 3px;
 }
-.first-text-description{
-	color: #731b54;
-	text-align: justify;
+.first-text-description-te{
+  color: #ae5722;
+  font-size: 2em;
+  text-align: justify;
+  letter-spacing: 3px;
+}
+.first-text-description-choco{
+  color: #9e4934;
+  font-size: 2em;
+  text-align: justify;
+  letter-spacing: 3px;
 }
 .second-text-description{
 	font-size: 1.5em !important;
-	text-align: justify;
+  text-align: left;
+
 }
-
-
+.product-description{
+    z-index: 500;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    width: 20%;
+    height: 20%;
+}
+.product-description-globo{
+    color: #ff3e70;
+    z-index: 500;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    width: 20%;
+    height: 20%;
+}
+.product-description-choco{
+    color: #9e4934;
+    z-index: 500;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    width: 20%;
+    height: 20%;
+}
+.product-description-teddy{
+    z-index: 500;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    width: 20%;
+    height: 20%;
+}
+.boton-comprar-texto:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
 .boton-comprar{
 		border-style: solid;
 		border-width: thin;
@@ -297,7 +306,7 @@ h1{
     text-decoration: none;
     display: inline-block;
     font-size: 11px;
-    margin: 14px 19px;
+    margin: 15px 0 0 0;
     cursor: pointer;
     border-radius: 60px;
 		float: left;
@@ -313,7 +322,7 @@ h1{
     text-decoration: none;
     display: inline-block;
     font-size: 11px;
-    margin: 14px 19px;
+    margin: 15px 0 0 0;
     cursor: pointer;
     border-radius: 60px;
 		float: left;
@@ -329,7 +338,7 @@ h1{
     text-decoration: none;
     display: inline-block;
     font-size: 11px;
-    margin: 14px 19px;
+    margin: 15px 0 0 0;
     cursor: pointer;
     border-radius: 60px;
 		float: left;
@@ -730,16 +739,17 @@ h1{
   }
 
   #perfume-ecommerce{
-    width: 45%;
+    width: 40%;
   }
   #te-ecommerce{
     width: 45%;
   }
   #teddy-ecommerce{
-    width:50%;
+    width:40%;
+		top: 6px;
   }
   #globos-ecommerce{
-    width: 50%;
+    width: 40%;
   }
   #choco-ecommerce{
     width: 40%;
@@ -767,9 +777,9 @@ h1{
   .product-description{
     z-index: 500;
     position: absolute;
-    top: 45%;
+    top: 40%;
     left: 8%;
-    width: 84%;
+    width: 85%;
     height: 20%;
   }
   .first-text-description{
@@ -787,9 +797,9 @@ h1{
   .product-description-teddy{
   		z-index: 500;
       position: absolute;
-      top: 45%;
+      top: 40%;
       left: 8%;
-  		width: 84%;
+  		width: 85%;
   		height: 20%;
   }
   .first-text-description-teddy{
@@ -801,9 +811,9 @@ h1{
   		color: #ff3e70;
   		z-index: 500;
       position: absolute;
-      top: 45%;
+      top: 40%;
       left: 8%;
-  		width: 84%;
+  		width: 85%;
   		height: 20%;
   }
   .first-text-description-globo{
@@ -819,9 +829,9 @@ h1{
   		color: #9e4934;
   		z-index: 500;
       position: absolute;
-      top: 41%;
-      left: 17%;
-  		width: 64%;
+      top: 40%;
+      left: 8%;
+  		width: 85%;
   		height: 20%;
   }
 
@@ -864,12 +874,12 @@ h1{
   		border-color: #9e4934;
   		background-color: transparent;
       color: #9e4934;
-      padding: 2px 23px;
+      padding: 6px 37px;
       text-align: center;
       text-decoration: none;
       display: inline-block;
       font-size: 11px;
-      margin: 15px 5px;
+      margin: 14px 19px;
       cursor: pointer;
       border-radius: 60px;
   		float: left;

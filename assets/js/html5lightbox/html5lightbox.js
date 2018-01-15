@@ -552,7 +552,7 @@ function loadHtml5LightBox(jsFolder) {
                     if (inst.options.showfacebook) socialCode += '<div class="html5-social-btn' + (inst.options.socialrotateeffect ? " html5-rotate" : "") + ' html5-social-facebook" style="' + socialBtnCSS + '"><div class="mh-icon-facebook" style="' + socialCSS + 'background-color:#3b5998;"></div></div>';
                     if (inst.options.showtwitter) socialCode += '<div class="html5-social-btn' + (inst.options.socialrotateeffect ?
                         " html5-rotate" : "") + ' html5-social-twitter" style="' + socialBtnCSS + '"><div class="mh-icon-twitter" style="' + socialCSS + 'background-color:#03b3ee;"></div></div>';
-                    if (inst.options.showpinterest) socialCode += '<div class="html5-social-btn' + (inst.options.socialrotateeffect ? " html5-rotate" : "") + ' html5-social-pinterest" style="' + socialBtnCSS + '"><div class="hidden mh-icon-pinterest" style="' + socialCSS + 'background-color:#c92228;"></div></div>';
+                    if (inst.options.showpinterest) socialCode += '<div class="html5-social-btn' + (inst.options.socialrotateeffect ? " html5-rotate" : "") + ' html5-social-pinterest" style="' + socialBtnCSS + '"><div class="hidden-md hidden-lg mh-icon-whatsapp" style="' + socialCSS + 'background-color:#00E676;"></div></div>';
                     socialCode += '<div style="clear:both;"></div></div>';
                     inst.$lightboxBox.append(socialCode);
                     $(".html5-social-btn", inst.$lightbox).click(function() {
@@ -561,7 +561,7 @@ function loadHtml5LightBox(jsFolder) {
                         var shareMedia = inst.currentElem[ELEM_HREF];
                         console.log(shareMedia)
                         if (inst.currentElem[ELEM_TYPE] == 0) shareMedia = inst.absoluteUrl(inst.currentElem[ELEM_HREF]);
-                        else if (inst.currentElem[ELEM_TYPE] == 3) shareMedia = "https://img.youtube.com/vi/" + inst.getYoutubeId(inst.currentElem[ELEM_HREF]) +
+                        else if (inst.currentElem[ELEM_TYPE] == 3) shareMedia = "https://www.youtube.com/watch?v=" + inst.getYoutubeId(inst.currentElem[ELEM_HREF]) +
                             "/0.jpg";
                         else {
                             var lightboxLink = $('.html5lightbox[href="' + inst.currentElem[ELEM_HREF] + '"]');
@@ -583,7 +583,7 @@ function loadHtml5LightBox(jsFolder) {
                            window.open("https://www.facebook.com/sharer/sharer.php?u=" + shareMedia, "_blank");
                          }
                         else if ($(this).hasClass("html5-social-twitter")) window.open("https://twitter.com/share?url=" + shareMedia, "_blank");
-                        else if ($(this).hasClass("html5-social-pinterest")) window.open("https://pinterest.com/pin/create/bookmarklet/?media=" + encodeURIComponent(shareMedia) + "&url=" + encodeURIComponent(shareUrl) + "&description=" + encodeURIComponent(shareTitle) + "&is_video=" + (isVideo ? "true" : "false"), "_blank");
+                        else if ($(this).hasClass("html5-social-pinterest")) window.open("whatsapp://send?text=Mira esta postal -" + shareMedia, "_blank");
                         else if ($(this).hasClass("html5-social-email")) window.open("mailto:?subject=" + encodeURIComponent(shareTitle) + "&body=Check out this: " + encodeURIComponent(shareUrl));
                         return false
                     })
