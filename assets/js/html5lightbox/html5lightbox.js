@@ -552,6 +552,7 @@ function loadHtml5LightBox(jsFolder) {
                     if (inst.options.showfacebook) socialCode += '<div class="html5-social-btn' + (inst.options.socialrotateeffect ? " html5-rotate" : "") + ' html5-social-facebook" style="' + socialBtnCSS + '"><div class="mh-icon-facebook" style="' + socialCSS + 'background-color:#3b5998;"></div></div>';
                     if (inst.options.showtwitter) socialCode += '<div class="html5-social-btn' + (inst.options.socialrotateeffect ?
                         " html5-rotate" : "") + ' html5-social-twitter" style="' + socialBtnCSS + '"><div class="mh-icon-twitter" style="' + socialCSS + 'background-color:#03b3ee;"></div></div>';
+                    if (inst.options.showpinterest) socialCode += '<div class="html5-social-btn' + (inst.options.socialrotateeffect ? " html5-rotate" : "") + ' html5-social-pinterest" style="' + socialBtnCSS + '"><div class="hidden-md hidden-lg mh-icon-whatsapp" style="' + socialCSS + 'background-color:#00E676;"></div></div>';
                     socialCode += '<div style="clear:both;"></div></div>';
                     inst.$lightboxBox.append(socialCode);
                     $(".html5-social-btn", inst.$lightbox).click(function() {
