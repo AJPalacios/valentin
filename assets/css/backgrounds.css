@@ -1,8 +1,6 @@
 .section{
 	text-align:center;
 }
-
-
 /* Sections
  * --------------------------------------- */
  #section0,
@@ -13,23 +11,6 @@
  .slide{
 	background-size: cover;
  }
- #section0{
-	background-image: url(../fullPage/bg3.jpg);
- }
- #section1{
-	background-image: url(../fullPage/bg2.jpg);
- }
- #section2{
-	background-image: url(../fullPage/bg4.jpg);
- }
- 
- #section3{
-	background-image: url(../fullPage/bg5.jpg);
- }
- #section4{
- 	background-image: url(../fullPage/bg1.jpg);
- }
-
 .section .bg-content {
     background: rgb(174,43,184);
     -webkit-border-radius: 7px;
@@ -39,6 +20,3 @@
     width: 100%;
     color: #333;
 }
-
-
- 

@@ -33,6 +33,7 @@ caption,th {
 }
 h1,h2,h3,h4,h5,h6 {
     font-weight: normal;
+    font-family: 'Helvetica', sans-serif;
     margin:0;
     padding:0;
     color:#444;
@@ -42,13 +43,9 @@ q:before,q:after {
 }
 abbr,acronym { border: 0;
 }
-
-
-/* Custom CSS
- * --------------------------------------- */
 body{
-	font-family: arial,helvetica;
+    font-family: arial,helvetica;
     font-size: 100%;
-	color: #333;
-	color: rgba(0,0,0,0.5);
+    color: #333;
+    color: rgba(0,0,0,0.5);
 }
