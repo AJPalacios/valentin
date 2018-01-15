@@ -13,7 +13,7 @@
 	<link rel="stylesheet" type="text/css" href="./assets/css/backgrounds.css" />
 	<link rel="stylesheet" type="text/css" href="./assets/css/animate.css">
 	<link rel="stylesheet" type="text/css" href="./assets/css/hover.css">
-	<link rel="stylesheet" type="text/css" href="./assets/css/main.css?version=1.4">
+	<link rel="stylesheet" type="text/css" href="./assets/css/main.css?version=1.5">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.0/jquery.js"></script>
 	<script type="text/javascript" src="./assets/js/html5lightbox/html5lightbox.js"></script>
 	<!--[if IE]>
@@ -481,12 +481,12 @@
 			                /*inicio*/
 			                .logotipo {
 								margin-bottom: 3%;
-								margin-top: 13%;
-								width: 25%;
+								margin-top: 10%;
+								width: 20%;
 							}
 							.h1 {
 								color: #FFFFFF;
-								font-size: 2.5em !important;
+								font-size: 1.3em !important;
 								text-transform: uppercase;
 								z-index: 100;
 							}
@@ -496,9 +496,56 @@
 								top: 64%;
 								left: 5%;
 							}
-							/*postales*/
-							.margin-top {
-								margin-top: 5%;
+			            }
+			            @media screen and (max-width: 320px) {
+			                /*inicio*/
+			                .logotipo {
+								margin-bottom: 3%;
+								margin-top: 10%;
+								width: 20%;
+							}
+							.h1 {
+								color: #FFFFFF;
+								font-size: 1.3em !important;
+								text-transform: uppercase;
+								z-index: 100;
+							}
+							.lampara {
+								height: 250px;
+								position: fixed;
+								left: 16%;
+							}
+							.banca {
+								height: 250px;
+								position: fixed;
+								left: 20%;
+							}
+							.basura {
+								height: 250px;
+								position: fixed;
+								left: 60%;
+							}
+							.UnSanValentinDiferente {
+								width: 95%;
+								position: fixed;
+								top: 63%;
+								left: 5%;
+							}
+							.scroll {
+								width: 15px;
+								position: fixed;
+								bottom: 0;
+							}
+							.boton-legales {
+								font-size: 1em;
+								position: fixed;
+								bottom: 2%;
+								right: 1.2%;
+								border: 2px solid #ffffff;
+								border-radius: 20px;
+								padding: 10px;
+								z-index: 99999;
+								color: #fff;
 							}
 			            }
 					</style>
@@ -533,18 +580,6 @@
 	<!--Postales-->
 	<div class="section" id="section1">
 		<div id="postales" class="col-lg-12 ">
-			<br class="visible-xs">
-			<br class="visible-xs">
-			<h1 class="peace-sans white margin-top header-seccion-postales">
-				POSTALES
-			</h1>
-			<p class="banda-regular white copyPostales">
-				TERMINA ESA RELACIÓN QUE TE QUITA LA FRESCURA CON UNA POSTAL
-				<br>
-				COMPARTE
-			</p>
-		</div>
-		<div>
 			<style>
 				.tituloPostales {
 				    position: fixed;
@@ -682,7 +717,44 @@
 						border-color: transparent transparent transparent #fff;
 					}
 	            }
+	            /*iPhone´s*/
+				@media screen and (max-width: 375px) {
+					/*postales*/
+					.collectionPostales {
+						margin-top: 27%;
+					}
+					.postales1xs {
+						width: 121%;
+						left: -24%;
+					}
+					.postales2xs {
+						left: 45%;
+						width: 168%;
+					}
+	            }
+	            @media screen and (max-width: 320px) {
+	            	.copyPostales {
+							font-size: 1.5em !important;
+					}
+					.controlArrow.next {
+						top: 51%;
+						right: 2% !important;
+						border-width: 38.5px 0 38.5px 26px;
+						border-color: transparent transparent transparent #fff;
+					}
+	            }
 			</style>
+			<br class="visible-xs">
+			<br class="visible-xs">
+			<br class="visible-xs">
+			<h1 class="peace-sans white margin-top header-seccion-postales">
+				POSTALES
+			</h1>
+			<p class="banda-regular white copyPostales" style="text-transform: uppercase;">
+				Comparte una postal para que le llegue la indirecta a esa persona que te quita la frescura.
+			</p>
+		</div>
+		<div>
 			<div class="slide">
 				<div class="container">
 					<div class="row">
@@ -838,6 +910,50 @@
 	<!--Postales-->
 
 	<!--Ecommerce-->
+		<style>
+			/*iPhone´s*/
+			@media screen and (max-width: 375px) {
+				.ecommerce-title {
+					font-size: 2em;
+					margin-top: 15%;
+					color: white;
+				}
+				.thin-cintillo {
+					font-size: .8em !important;
+				}
+				.boton-comprar-globo {
+					border-style: solid;
+					border-width: thin;
+					border-color: #ff3e70;
+					background-color: transparent;
+					color: #ff3e70;
+					text-align: center;
+					text-decoration: none;
+					display: inline-block;
+					font-size: 11px;
+					margin: 15px 35px;
+					cursor: pointer;
+					border-radius: 60px;
+					float: left;
+				}
+
+				.boton-comprar-choco {
+					border-style: solid;
+					border-width: thin;
+					border-color: #9e4934;
+					background-color: transparent;
+					color: #9e4934;
+					text-align: center;
+					text-decoration: none;
+					display: inline-block;
+					font-size: 11px;
+					cursor: pointer;
+					border-radius: 60px;
+					float: left;
+					top: -18%;
+				}
+			}
+		</style>
 	<div class="section" id="section2">
 		<div id="ecommerce" class="slide">
 			<div class="container-fluid">
@@ -898,7 +1014,7 @@
 							<br>
 							<p class="banda-bold second-text-description">
 								RESPIRA EL HELIO Y A VER
-								<br>SI ASI LOGRAS SACARLE
+								<br>SI ASÍ LOGRAS SACARLE
 								<br>UNA SONRISA A ALGUIEN MÁS,
 								<br>PORQUE A MÍ YA NO ME HACES
 								<br>NINGUNA GRACIA.
@@ -1024,7 +1140,7 @@
 				<div class="row align-items-center">
 					<div class="col-xs-12 col-md-12">
 						<p class="banda-regular thin-cintillo pink-cintillo" style="text-transform: uppercase;">
-							EXPLORA LA “TIENDA” para que se lo envíes a esa persona que tanto quieres (fuera de tu vida)
+							Estos productos son imaginarios, igualito que el amor de esa persona que tanto quieres (fuera de tu vida). Lo bueno, es que se los puedes compartir por redes sociales.​
 						</p>
 					</div>
 				</div>
@@ -1035,6 +1151,26 @@
 
 	<!--Tictacticas-->
 	<div class="section" id="section3">
+		<style>
+			@media screen and (max-width: 375px){
+				.tictacticas {
+					text-transform: uppercase;
+					margin-top: 15%;
+					color: #f7a0bf;
+				}
+				.tictacticasP {
+					color: #FFFFFF;
+					font-size: 1.5em !important;
+				}
+				.video1-480-780 {
+					margin-top: 20%;
+				}
+				.imgResponsiveTictacticas {
+					width: 65%;
+					margin: 2.5%;
+				}
+			}
+		</style>
 		<div id="tictacticas" class="container">
 			<div class="row">
 				<div class="col-xs-12">
@@ -1209,6 +1345,34 @@
 								z-index: 5;
 							}
 						}
+						@media screen and (max-width: 375px){
+							.yerbabuena {
+								position: absolute;
+								top: 8%;
+								left: 1%;
+							}
+							.naranja {
+								position: absolute;
+								top: 60%;
+								left: 0%;
+							}
+							.arandano {
+								position: absolute;
+								top: 33%;
+								left: 30%;
+								z-index: 5;
+							}
+							.fresa {
+								position: absolute;
+								top: 60%;
+								left: 60%;
+							}
+							.menta {
+								position: absolute;
+								top: 8%;
+								right: 0%;
+							}
+						}
 					</style>
 					<div id="container-products">
 						<a>
@@ -1250,7 +1414,7 @@
 					</script>
 				</div>
 				<div class="col-lg-12">
-					<a class="boton-legales banda-regular hvr-float-shadow" href="legales..controlArrow.nexthtml">
+					<a class="boton-legales banda-regular hvr-float-shadow" href="legales.html">
 						Legales
 					</a>
 				</div>

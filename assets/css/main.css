@@ -257,38 +257,56 @@ h1{
   text-align: left;
 
 }
+
+#perfume-ecommerce{
+	width: 30%;
+}
+#globos-ecommerce{
+	width: 25%;
+}
+#teddy-ecommerce{
+	width: 25%;
+	top: 10px;
+}
+#choco-ecommerce{
+	width: 25%;
+	top: 10px;
+}
+#te-ecommerce{
+	top: 10px;
+}
 .product-description{
     z-index: 500;
     position: absolute;
-    top: 50%;
+    top: 35%;
     left: 15%;
-    width: 20%;
+    width: 25%;
     height: 20%;
 }
 .product-description-globo{
     color: #ff3e70;
     z-index: 500;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 15%;
-    width: 20%;
+    width: 30%;
     height: 20%;
 }
 .product-description-choco{
     color: #9e4934;
     z-index: 500;
     position: absolute;
-    top: 50%;
+    top: 35%;
     left: 15%;
-    width: 20%;
+    width: 25%;
     height: 20%;
 }
 .product-description-teddy{
     z-index: 500;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 15%;
-    width: 20%;
+    width: 25%;
     height: 20%;
 }
 .boton-comprar-texto:hover {
@@ -734,7 +752,7 @@ h1{
     width: 100%;
     position: absolute;
     background-color:  white;
-    height: 6em;
+    height: 5.5em;
     z-index: 100;
   }
 
@@ -829,7 +847,7 @@ h1{
   		color: #9e4934;
   		z-index: 500;
       position: absolute;
-      top: 40%;
+      top: 42%;
       left: 8%;
   		width: 85%;
   		height: 20%;
@@ -869,12 +887,12 @@ h1{
   }
 
   .boton-comprar-choco{
-  	border-style: solid;
+  		border-style: solid;
   		border-width: thin;
   		border-color: #9e4934;
   		background-color: transparent;
       color: #9e4934;
-      padding: 6px 37px;
+      padding: 0px 49px;
       text-align: center;
       text-decoration: none;
       display: inline-block;
