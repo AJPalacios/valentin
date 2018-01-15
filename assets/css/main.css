@@ -430,8 +430,8 @@ h1{
   .product-description{
     z-index: 500;
     position: absolute;
-    top: 45%;
-    left: 15%;
+    top: 40%;
+    left: 10%;
     width: 32%;
     height: 20%;
   }
@@ -457,25 +457,25 @@ h1{
   }
 
   #teddy-ecommerce{
-    width: 35%;
+    width: 27%;
   }
   .product-description-teddy{
       z-index: 500;
       position: absolute;
-      top: 45%;
-      left: 15%;
-      width: 30%;
+      top: 38%;
+      left: 8%;
+      width: 28%;
       height: 20%;
   }
 
   #globos-ecommerce{
-    width: 37%;
+    width: 25%;
   }
   .product-description-globo{
   		color: #ff3e70;
   		z-index: 500;
       position: absolute;
-      top: 45%;
+      top: 42%;
       left: 15%;
   		width: 30%;
   		height: 20%;
@@ -499,14 +499,14 @@ h1{
   }
 
   #choco-ecommerce{
-    width: 40%;
+    width: 30%;
   }
 
   .product-description-choco{
   		color: #9e4934;
   		z-index: 500;
       position: absolute;
-      top: 45%;
+      top: 35%;
       left: 15%;
   		width: 30%;
   		height: 20%;
