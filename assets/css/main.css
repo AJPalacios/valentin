@@ -847,7 +847,7 @@ h1{
   		color: #9e4934;
   		z-index: 500;
       position: absolute;
-      top: 40%;
+      top: 42%;
       left: 8%;
   		width: 85%;
   		height: 20%;
@@ -887,12 +887,12 @@ h1{
   }
 
   .boton-comprar-choco{
-  	border-style: solid;
+  		border-style: solid;
   		border-width: thin;
   		border-color: #9e4934;
   		background-color: transparent;
       color: #9e4934;
-      padding: 6px 37px;
+      padding: 0px 49px;
       text-align: center;
       text-decoration: none;
       display: inline-block;
