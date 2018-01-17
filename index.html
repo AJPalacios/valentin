@@ -560,13 +560,13 @@
 							<img src="assets/img/inicio/lampara.png" class="lampara animated fadeInLeftBig" alt="UnSanValentinDiferente">
 						</div>
 						<div class="col-xs-4">
-							<img src="assets/img/inicio/banca.png" class="banca animated zoomInUp" alt="UnSanValentinDiferente">
+							<img src="assets/img/inicio/banca.png" class="wow banca animated zoomInUp" alt="UnSanValentinDiferente">
 						</div>
 						<div class="col-xs-4">
 							<img src="assets/img/inicio/basura.png" class="basura animated fadeInRightBig" alt="UnSanValentinDiferente">
 						</div>
 					</div>
-						<img src="assets/img/inicio/unsanvalentindiferente.png" class="UnSanValentinDiferente animated fadeInUpBig" alt="UnSanValentinDiferente">
+						<img src="assets/img/inicio/unsanvalentindiferente.png" class="wow UnSanValentinDiferente animated fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s" alt="UnSanValentinDiferente">
 						<br>
 						<a href="#postales">
 							<img src="assets/img/inicio/scroll.png" class="scroll animated pulse infinite" alt="UnSanValentinDiferente">
@@ -1279,6 +1279,14 @@
 							opacity: 1;
 							z-index: 99999;
 						}
+						.frutas {
+						    width: 95%;
+						    position: absolute;
+						    top: 0;
+						    left: 0;
+						    bottom: 0;
+						    right: 0;
+						}
 						@media only screen and (min-width: 1024px) and (max-width : 1199px) {
 						}
 						@media screen and (min-width: 780px) and (max-width: 1199px) {
@@ -1385,6 +1393,7 @@
 						}
 					</style>
 					<div id="container-products">
+						<img src="./assets/img/parallax/parallax-5.png" class="frutas animated fadeInDownBig" alt="Arandano Frambuesa TicTac">
 						<a>
 							<img src="./assets/img/productos/yerbabuena.png" class="animated pulse infinite cajitas yerbabuena hvr-buzz-out" alt="TicTac Sabor Yerbabuena">
 						</a>
@@ -1433,6 +1442,10 @@
 	</div>
 	<!--Productos-->
 
+	<script src="./assets/js/wow.min.js" type="text/javascript"></script>
+    <script>
+		new WOW().init();
+    </script>
 	<script src="./assets/js/bootstrap.min.js" type="text/javascript"></script>
 	<script src="./assets/js/lightbox-2.6.min.js" type="text/javascript"></script>
 </body>
