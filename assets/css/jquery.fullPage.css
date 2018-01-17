@@ -68,8 +68,8 @@ html, body {
     width: 4%;
 		height: 7%;
 		background-size: cover;
-    /*border-width: 38.5px 34px 38.5px 0;
-    border-color: transparent #fff transparent transparent;*/
+    /*border-width: 38.5px 34px 38.5px 0;*/
+    border-color: transparent #fff transparent transparent;
 }
 .controlArrow.next {
 		background-image:url('../img/ecommerce/arrow-right.svg');
