@@ -66,16 +66,16 @@ html, body {
 		background-image:url('../img/ecommerce/arrow-left.svg');
     left: 46%;
     width: 4%;
-		height: 7%;
+		height: 8%;
 		background-size: cover;
     /*border-width: 38.5px 34px 38.5px 0;*/
-    border-color: transparent #fff transparent transparent;
+    /*border-color: transparent #fff transparent transparent;*/
 }
 .controlArrow.next {
 		background-image:url('../img/ecommerce/arrow-right.svg');
     right: 45%;
 		width: 4%;
-		height: 7%;
+		height: 8%;
 		background-size: cover;
     /*border-width: 38.5px 0 38.5px 34px;
     border-color: transparent transparent transparent #fff;*/
