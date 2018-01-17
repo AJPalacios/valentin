@@ -58,21 +58,27 @@ html, body {
     position: absolute;
     top: 80%;
     cursor: pointer;
-    width: 0;
-    height: 0;
-    border-style: solid;
+    /*width: 4%;
+    height: 7%;*/
     margin-top: -38px;
 }
 .controlArrow.prev {
+		background-image:url('../img/ecommerce/arrow-left.svg');
     left: 46%;
-    width: 0;
-    border-width: 38.5px 34px 38.5px 0;
-    border-color: transparent #fff transparent transparent;
+    width: 4%;
+		height: 7%;
+		background-size: cover;
+    /*border-width: 38.5px 34px 38.5px 0;
+    border-color: transparent #fff transparent transparent;*/
 }
 .controlArrow.next {
+		background-image:url('../img/ecommerce/arrow-right.svg');
     right: 45%;
-    border-width: 38.5px 0 38.5px 34px;
-    border-color: transparent transparent transparent #fff;
+		width: 4%;
+		height: 7%;
+		background-size: cover;
+    /*border-width: 38.5px 0 38.5px 34px;
+    border-color: transparent transparent transparent #fff;*/
 }
 .scrollable {
     overflow: scroll;
