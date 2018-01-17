@@ -53,7 +53,7 @@
   color: #873d83;
 }
 .thin-cintillo{
-  font-size: 2em !important;
+  font-size: 1.7em !important;
 }
 
 
@@ -62,9 +62,9 @@
   overflow-y: hidden !important;
 }
 .menuTicTac{
-  background: -moz-linear-gradient(left, rgba(0,0,0,0) 1%, rgba(92,8,138,0.82) 50%);
-  background: -webkit-linear-gradient(left, rgba(0,0,0,0) 1%,rgba(92,8,138,0.82) 50%);
-  background: linear-gradient(to right, rgba(0,0,0,0) 1%,rgba(92,8,138,0.82) 50%);
+  background: -moz-linear-gradient(left, rgba(0,0,0,0) 1%, rgba(92,8,138,0.50) 50%);
+  background: -webkit-linear-gradient(left, rgba(0,0,0,0) 1%,rgba(92,8,138,0.50) 50%);
+  background: linear-gradient(to right, rgba(0,0,0,0) 1%,rgba(92,8,138,0.50) 50%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#d15c088a',GradientType=1 );
   height: 100vh;
   z-index: 99999;
@@ -78,14 +78,14 @@
   width: 40%;
   right: -10%;
   position: relative;
- /* -webkit-transition: width 0.3s;
+  -webkit-transition: width 0.3s;
   transition: width 0.3s;
-  -webkit-transition-timing-function: ease;*/
+  -webkit-transition-timing-function: ease;
 }
-/*
+
 #iconos:hover {
   width: 45%;
-}*/
+}
 ul li {
   position: relative;
   top: 30%;
@@ -262,18 +262,21 @@ h1{
 	width: 30%;
 }
 #globos-ecommerce{
-	width: 25%;
+  width: 28%;
+  top: 5%;
 }
 #teddy-ecommerce{
-	width: 25%;
-	top: 10px;
+  width: 30%;
+  right: -2%;
+	top: 40px;
 }
 #choco-ecommerce{
-	width: 25%;
-	top: 10px;
+	width: 30%;
+	top: 6%;
 }
 #te-ecommerce{
-	top: 10px;
+  top: 5%;
+  width: 35%;
 }
 .product-description{
     z-index: 500;
@@ -743,6 +746,13 @@ h1{
 }
 
 @media only screen and (max-width: 30em) {
+	.controlArrow.next {
+    background-image: url(../img/ecommerce/arrow-right.svg);
+    right: 45%;
+    width: 10%;
+    height: 8%;
+    background-size: cover;
+}
   .thin-cintillo{
     font-size: 1em !important;
   }
@@ -908,6 +918,13 @@ h1{
 }
 
 @media only screen and (max-width: 20em){
+	.controlArrow.next {
+    background-image: url(../img/ecommerce/arrow-right.svg);
+    right: 45%;
+    width: 12%;
+    height: 7%;
+    background-size: cover;
+}
   .thin-cintillo{
     font-size: 1.5em !important;
   }
