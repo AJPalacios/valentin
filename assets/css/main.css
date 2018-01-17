@@ -746,6 +746,13 @@ h1{
 }
 
 @media only screen and (max-width: 30em) {
+	.controlArrow.next {
+    background-image: url(../img/ecommerce/arrow-right.svg);
+    right: 45%;
+    width: 10%;
+    height: 8%;
+    background-size: cover;
+}
   .thin-cintillo{
     font-size: 1em !important;
   }
@@ -911,6 +918,13 @@ h1{
 }
 
 @media only screen and (max-width: 20em){
+	.controlArrow.next {
+    background-image: url(../img/ecommerce/arrow-right.svg);
+    right: 45%;
+    width: 11%;
+    height: 6%;
+    background-size: cover;
+}
   .thin-cintillo{
     font-size: 1.5em !important;
   }
