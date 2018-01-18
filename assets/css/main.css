@@ -262,8 +262,9 @@ h1{
 	width: 30%;
 }
 #globos-ecommerce{
-  width: 28%;
-  top: 5%;
+  width: 30%;
+  top: 15%;
+	bottom: -130px;
 }
 #teddy-ecommerce{
   width: 30%;
@@ -379,6 +380,153 @@ h1{
 
 /*Responsive*/
 
+
+@media only screen and (max-width: 163em){
+	#perfume-ecommerce{
+	    width: 40%;
+			top: 5%;
+	  }
+	#te-ecommerce{
+	    width: 38%;
+			top: 5%;
+	  }
+	#teddy-ecommerce{
+	  width: 40%;
+		top: 5%;
+	}
+	#globos-ecommerce{
+		  width: 38%;
+			top: 20%;
+	}
+	#choco-ecommerce{
+		  width: 30%;
+			top: 8%;
+	}
+
+
+	/*second text*/
+	.first-text-description{
+	  color: #731b54;
+	  font-size: 4.5em !important;
+	  text-align: justify;
+	  letter-spacing: 3px;
+	}
+	.first-text-description-globo{
+	  color: #ff3e70;
+	  font-size: 3.5em !important;
+	  text-align: justify;
+	}
+	.first-text-description-teddy{
+	  color: #ff99eb;
+	  font-size: 3.5em !important;
+	  text-align: justify;
+	  letter-spacing: 3px;
+	}
+	.first-text-description-te{
+	  color: #ae5722;
+	  font-size: 3.5em !important;
+	  text-align: justify;
+	  letter-spacing: 3px;
+	}
+	.first-text-description-choco{
+	  color: #9e4934;
+	  font-size: 3.5em !important;
+	  text-align: justify;
+	  letter-spacing: 3px;
+	}
+	.second-text-description{
+		font-size: 3.5em !important;
+	  text-align: left;
+
+	}
+
+
+	.product-description-globo{
+	    color: #ff3e70;
+	    z-index: 500;
+	    position: absolute;
+	    top: 40%;
+	    left: 8%;
+	    width: 30%;
+	    height: 20%;
+	}
+	.product-description-teddy{
+	    z-index: 500;
+	    position: absolute;
+	    top: 40%;
+	    left: 8%;
+	    width: 25%;
+	    height: 20%;
+	}
+	.product-description{
+	    z-index: 500;
+	    position: absolute;
+	    top: 35%;
+	    left: 8%;
+	    width: 25%;
+	    height: 20%;
+	}
+	.product-description-choco{
+	    color: #9e4934;
+	    z-index: 500;
+	    position: absolute;
+	    top: 35%;
+	    left: 8%;
+	    width: 30%;
+	    height: 20%;
+	}
+
+	.boton-comprar-choco{
+		border-style: solid;
+			border-width: thin;
+			border-color: #9e4934;
+			background-color: transparent;
+	    color: #9e4934;
+	    padding: 15px 32px;
+	    text-align: center;
+	    text-decoration: none;
+	    display: inline-block;
+	    font-size: 30px;
+	    margin: 20px 0 0 0;
+	    cursor: pointer;
+	    border-radius: 60px;
+			float: left;
+	}
+
+	.boton-comprar{
+			border-style: solid;
+			border-width: thin;
+			border-color: white;
+			background-color: transparent;
+	    color: white;
+	    padding: 15px 32px;
+	    text-align: center;
+	    text-decoration: none;
+	    display: inline-block;
+	    font-size: 30px;
+	    margin: 20px 0 0 0;
+	    cursor: pointer;
+	    border-radius: 60px;
+			float: left;
+	}
+	.boton-comprar-globo{
+		border-style: solid;
+			border-width: thin;
+			border-color: #ff3e70;
+			background-color: transparent;
+	    color: #ff3e70;
+	    padding: 15px 32px;
+	    text-align: center;
+	    text-decoration: none;
+	    display: inline-block;
+	    font-size: 30px;
+	    margin: 20px 0 0 0;
+	    cursor: pointer;
+	    border-radius: 60px;
+			float: left;
+	}
+
+}
 
 @media only screen and (max-width: 75em){
   #perfume-ecommerce{
