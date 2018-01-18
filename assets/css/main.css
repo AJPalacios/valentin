@@ -263,10 +263,15 @@ h1{
 	 top: 15%;
 }
 #globos-ecommerce{
+  width: 28%;
+	bottom: 0%;
+	height: 90%;
+  /*
   width: 40%;
   top: 18%;
-	bottom: -130px;
-	height: 90%;
+  bottom: -130px;
+  height: 90%;
+  */
 }
 #teddy-ecommerce{
   width: 30%;
