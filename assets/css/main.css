@@ -393,9 +393,9 @@ h1{
 		top: 10%;
 	}
 	#globos-ecommerce{
-	  width: 35%;
-	  top: 15%;
-		bottom: -130px;
+	  width: 30%;
+		bottom: -62px;
+		/*top: 15%;*/
 	}
 	#teddy-ecommerce{
 	  width: 30%;
