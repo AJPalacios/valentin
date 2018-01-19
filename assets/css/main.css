@@ -845,9 +845,9 @@ h1{
 		top: 5%;
   }
   #globos-ecommerce{
-    width: 60%;
+    width: 64%;
 		top: 2.5%;
-		height: 80%;
+		height: 65%;
   }
   #choco-ecommerce{
     width: 50%;
@@ -875,7 +875,7 @@ h1{
   .product-description{
     z-index: 500;
     position: absolute;
-    top: 40%;
+    top: 45%;
     left: 8%;
     width: 85%;
     height: 20%;
@@ -895,7 +895,7 @@ h1{
   .product-description-teddy{
   		z-index: 500;
       position: absolute;
-      top: 40%;
+      top: 45%;
       left: 8%;
   		width: 85%;
   		height: 20%;
@@ -909,9 +909,9 @@ h1{
   		color: #ff3e70;
   		z-index: 500;
       position: absolute;
-      top: 55%;
-      left: 8%;
-  		width: 90%;
+      top: 48%;
+      left: -3%;
+  		width: 102%;
   		height: 20%;
   }
   .first-text-description-globo{
@@ -927,7 +927,7 @@ h1{
   		color: #9e4934;
   		z-index: 500;
       position: absolute;
-      top: 42%;
+      top: 46%;
       left: 8%;
   		width: 85%;
   		height: 20%;
