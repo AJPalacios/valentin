@@ -388,9 +388,12 @@ h1{
 /*Responsive*/
 
 @media only screen and (max-width: 137em) {
+	.thin-cintillo{
+		font-size: 1.5em !important;
+	}
 	#perfume-ecommerce{
 		width: 30%;
-		top: 4%;
+		top: -4%;
 	}
 	#globos-ecommerce{
 	  width: 30%;
@@ -400,21 +403,25 @@ h1{
 	#teddy-ecommerce{
 	  width: 30%;
 	  right: -2%;
-		top: 10%;
+		top: 5%;
 	}
 	#choco-ecommerce{
 		width: 30%;
-		top: 10%;
+		top: 4%;
 	}
 	#te-ecommerce{
-	  top: 10%;
+	  top: 4%;
 	  width: 35%;
 	}
 }
 
 @media only screen and (max-width: 75em){
+	.thin-cintillo{
+		font-size: 1.5em !important;
+	}
 	#perfume-ecommerce{
 	 width: 40%;
+	 top: -5%;
  }
  	#te-ecommerce{
 	 width: 38%;
@@ -423,7 +430,7 @@ h1{
  width: 40%;
 }
 #globos-ecommerce{
- width: 25%
+ width: 28%
 }
 #choco-ecommerce{
  width: 25%;
@@ -432,16 +439,16 @@ h1{
     z-index: 500;
     position: absolute;
     top: 40%;
-    left: 15%;
-    width: 30%;
+    left: 8%;
+    width: 35%;
     height: 20%;
   }
   .product-description-teddy{
     z-index: 500;
     position: absolute;
     top: 43%;
-    left: 15%;
-    width: 30%;
+    left: 8%;
+    width: 35%;
     height: 20%;
   }
 
@@ -449,8 +456,8 @@ h1{
     z-index: 500;
     position: absolute;
     top: 43%;
-    left: 15%;
-    width: 30%;
+    left: 8%;
+    width: 35%;
     height: 20%;
   }
   .product-description-choco{
@@ -827,24 +834,27 @@ h1{
   }
 
   #perfume-ecommerce{
-    width: 40%;
+    width: 45%;
+		top: 5%;
   }
   #te-ecommerce{
-    width: 45%;
+    width: 55%;
   }
   #teddy-ecommerce{
-    width:40%;
-		top: 6px;
+    width:50%;
+		top: 5%;
   }
   #globos-ecommerce{
-    width: 40%;
+    width: 60%;
+		top: 2.5%;
+		height: 80%;
   }
   #choco-ecommerce{
-    width: 40%;
+    width: 50%;
   }
   .ecommerce-title{
     margin-top: 12%;
-    font-size: 2em;
+    font-size: 2em !important;
   }
   .te-title{
     margin-top: 12%;
@@ -899,9 +909,9 @@ h1{
   		color: #ff3e70;
   		z-index: 500;
       position: absolute;
-      top: 40%;
+      top: 55%;
       left: 8%;
-  		width: 85%;
+  		width: 90%;
   		height: 20%;
   }
   .first-text-description-globo{
@@ -999,7 +1009,7 @@ h1{
   }
   #perfume-ecommerce{
     width: 50%;
-    top: -5%;
+    top: 3%;
   }
   #globos-ecommerce{
     width: 40%;
@@ -1007,16 +1017,16 @@ h1{
     height: 55%;
   }
   #teddy-ecommerce{
-    width: 40%;
+    width: 50%;
     top: 5%;
   }
   #te-ecommerce{
-    width: 45%;
+    width: 50%;
     top: 5%;
 
   }
   #choco-ecommerce{
-    width: 40%;
+    width: 50%;
     top: 5%;
   }
   .ecommerce-title{
