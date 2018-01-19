@@ -390,7 +390,7 @@ h1{
 @media only screen and (max-width: 137em) {
 	#perfume-ecommerce{
 		width: 30%;
-		top: 10%;
+		top: 4%;
 	}
 	#globos-ecommerce{
 	  width: 30%;
@@ -994,41 +994,60 @@ h1{
     width: 100%;
     position: absolute;
     background-color:  white;
-    height: 8em;
+    height: 5.5em;
     z-index: 100;
   }
   #perfume-ecommerce{
     width: 50%;
+    top: -5%;
+  }
+  #globos-ecommerce{
+    width: 40%;
+    top: 1%;
+    height: 55%;
+  }
+  #teddy-ecommerce{
+    width: 40%;
+    top: 5%;
+  }
+  #te-ecommerce{
+    width: 45%;
+    top: 5%;
+
+  }
+  #choco-ecommerce{
+    width: 40%;
+    top: 5%;
   }
   .ecommerce-title{
-    font-size: 2em;
+    font-size: 1.3em !important;
     margin-top: 13%;
     color: white;
   }
   .te-title{
-    font-size: 2em;
+    font-size: 1em;
   	margin-top: 13%;
   	color: white;
   }
   .teddy-title{
-    font-size: 2em;
+    font-size: 1em;
   	margin-top: 13%;
   	color: white;
   }
   .globos-title{
-    font-size: 2em;
+    font-size: 1.3em;
   	margin-top: 13%;
   	color: white;
   }
   .chocolates-title{
-    font-size: 2em;
+    font-size: 1em;
   	margin-top: 13%;
   	color: white;
   }
   .product-description{
     z-index: 500;
     position: absolute;
-    top: 42%;
+    top: 40%;
     left: 4%;
     width: 94%;
     height: 20%;
@@ -1037,7 +1056,7 @@ h1{
     text-align: center;
   }
   .second-text-description{
-    font-size: 1em !important;
+    font-size: .8em !important;
     text-align: center;
   }
 
@@ -1058,7 +1077,7 @@ h1{
   		color: #ff3e70;
   		z-index: 500;
       position: absolute;
-      top: 42%;
+      top: 40%;
       left: 4%;
   		width: 94%;
   		height: 20%;
@@ -1087,7 +1106,7 @@ h1{
       text-align: center;
       text-decoration: none;
       display: inline-block;
-      font-size: 11px;
+      font-size: 8px !important;
       margin: 15px 35px;
       cursor: pointer;
       border-radius: 60px;
@@ -1103,7 +1122,7 @@ h1{
       text-align: center;
       text-decoration: none;
       display: inline-block;
-      font-size: 11px;
+      font-size: 8px !important;
       margin: 15px 35px;
       cursor: pointer;
       border-radius: 60px;
