@@ -854,23 +854,23 @@ h1{
   }
   .ecommerce-title{
     margin-top: 12%;
-    font-size: 2em !important;
+    font-size: 1em !important;
   }
   .te-title{
     margin-top: 12%;
-    font-size: 2em;
+    font-size: 1em;
   }
   .teddy-title{
     margin-top: 12%;
-    font-size: 2em;
+    font-size: 1em;
   }
   .globos-title{
     margin-top: 12%;
-    font-size: 2em;
+    font-size: 1em;
   }
   .chocolates-title{
     margin-top: 12%;
-    font-size: 2em;
+    font-size: 1em;
   }
   .product-description{
     z-index: 500;
@@ -910,8 +910,8 @@ h1{
   		z-index: 500;
       position: absolute;
       top: 48%;
-      left: -3%;
-  		width: 102%;
+      left: 3%;
+  		width: 95%;
   		height: 20%;
   }
   .first-text-description-globo{
