@@ -909,7 +909,7 @@ h1{
   		color: #ff3e70;
   		z-index: 500;
       position: absolute;
-      top: 48%;
+      top: 45%;
       left: 3%;
   		width: 95%;
   		height: 20%;
@@ -955,7 +955,7 @@ h1{
   		border-color: #ff3e70;
   		background-color: transparent;
       color: #ff3e70;
-      padding: 2px 37px;
+      padding: 0px 49px;
       text-align: center;
       text-decoration: none;
       display: inline-block;
@@ -977,7 +977,7 @@ h1{
       text-decoration: none;
       display: inline-block;
       font-size: 11px;
-      margin: 14px 19px;
+      margin: 15px 19px;
       cursor: pointer;
       border-radius: 60px;
   		float: left;
