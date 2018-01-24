@@ -53,7 +53,7 @@
   color: #873d83;
 }
 .thin-cintillo{
-  font-size: 1.7em !important;
+  font-size: 1.5em !important;
 }
 
 
@@ -260,7 +260,7 @@ h1{
 
 #perfume-ecommerce{
 	width: 30%;
-	 top: 15%;
+	 top: 8%;
 }
 #globos-ecommerce{
   width: 28%;
@@ -393,10 +393,10 @@ h1{
 	}
 	#perfume-ecommerce{
 		width: 30%;
-		top: -4%;
+		top: 5%;
 	}
 	#globos-ecommerce{
-	  width: 30%;
+	  /*width: 30%;*/
 		bottom: -62px;
 		/*top: 15%;*/
 	}
@@ -1012,7 +1012,7 @@ h1{
     top: 3%;
   }
   #globos-ecommerce{
-    width: 40%;
+    /*width: 40%;*/
     top: 1%;
     height: 55%;
   }
@@ -1084,7 +1084,7 @@ h1{
   }
 
   .product-description-globo{
-  		color: #ff3e70;
+  		color: white;
   		z-index: 500;
       position: absolute;
       top: 40%;
@@ -1107,17 +1107,17 @@ h1{
   }
 
   .boton-comprar-globo{
-  	border-style: solid;
+  		border-style: solid;
   		border-width: thin;
-  		border-color: #ff3e70;
+  		border-color: white !important;
   		background-color: transparent;
-      color: #ff3e70;
-      padding: 13px 32px;
+      color: white !important;
+      padding: 3px 32px;
       text-align: center;
       text-decoration: none;
       display: inline-block;
-      font-size: 8px !important;
-      margin: 15px 35px;
+      font-size: 11px !important;
+      margin: 12px 46px;
       cursor: pointer;
       border-radius: 60px;
   		float: left;
@@ -1128,12 +1128,12 @@ h1{
   		border-color: #9e4934;
   		background-color: transparent;
       color: #9e4934;
-      padding: 13px 32px;
+      padding: 3px 32px;
       text-align: center;
       text-decoration: none;
       display: inline-block;
-      font-size: 8px !important;
-      margin: 15px 35px;
+      font-size: 11px !important;
+      margin: 12px 46px;
       cursor: pointer;
       border-radius: 60px;
   		float: left;
