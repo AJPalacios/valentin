@@ -1,3 +1,6 @@
+
+
+
 /*Fonts*/
 
 @font-face{
@@ -813,6 +816,11 @@ h1{
 }
 
 @media only screen and (max-width: 30em) {
+
+  body{
+    overflow-y: scroll !important;
+  }
+
 	.controlArrow.next {
     background-image: url(../img/ecommerce/arrow-right.svg);
     right: 45%;
@@ -875,7 +883,7 @@ h1{
   .product-description{
     z-index: 500;
     position: absolute;
-    top: 45%;
+    top: 44%;
     left: 8%;
     width: 85%;
     height: 20%;
@@ -895,7 +903,7 @@ h1{
   .product-description-teddy{
   		z-index: 500;
       position: absolute;
-      top: 45%;
+      top: 44%;
       left: 8%;
   		width: 85%;
   		height: 20%;
@@ -909,7 +917,7 @@ h1{
   		color: white;
   		z-index: 500;
       position: absolute;
-      top: 45%;
+      top: 44%;
       left: 3%;
   		width: 95%;
   		height: 20%;
@@ -927,7 +935,7 @@ h1{
   		color: #9e4934;
   		z-index: 500;
       position: absolute;
-      top: 46%;
+      top: 44%;
       left: 8%;
   		width: 85%;
   		height: 20%;
