@@ -237,19 +237,28 @@
 			z-index: 1;
 			top: 0;
 			right: 0;
-			background: -moz-linear-gradient(left, rgba(0,0,0,0) 1%, rgba(92,8,138,0.82) 50%);
+			background: #74199e;
+			background: -moz-linear-gradient(top, #74199e 0%, #c5005a 100%);
+			background: -webkit-linear-gradient(top, #74199e 0%,#c5005a 100%);
+			background: linear-gradient(to bottom, #74199e 0%,#c5005a 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#74199e', endColorstr='#c5005a',GradientType=0 );
+			/*background: -moz-linear-gradient(left, rgba(0,0,0,0) 1%, rgba(92,8,138,0.82) 50%);
 			background: -webkit-linear-gradient(left, rgba(0,0,0,0) 1%,rgba(92,8,138,0.82) 50%);
 			background: linear-gradient(to right, rgba(0,0,0,0) 1%,rgba(92,8,138,0.82) 50%);
-			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#d15c088a',GradientType=1 );
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#d15c088a',GradientType=1 );*/
 			overflow-x: hidden;
 			overflow-: hidden;
 			transition: 0.5s;
 			padding-top: 60px;
 			z-index: 99999;
 		}
+		.logo-tictac-menu-mobile {
+			width: 60px;
+		}
 		.sidenav a {
 			display: block;
 			transition: 0.3s;
+			padding-left: 5%;
 		}
 		.sidenav .closebtn {
 			position: absolute;
@@ -264,7 +273,9 @@
 			transition: margin-left .5s;
 		}
 		@media screen and (max-height: 450px) {
-			.sidenav {padding-top: 15px;}
+			.sidenav {
+				padding-top: 15px;
+			}
 		}
 	</style>
 </head>
@@ -278,22 +289,30 @@
 
 	<!--Menu-->
 	<div id="mySidenav" class="sidenav visible-xs visible-sm hidden-md hidden-lg">
+		<center>
+			<img src="assets/img/inicio/logotipo-tictac.svg" class="logo-tictac-menu-mobile">
+		</center>
 		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 		<a href="#inicio">
-			<img src="./assets/img/menu/inicio-tictac.png" class="imagenMenuResponsiveInt">
+			<img src="./assets/img/menu/mobile-inicio-tictac.png" class="imagenMenuResponsiveInt">
 		</a>
 		<a href="#postales">
-			<img src="./assets/img/menu/postales-tictac.png" class="imagenMenuResponsiveInt">
+			<img src="./assets/img/menu/mobile-postales-tictac.png" class="imagenMenuResponsiveInt">
 		</a>
 		<a href="#ecommerce">
-			<img src="./assets/img/menu/ecommerce-tictac.png" class="imagenMenuResponsiveInt">
+			<img src="./assets/img/menu/mobile-ecommerce-tictac.png" class="imagenMenuResponsiveInt">
 		</a>
 		<a href="#tictacticas">
-			<img src="./assets/img/menu/tictacticas-tictac.png" class="imagenMenuResponsiveInt">
+			<img src="./assets/img/menu/mobile-tictacticas-tictac.png" class="imagenMenuResponsiveInt">
 		</a>
 		<a href="#productos">
-			<img src="./assets/img/menu/productos-tictac.png" class="imagenMenuResponsiveInt">
+			<img src="./assets/img/menu/mobile-productos-tictac.png" class="imagenMenuResponsiveInt">
 		</a>
+		<div class="hidden-md hidden-lg">
+			<a class="boton-legales banda-regular hvr-float-shadow" href="aviso-de-privacidad.html">
+				Aviso de Privacidad
+			</a>
+		</div>
 	</div>
 	<div id="main" class="visible-xs visible-sm hidden-md hidden-lg">
 		<a style="cursor:pointer;" onclick="openNav()">
@@ -1002,7 +1021,7 @@
 					cursor: pointer;
 					border-radius: 60px;
 					float: left;
-					top: -18%;
+					/*top: -18%;*/
 				}
 			}
 		</style>
@@ -1574,7 +1593,7 @@
 					</script>
 				</div>
 				<div class="col-lg-12">
-					<a class="boton-legales banda-regular hvr-float-shadow" href="aviso-de-privacidad.html">
+					<a class="hidden-xs hidden-sm boton-legales banda-regular hvr-float-shadow" href="aviso-de-privacidad.html">
 						Aviso de Privacidad
 					</a>
 				</div>
