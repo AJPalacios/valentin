@@ -186,6 +186,20 @@
 		    background-repeat: no-repeat;
 		    background-size: cover;
 		}
+		.boton-legales-mobile {
+			font-size: 2em;
+		    position: absolute;
+		    bottom: 3%;
+		    right: 5%;
+		    border: 2px solid #ffffff;
+		    border-radius: 20px;
+		    padding: 10px;
+		    color: #fff;
+		}
+		.boton-legales-mobile:hover {
+			color: #fff !important;
+			text-decoration: none;
+		}
 		.boton-legales {
 			font-size: 1.2em;
 			position: fixed;
@@ -277,6 +291,11 @@
 				padding-top: 15px;
 			}
 		}
+		@media screen and (max-width: 991px) {
+			.boton-legales {
+				display: none;
+			}
+		}
 	</style>
 </head>
 <body>
@@ -309,7 +328,7 @@
 			<img src="./assets/img/menu/mobile-productos-tictac.png" class="imagenMenuResponsiveInt">
 		</a>
 		<div class="hidden-md hidden-lg">
-			<a class="boton-legales banda-regular hvr-float-shadow" href="aviso-de-privacidad.html">
+			<a class="boton-legales-mobile banda-regular hvr-float-shadow" href="aviso-de-privacidad.html">
 				Aviso de Privacidad
 			</a>
 		</div>
@@ -540,17 +559,6 @@
 								width: 15px;
 								position: fixed;
 								bottom: 0;
-							}
-							.boton-legales {
-								font-size: 1em;
-								position: fixed;
-								bottom: 2%;
-								right: 1.2%;
-								border: 2px solid #ffffff;
-								border-radius: 20px;
-								padding: 10px;
-								z-index: 99999;
-								color: #fff;
 							}
 			            }
 					</style>
@@ -1665,7 +1673,7 @@
 					</script>
 				</div>
 				<div class="col-lg-12">
-					<a class="hidden-xs hidden-sm boton-legales banda-regular hvr-float-shadow" href="aviso-de-privacidad.html">
+					<a class="boton-legales banda-regular hvr-float-shadow" href="aviso-de-privacidad.html">
 						Aviso de Privacidad
 					</a>
 				</div>
