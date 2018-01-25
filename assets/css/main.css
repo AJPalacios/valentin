@@ -817,8 +817,18 @@ h1{
 
 @media only screen and (max-width: 30em) {
 
+
+
   body{
     overflow-y: scroll !important;
+  }
+
+  .scroll{
+    display: none !important;
+  }
+
+  .tableCell{
+    height: 100% !important;
   }
 
 	.controlArrow.next {
