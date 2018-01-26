@@ -831,19 +831,21 @@ h1{
     height: 100% !important;
   }
 	.controlArrow.prev {
-    background-image: url(../img/ecommerce/arrow-right.svg);
-    left: 45%;
+    background-image: url(../img/ecommerce/arrow-left.svg);
+    left: 4% !important;
     width: 10%;
     height: 8%;
+    top: 86%;
     background-size: cover;
 }
 
 	.controlArrow.next {
     background-image: url(../img/ecommerce/arrow-right.svg);
-    right: 45%;
+    right: 1% !important;
     width: 10%;
     height: 8%;
-    background-size: cover;
+    top: 86%;
+    background-size: cover; 
 }
   .thin-cintillo{
     font-size: 1em !important;
