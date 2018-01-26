@@ -80,6 +80,25 @@
 			grid-column: span 2;
 			grid-row: span 2;
 		}
+		.grid-mobile {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr ;
+			grid-template-rows: ;
+			grid-gap: 10px;
+		}
+		.grid-item-mobile {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		:first-child {
+			grid-column: span 2;
+			grid-row: span 2;
+		}
+		:last-child {
+			grid-column: span 1;
+			grid-row: span 1;
+		}		
 		/*
 		@media only screen and (min-width: 1200px;) {}
 		@media only screen and (min-width: 1024px;) and (max-width: 1200px;) {}
@@ -100,84 +119,130 @@
 			Comparte una postal para que le llegue la indirecta a esa persona que te quita la frescura.
 		</p>
 	</div>
-	<div class="slide">
+	<!-- Desktop Laptop -->
+	<div class="visible-md visible-lg slide">
 		<div class="container">
 			<div class="row">
 				<div class="grid">
-					<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/cofre.jpg">
+					<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/calendario.jpg">
 						<img src="./assets/img/postales/calendario.jpg" class="img-responsive grid-item grayscale">
 					</a>
-					<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/cofre.jpg">
-						<img src="./assets/img/postales/calendario.jpg" class="img-responsive grid-item grayscale">
+					<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/cama.jpg">
+						<img src="./assets/img/postales/cama.jpg" class="img-responsive grid-item grayscale">
+					</a>
+					<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/cerebro.jpg">
+						<img src="./assets/img/postales/cerebro.jpg" class="img-responsive grid-item grayscale">
 					</a>
 					<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/cofre.jpg">
-						<img src="./assets/img/postales/calendario.jpg" class="img-responsive grid-item grayscale">
+						<img src="./assets/img/postales/cofre.jpg" class="img-responsive grid-item grayscale">
 					</a>
-					<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/cofre.jpg">
-						<img src="./assets/img/postales/calendario.jpg" class="img-responsive grid-item grayscale">
+					<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/libro.jpg">
+						<img src="./assets/img/postales/libro.jpg" class="img-responsive grid-item grayscale">
 					</a>
-					<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/cofre.jpg">
-						<img src="./assets/img/postales/calendario.jpg" class="img-responsive grid-item grayscale">
-					</a>
-					<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/cofre.jpg">
-						<img src="./assets/img/postales/calendario.jpg" class="img-responsive grid-item grayscale">
+					<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/luna.jpg">
+						<img src="./assets/img/postales/luna.jpg" class="img-responsive grid-item grayscale">
 					</a>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="slide">
+	<div class="visible-md visible-lg slide">
 		<div class="container">
 			<div class="row">
 				<div class="grid">
-					<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/cofre.jpg">
-						<img src="./assets/img/postales/calendario.jpg" class="img-responsive grid-item grayscale">
+					<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/maleta.jpg">
+						<img src="./assets/img/postales/maleta.jpg" class="img-responsive grid-item grayscale">
 					</a>
-					<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/cofre.jpg">
-						<img src="./assets/img/postales/calendario.jpg" class="img-responsive grid-item grayscale">
+					<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/mentiras.jpg">
+						<img src="./assets/img/postales/mentiras.jpg" class="img-responsive grid-item grayscale">
 					</a>
-					<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/cofre.jpg">
-						<img src="./assets/img/postales/calendario.jpg" class="img-responsive grid-item grayscale">
+					<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/micro.jpg">
+						<img src="./assets/img/postales/micro.jpg" class="img-responsive grid-item grayscale">
 					</a>
-					<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/cofre.jpg">
-						<img src="./assets/img/postales/calendario.jpg" class="img-responsive grid-item grayscale">
+					<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/salvavidas.jpg">
+						<img src="./assets/img/postales/salvavidas.jpg" class="img-responsive grid-item grayscale">
 					</a>
-					<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/cofre.jpg">
-						<img src="./assets/img/postales/calendario.jpg" class="img-responsive grid-item grayscale">
+					<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/serpiente.jpg">
+						<img src="./assets/img/postales/serpiente.jpg" class="img-responsive grid-item grayscale">
 					</a>
-					<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/cofre.jpg">
-						<img src="./assets/img/postales/calendario.jpg" class="img-responsive grid-item grayscale">
+					<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/voto.jpg">
+						<img src="./assets/img/postales/voto.jpg" class="img-responsive grid-item grayscale">
 					</a>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="slide">
+	<!-- Desktop Laptop -->
+	<!-- Tablet Móvil -->
+	<div class="visible-xs visible-sm slide">
 		<div class="container">
 			<div class="row">
-				<div class="grid">
-					<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/cofre.jpg">
-						<img src="./assets/img/postales/calendario.jpg" class="img-responsive grid-item grayscale">
+				<div class="grid-mobile">
+					<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/calendario.jpg">
+						<img src="./assets/img/postales/calendario.jpg" class="img-responsive grid-item-mobile grayscale">
 					</a>
-					<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/cofre.jpg">
-						<img src="./assets/img/postales/calendario.jpg" class="img-responsive grid-item grayscale">
+					<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/cama.jpg">
+						<img src="./assets/img/postales/cama.jpg" class="img-responsive grid-item-mobile grayscale">
 					</a>
-					<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/cofre.jpg">
-						<img src="./assets/img/postales/calendario.jpg" class="img-responsive grid-item grayscale">
-					</a>
-					<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/cofre.jpg">
-						<img src="./assets/img/postales/calendario.jpg" class="img-responsive grid-item grayscale">
-					</a>
-					<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/cofre.jpg">
-						<img src="./assets/img/postales/calendario.jpg" class="img-responsive grid-item grayscale">
-					</a>
-					<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/cofre.jpg">
-						<img src="./assets/img/postales/calendario.jpg" class="img-responsive grid-item grayscale">
+					<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/cerebro.jpg">
+						<img src="./assets/img/postales/cerebro.jpg" class="img-responsive grid-item-mobile grayscale">
 					</a>
 				</div>
 			</div>
 		</div>
 	</div>
+	<div class="visible-xs visible-sm slide">
+		<div class="container">
+			<div class="row">
+				<div class="grid-mobile">
+					<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/cofre.jpg">
+						<img src="./assets/img/postales/cofre.jpg" class="img-responsive grid-item-mobile grayscale">
+					</a>
+					<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/libro.jpg">
+						<img src="./assets/img/postales/libro.jpg" class="img-responsive grid-item-mobile grayscale">
+					</a>
+					<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/luna.jpg">
+						<img src="./assets/img/postales/luna.jpg" class="img-responsive grid-item-mobile grayscale">
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="visible-xs visible-sm slide">
+		<div class="container">
+			<div class="row">
+				<div class="grid-mobile">
+					<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/maleta.jpg">
+						<img src="./assets/img/postales/maleta.jpg" class="img-responsive grid-item-mobile grayscale">
+					</a>
+					<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/mentiras.jpg">
+						<img src="./assets/img/postales/mentiras.jpg" class="img-responsive grid-item-mobile grayscale">
+					</a>
+					<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/micro.jpg">
+						<img src="./assets/img/postales/micro.jpg" class="img-responsive grid-item-mobile grayscale">
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="visible-xs visible-sm slide">
+		<div class="container">
+			<div class="row">
+				<div class="grid-mobile">
+					<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/salvavidas.jpg">
+						<img src="./assets/img/postales/salvavidas.jpg" class="img-responsive grid-item-mobile grayscale">
+					</a>
+					<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/serpiente.jpg">
+						<img src="./assets/img/postales/serpiente.jpg" class="img-responsive grid-item-mobile grayscale">
+					</a>
+					<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/voto.jpg">
+						<img src="./assets/img/postales/voto.jpg" class="img-responsive grid-item-mobile grayscale">
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Tablet Móvil -->
 </div>
 <script src="./assets/js/wow.min.js" type="text/javascript"></script>
 	<script>
