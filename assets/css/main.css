@@ -830,6 +830,13 @@ h1{
   .tableCell{
     height: 100% !important;
   }
+	.controlArrow.prev {
+    background-image: url(../img/ecommerce/arrow-right.svg);
+    left: 45%;
+    width: 10%;
+    height: 8%;
+    background-size: cover;
+}
 
 	.controlArrow.next {
     background-image: url(../img/ecommerce/arrow-right.svg);
