@@ -488,22 +488,22 @@
 								width: 20%;
 							}
 							.lampara {
-								height: 250px;
+								height: 230px;
 								position: fixed;
 								left: 20%;
 							}
 							.banca {
-								height: 250px;
+								height: 230px;
 								position: fixed;
 								left: 25%;
 							}
 							.basura {
-								height: 250px;
+								height: 230px;
 								position: fixed;
 								left: 60%;
 							}
 							.UnSanValentinDiferente {
-								width: 90%;
+								width: 80%;
 								position: fixed;
 								top: 54%;
 								left: 5%;
@@ -530,9 +530,12 @@
 							}
 							.h1 {
 								color: #FFFFFF;
-								font-size: 1.3em !important;
+								font-size: 1.2em !important;
 								text-transform: uppercase;
 								z-index: 100;
+							}
+							.lampara-banca-basura {
+								margin-top: -8px;
 							}
 							.lampara {
 								height: 250px;
@@ -550,9 +553,9 @@
 								left: 60%;
 							}
 							.UnSanValentinDiferente {
-								width: 95%;
+								width: 90%;
 								position: fixed;
-								top: 63%;
+								top: 68%;
 								left: 5%;
 							}
 							.scroll {
@@ -738,6 +741,9 @@
 	            /*iPhone´s*/
 				@media screen and (max-width: 375px) {
 					/*postales*/
+					.copyPostales {
+						font-size: 1.3em !important;
+					}
 					.collectionPostales {
 						margin-top: 27%;
 					}
@@ -752,7 +758,7 @@
 	            }
 	            @media screen and (max-width: 320px) {
 	            	.copyPostales {
-							font-size: 1.5em !important;
+							font-size: 1.3em !important;
 					}
 					.controlArrow.next {
 						top: 51%;
@@ -763,14 +769,14 @@
 	            }
 				#postales {margin-bottom: 2%;}
 			</style>
-			<br class="visible-xs"><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+			<br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
 			<h1 class="peace-sans white padding-top header-seccion-postales">
 				POSTALES
 			</h1>
 			<p class="banda-regular white copyPostales" style="text-transform: uppercase;">
 				Comparte una postal para que le llegue la indirecta a esa persona que te quita la frescura.
 			</p>
-			<br class="visible-xs"><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+			<br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
 		</div>
 		<div class="container">
 			<div class="row ">
@@ -1241,8 +1247,6 @@
 				</div>
 				<div class="hidden-lg">
 					<style>
-						@media only screen and (min-width: 1024px) and (max-width : 1199px) {
-			            }
 			            @media screen and (min-width: 780px) and (max-width: 1199px) {
 			            	.imgResponsiveTictacticas {
 								width: 50%;
@@ -1276,7 +1280,7 @@
 							.video1-480 {
 								width: 85%;
 								margin-top: 6%;
-								height: 18em;
+								height: auto;
 							}
 			            }
 					</style>
@@ -1290,7 +1294,7 @@
 							<img src="./assets/img/tictacticas/video-2.png" class="video1-480 imgResponsiveTictacticas" alt="Galatzia TicTac">
 						</a>
 					</div>
-					<div class="">
+					<div class="hidden-xs">
 						<a href="https://www.youtube.com/embed/AHg4yyLLv6E?rel=0" data-showsocial="true" class="html5lightbox" title="Tictácticas">
 							<img src="./assets/img/tictacticas/video-3.png" class="video1-480 imgResponsiveTictacticas" alt="Galatzia TicTac">
 						</a>
@@ -1484,12 +1488,14 @@
 							    top: 15%;
 							    left: 25%;
 							    width: 50%;
+							    z-index: 900;
 							}
 							.frescura-diferente {
 							    position: relative;
-							    top: 80%;
+							    top: 48%;
 							    left: 16%;
 							    width: 70%;
+							    z-index: 900;
 							}
 							.yerbabuena {
 								position: absolute;
