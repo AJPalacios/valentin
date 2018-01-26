@@ -1,3 +1,6 @@
+
+
+
 /*Fonts*/
 
 @font-face{
@@ -176,8 +179,8 @@ h1{
 .top1{
   margin-top: 5%;
 }
-.margin-top{
-  margin-top: 3%;
+.padding-top{
+  padding-top: 3%;
 }
 .relative{
   position: relative;
@@ -393,7 +396,7 @@ h1{
 	}
 	#perfume-ecommerce{
 		width: 30%;
-		top: 5%;
+		top: -5%;
 	}
 	#globos-ecommerce{
 	  /*width: 30%;*/
@@ -813,6 +816,28 @@ h1{
 }
 
 @media only screen and (max-width: 30em) {
+
+
+
+  body{
+    overflow-y: scroll !important;
+  }
+
+  .scroll{
+    display: none !important;
+  }
+
+  .tableCell{
+    height: 100% !important;
+  }
+	.controlArrow.prev {
+    background-image: url(../img/ecommerce/arrow-right.svg);
+    left: 45%;
+    width: 10%;
+    height: 8%;
+    background-size: cover;
+}
+
 	.controlArrow.next {
     background-image: url(../img/ecommerce/arrow-right.svg);
     right: 45%;
@@ -824,7 +849,7 @@ h1{
     font-size: 1em !important;
   }
   .cintillo{
-    padding: 16px;
+    padding: 10px;
     bottom: 0;
     width: 100%;
     position: absolute;
@@ -875,7 +900,7 @@ h1{
   .product-description{
     z-index: 500;
     position: absolute;
-    top: 45%;
+    top: 44%;
     left: 8%;
     width: 85%;
     height: 20%;
@@ -895,7 +920,7 @@ h1{
   .product-description-teddy{
   		z-index: 500;
       position: absolute;
-      top: 45%;
+      top: 44%;
       left: 8%;
   		width: 85%;
   		height: 20%;
@@ -909,7 +934,7 @@ h1{
   		color: white;
   		z-index: 500;
       position: absolute;
-      top: 45%;
+      top: 44%;
       left: 3%;
   		width: 95%;
   		height: 20%;
@@ -927,7 +952,7 @@ h1{
   		color: #9e4934;
   		z-index: 500;
       position: absolute;
-      top: 46%;
+      top: 44%;
       left: 8%;
   		width: 85%;
   		height: 20%;

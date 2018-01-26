@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
-	<title>Un San Valentin Diferente</title>
+	<title>Un San Valentin Diferente #FrescuraDiferente</title>
 	<link rel="shortcut icon" type="image/x-icon" href="./assets/img/icons/favicon.ico">
 	<link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
 	<!--<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">-->
@@ -13,7 +13,7 @@
 	<link rel="stylesheet" type="text/css" href="./assets/css/backgrounds.css" />
 	<link rel="stylesheet" type="text/css" href="./assets/css/animate.css">
 	<link rel="stylesheet" type="text/css" href="./assets/css/hover.css">
-	<link rel="stylesheet" type="text/css" href="./assets/css/main.css?version=2.3">
+	<link rel="stylesheet" type="text/css" href="./assets/css/main.css?version=2.4">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.0/jquery.js"></script>
 	<script type="text/javascript" src="./assets/js/html5lightbox/html5lightbox.js"></script>
 	<!--[if IE]>
@@ -44,8 +44,8 @@
 	</script>
 	<script>
 		function openNav() {
-			document.getElementById("mySidenav").style.width = "250px";
-			document.getElementById("main").style.marginLeft = "250px";
+			document.getElementById("mySidenav").style.width = "180px";
+			document.getElementById("main").style.marginLeft = "180px";
 		}
 		function closeNav() {
 			document.getElementById("mySidenav").style.width = "0";
@@ -186,6 +186,20 @@
 		    background-repeat: no-repeat;
 		    background-size: cover;
 		}
+		.boton-legales-mobile {
+			font-size: 2em;
+		    position: absolute;
+		    bottom: 3%;
+		    right: 5%;
+		    border: 2px solid #ffffff;
+		    border-radius: 20px;
+		    padding: 10px;
+		    color: #fff;
+		}
+		.boton-legales-mobile:hover {
+			color: #fff !important;
+			text-decoration: none;
+		}
 		.boton-legales {
 			font-size: 1.2em;
 			position: fixed;
@@ -277,79 +291,84 @@
 				padding-top: 15px;
 			}
 		}
+		@media screen and (max-width: 991px) {
+			.boton-legales {
+				display: none;
+			}
+		}
 	</style>
 </head>
 <body>
 
 	<!--Preloader
-	<div id="loader-wrapper">
-		<div id="loader"></div>
-	</div>
+		<div id="loader-wrapper">
+			<div id="loader"></div>
+		</div>
 	Preloader-->
 
 	<!--Menu-->
-	<div id="mySidenav" class="sidenav visible-xs visible-sm hidden-md hidden-lg">
-		<center>
-			<img src="assets/img/inicio/logotipo-tictac.svg" class="logo-tictac-menu-mobile">
-		</center>
-		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-		<a href="#inicio">
-			<img src="./assets/img/menu/mobile-inicio-tictac.png" class="imagenMenuResponsiveInt">
-		</a>
-		<a href="#postales">
-			<img src="./assets/img/menu/mobile-postales-tictac.png" class="imagenMenuResponsiveInt">
-		</a>
-		<a href="#ecommerce">
-			<img src="./assets/img/menu/mobile-ecommerce-tictac.png" class="imagenMenuResponsiveInt">
-		</a>
-		<a href="#tictacticas">
-			<img src="./assets/img/menu/mobile-tictacticas-tictac.png" class="imagenMenuResponsiveInt">
-		</a>
-		<a href="#productos">
-			<img src="./assets/img/menu/mobile-productos-tictac.png" class="imagenMenuResponsiveInt">
-		</a>
-		<div class="hidden-md hidden-lg">
-			<a class="boton-legales banda-regular hvr-float-shadow" href="aviso-de-privacidad.html">
-				Aviso de Privacidad
+		<div id="mySidenav" class="sidenav visible-xs visible-sm hidden-md hidden-lg">
+			<center>
+				<img src="assets/img/inicio/logotipo-tictac.svg" class="logo-tictac-menu-mobile">
+			</center>
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="#inicio" onclick="closeNav()">
+				<img src="./assets/img/menu/mobile-inicio-tictac.png" class="imagenMenuResponsiveInt">
+			</a>
+			<a href="#postales" onclick="closeNav()">
+				<img src="./assets/img/menu/mobile-postales-tictac.png" class="imagenMenuResponsiveInt">
+			</a>
+			<a href="#ecommerce" onclick="closeNav()">
+				<img src="./assets/img/menu/mobile-ecommerce-tictac.png" class="imagenMenuResponsiveInt">
+			</a>
+			<a href="#tictacticas" onclick="closeNav()">
+				<img src="./assets/img/menu/mobile-tictacticas-tictac.png" class="imagenMenuResponsiveInt">
+			</a>
+			<a href="#productos" onclick="closeNav()">
+				<img src="./assets/img/menu/mobile-productos-tictac.png" class="imagenMenuResponsiveInt">
+			</a>
+			<div class="hidden-md hidden-lg">
+				<a class="boton-legales-mobile banda-regular hvr-float-shadow" href="aviso-de-privacidad.html">
+					Aviso de Privacidad
+				</a>
+			</div>
+		</div>
+		<div id="main" class="visible-xs visible-sm hidden-md hidden-lg">
+			<a style="cursor:pointer;" onclick="openNav()">
+				<img src="./assets/img/menu/menu-tictac.png" alt="" class="imagenMenuResponsive">
 			</a>
 		</div>
-	</div>
-	<div id="main" class="visible-xs visible-sm hidden-md hidden-lg">
-		<a style="cursor:pointer;" onclick="openNav()">
-			<img src="./assets/img/menu/menu-tictac.png" alt="" class="imagenMenuResponsive">
-		</a>
-	</div>
-	<div class="visible-lg visible-md hidden-sm hidden-xs menuShadowSecciones">
-		<div class="shadow">
-			<ul class="menuTicTac">
-				<li>
-					<a href="#inicio">
-						<img src="./assets/img/menu/inicio-tictac.png" id="iconos">
-					</a>
-				</li>
-				<li>
-					<a href="#postales">
-						<img src="./assets/img/menu/postales-tictac.png" id="iconos">
-					</a>
-				</li>
-				<li>
-					<a href="#ecommerce">
-						<img src="./assets/img/menu/ecommerce-tictac.png" id="iconos">
-					</a>
-				</li>
-				<li>
-					<a href="#tictacticas">
-						<img src="./assets/img/menu/tictacticas-tictac.png" id="iconos">
-					</a>
-				</li>
-				<li>
-					<a href="#productos">
-						<img src="./assets/img/menu/productos-tictac.png" id="iconos">
-					</a>
-				</li>
-			</ul>
+		<div class="visible-lg visible-md hidden-sm hidden-xs menuShadowSecciones">
+			<div class="shadow">
+				<ul class="menuTicTac">
+					<li>
+						<a href="#inicio">
+							<img src="./assets/img/menu/inicio-tictac.png" id="iconos">
+						</a>
+					</li>
+					<li>
+						<a href="#postales">
+							<img src="./assets/img/menu/postales-tictac.png" id="iconos">
+						</a>
+					</li>
+					<li>
+						<a href="#ecommerce">
+							<img src="./assets/img/menu/ecommerce-tictac.png" id="iconos">
+						</a>
+					</li>
+					<li>
+						<a href="#tictacticas">
+							<img src="./assets/img/menu/tictacticas-tictac.png" id="iconos">
+						</a>
+					</li>
+					<li>
+						<a href="#productos">
+							<img src="./assets/img/menu/productos-tictac.png" id="iconos">
+						</a>
+					</li>
+				</ul>
+			</div>
 		</div>
-	</div>
 	<!--Menu-->
 
 	<!--Inicio-->
@@ -468,6 +487,27 @@
 								margin-top: 10%;
 								width: 20%;
 							}
+							.lampara {
+								height: 230px;
+								position: fixed;
+								left: 20%;
+							}
+							.banca {
+								height: 230px;
+								position: fixed;
+								left: 25%;
+							}
+							.basura {
+								height: 230px;
+								position: fixed;
+								left: 60%;
+							}
+							.UnSanValentinDiferente {
+								width: 80%;
+								position: fixed;
+								top: 54%;
+								left: 5%;
+							}
 							.h1 {
 								color: #FFFFFF;
 								font-size: 1.3em !important;
@@ -490,9 +530,12 @@
 							}
 							.h1 {
 								color: #FFFFFF;
-								font-size: 1.3em !important;
+								font-size: 1.2em !important;
 								text-transform: uppercase;
 								z-index: 100;
+							}
+							.lampara-banca-basura {
+								margin-top: -8px;
 							}
 							.lampara {
 								height: 250px;
@@ -510,26 +553,15 @@
 								left: 60%;
 							}
 							.UnSanValentinDiferente {
-								width: 95%;
+								width: 90%;
 								position: fixed;
-								top: 63%;
+								top: 68%;
 								left: 5%;
 							}
 							.scroll {
 								width: 15px;
 								position: fixed;
 								bottom: 0;
-							}
-							.boton-legales {
-								font-size: 1em;
-								position: fixed;
-								bottom: 2%;
-								right: 1.2%;
-								border: 2px solid #ffffff;
-								border-radius: 20px;
-								padding: 10px;
-								z-index: 99999;
-								color: #fff;
 							}
 			            }
 					</style>
@@ -553,7 +585,7 @@
 						<img src="assets/img/inicio/unsanvalentindiferente.png" class="wow UnSanValentinDiferente animated fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s" alt="UnSanValentinDiferente">
 						<br>
 						<a href="#postales">
-							<img src="assets/img/inicio/scroll.png" class="scroll animated pulse infinite" alt="UnSanValentinDiferente">
+							<img src="assets/img/inicio/scroll.png" class="hidden-xs hidden-sm scroll animated pulse infinite" alt="UnSanValentinDiferente">
 						</a>
 				</div>
 			</div>
@@ -566,11 +598,9 @@
 		<div id="postales" class="col-lg-12">
 			<style>
 				@media (min-width: 1200px){
-
 					.container{
 						width:1000px !important;
 					}
-
 				}
 				.tituloPostales {
 				    position: fixed;
@@ -711,6 +741,9 @@
 	            /*iPhone´s*/
 				@media screen and (max-width: 375px) {
 					/*postales*/
+					.copyPostales {
+						font-size: 1.3em !important;
+					}
 					.collectionPostales {
 						margin-top: 27%;
 					}
@@ -725,7 +758,7 @@
 	            }
 	            @media screen and (max-width: 320px) {
 	            	.copyPostales {
-							font-size: 1.5em !important;
+							font-size: 1.3em !important;
 					}
 					.controlArrow.next {
 						top: 51%;
@@ -734,246 +767,184 @@
 						border-color: transparent transparent transparent #fff;
 					}
 	            }
+				#postales {margin-bottom: 2%;}
 			</style>
-			<style type="text/css">
-			#postales {margin-bottom: 2%;}
-			.test-postales-1 {width: 100%;}
-			.test-postales-2 {width: 100%;}
-			</style>
-			<br class="visible-xs"><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
-			<h1 class="peace-sans white margin-top header-seccion-postales">
+			<br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+			<h1 class="peace-sans white padding-top header-seccion-postales">
 				POSTALES
 			</h1>
 			<p class="banda-regular white copyPostales" style="text-transform: uppercase;">
 				Comparte una postal para que le llegue la indirecta a esa persona que te quita la frescura.
 			</p>
+			<br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
 		</div>
 		<div class="container">
-			<div class="row">
+			<div class="row ">
 				<div class="">
-					<div class="slide hidden-xs hidden-sm hidden-md">
-						<div class="col-lg-12">
-							<div class="col-lg-6 col-md-6 col-sm-12">
-								<div class="col-lg-8">
+					<style type="text/css">
+						.grid {
+							display: grid;
+							grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+							grid-template-rows: ;
+							grid-gap: 10px;
+						}
+						.grid-item {
+							display: flex;
+							align-items: center;
+							justify-content: center;
+						}
+						:first-child {
+							grid-column: span 2;
+							grid-row: span 2;
+						}
+						:nth-child(3) {
+							grid-column: span 2;
+							grid-row: span 2;
+						}
+						.grid-mobile {
+							display: grid;
+							grid-template-columns: 1fr 1fr 1fr ;
+							grid-template-rows: ;
+							grid-gap: 10px;
+						}
+						.grid-item-mobile {
+							display: flex;
+							align-items: center;
+							justify-content: center;
+						}
+						:first-child {
+							grid-column: span 2;
+							grid-row: span 2;
+						}
+						:last-child {
+							grid-column: span 1;
+							grid-row: span 1;
+						}
+					</style>
+					<!-- Desktop Laptop -->
+					<div class="visible-md visible-lg slide">
+						<div class="container">
+							<div class="row">
+								<div class="grid">
 									<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/calendario.jpg">
-										<img src="./assets/img/postales/calendario.jpg" class="test-postales-1 img-responsive grayscale">
+										<img src="./assets/img/postales/calendario.jpg" class="img-responsive grid-item grayscale">
 									</a>
-								</div>
-								<div class="col-lg-4">
 									<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/cama.jpg">
-										<img src="./assets/img/postales/cama.jpg" class="test-postales-1 img-responsive grayscale">
+										<img src="./assets/img/postales/cama.jpg" class="img-responsive grid-item grayscale">
 									</a>
-									<br class="hidden-xs"><br class="hidden-xs"><br class="hidden-xs">
 									<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/cerebro.jpg">
-										<img src="./assets/img/postales/cerebro.jpg" class="test-postales-1 img-responsive grayscale">
+										<img src="./assets/img/postales/cerebro.jpg" class="img-responsive grid-item grayscale">
 									</a>
-								</div>
-							</div>
-							<div class="col-lg-6 col-md-6 col-sm-12">
-								<div class="col-lg-8">
 									<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/cofre.jpg">
-										<img src="./assets/img/postales/cofre.jpg" class="test-postales-1 img-responsive grayscale">
+										<img src="./assets/img/postales/cofre.jpg" class="img-responsive grid-item grayscale">
 									</a>
-								</div>
-								<div class="col-lg-4">
 									<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/libro.jpg">
-										<img src="./assets/img/postales/libro.jpg" class="test-postales-1 img-responsive grayscale">
+										<img src="./assets/img/postales/libro.jpg" class="img-responsive grid-item grayscale">
 									</a>
-									<br class="hidden-xs"><br class="hidden-xs"><br class="hidden-xs">
 									<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/luna.jpg">
-										<img src="./assets/img/postales/luna.jpg" class="test-postales-1 img-responsive grayscale">
+										<img src="./assets/img/postales/luna.jpg" class="img-responsive grid-item grayscale">
 									</a>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="slide hidden-xs hidden-sm hidden-md">
-						<div class="col-lg-12">
-							<div class="col-lg-6 col-md-6 col-sm-12">
-								<div class="col-lg-4">
+					<div class="visible-md visible-lg slide">
+						<div class="container">
+							<div class="row">
+								<div class="grid">
 									<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/maleta.jpg">
-										<img src="./assets/img/postales/maleta.jpg" class="test-postales-1 img-responsive grayscale">
+										<img src="./assets/img/postales/maleta.jpg" class="img-responsive grid-item grayscale">
 									</a>
-									<br class="hidden-xs"><br class="hidden-xs"><br class="hidden-xs">
 									<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/mentiras.jpg">
-										<img src="./assets/img/postales/mentiras.jpg" class="test-postales-1 img-responsive grayscale">
+										<img src="./assets/img/postales/mentiras.jpg" class="img-responsive grid-item grayscale">
 									</a>
-								</div>
-								<div class="col-lg-8">
 									<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/micro.jpg">
-										<img src="./assets/img/postales/micro.jpg" class="test-postales-1 img-responsive grayscale">
+										<img src="./assets/img/postales/micro.jpg" class="img-responsive grid-item grayscale">
 									</a>
-								</div>
-							</div>
-							<div class="col-lg-6 col-md-6 col-sm-12">
-								<div class="col-lg-4">
 									<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/salvavidas.jpg">
-										<img src="./assets/img/postales/salvavidas.jpg" class="test-postales-1 img-responsive grayscale">
+										<img src="./assets/img/postales/salvavidas.jpg" class="img-responsive grid-item grayscale">
 									</a>
-									<br class="hidden-xs"><br class="hidden-xs"><br class="hidden-xs">
 									<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/serpiente.jpg">
-										<img src="./assets/img/postales/serpiente.jpg" class="test-postales-1 img-responsive grayscale">
+										<img src="./assets/img/postales/serpiente.jpg" class="img-responsive grid-item grayscale">
 									</a>
-								</div>
-								<div class="col-lg-8">
 									<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/voto.jpg">
-										<img src="./assets/img/postales/voto.jpg" class="test-postales-1 img-responsive grayscale">
+										<img src="./assets/img/postales/voto.jpg" class="img-responsive grid-item grayscale">
 									</a>
 								</div>
 							</div>
 						</div>
 					</div>
-
-					<div class="slide hidden-lg">
+					<!-- Desktop Laptop -->
+					<!-- Tablet Móvil -->
+					<div class="visible-xs visible-sm slide">
 						<div class="container">
 							<div class="row">
-								<div class="">
-									<div class="col-xs-12 col-lg-12 collectionPostales">
-										<div class="col-xs-9 col-md-10 col-lg-12">
-											<div class="col-lg-6 positionRelativeTictacticas postales1xs">
-												<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/calendario.jpg">
-													<img src="./assets/img/postales/calendario.jpg" class="video1 grayscale" alt="Tictácticas">
-												</a>
-											</div>
-											<div class="col-lg-6 positionRelativePostales2">
-												<div class="col-lg-12 postales2md postales2xs">
-													<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/cama.jpg">
-														<img src="./assets/img/postales/cama.jpg" class="video2 grayscale" alt="Tictácticas">
-													</a>
-												</div>
-												<br>
-												<div class="col-lg-12 postales2md postales2xs">
-													<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/cerebro.jpg">
-														<img src="./assets/img/postales/cerebro.jpg" class="video3 grayscale" alt="Tictácticas">
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
+								<div class="grid-mobile">
+									<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/calendario.jpg">
+										<img src="./assets/img/postales/calendario.jpg" class="img-responsive grid-item-mobile grayscale">
+									</a>
+									<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/cama.jpg">
+										<img src="./assets/img/postales/cama.jpg" class="img-responsive grid-item-mobile grayscale">
+									</a>
+									<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/cerebro.jpg">
+										<img src="./assets/img/postales/cerebro.jpg" class="img-responsive grid-item-mobile grayscale">
+									</a>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="slide hidden-lg">
+					<div class="visible-xs visible-sm slide">
 						<div class="container">
 							<div class="row">
-								<div class="">
-									<div class="col-xs-12 col-lg-12 collectionPostales">
-										<div class="col-xs-9 col-md-10 col-lg-12">
-											<div class="col-lg-6 positionRelativeTictacticas postales1xs">
-												<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/cofre.jpg">
-													<img src="./assets/img/postales/cofre.jpg" class="video1 grayscale" alt="Tictácticas">
-												</a>
-											</div>
-											<div class="col-lg-6 positionRelativePostales2">
-												<div class="col-lg-12 postales2md postales2xs">
-													<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/libro.jpg">
-														<img src="./assets/img/postales/libro.jpg" class="video2 grayscale" alt="Tictácticas">
-													</a>
-												</div>
-												<br>
-												<div class="col-lg-12 postales2md postales2xs">
-													<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/luna.jpg">
-														<img src="./assets/img/postales/luna.jpg" class="video3 grayscale" alt="Tictácticas">
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
+								<div class="grid-mobile">
+									<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/cofre.jpg">
+										<img src="./assets/img/postales/cofre.jpg" class="img-responsive grid-item-mobile grayscale">
+									</a>
+									<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/libro.jpg">
+										<img src="./assets/img/postales/libro.jpg" class="img-responsive grid-item-mobile grayscale">
+									</a>
+									<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/luna.jpg">
+										<img src="./assets/img/postales/luna.jpg" class="img-responsive grid-item-mobile grayscale">
+									</a>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="slide hidden-lg">
+					<div class="visible-xs visible-sm slide">
 						<div class="container">
 							<div class="row">
-								<div class="">
-									<div class="col-xs-12 col-lg-12 collectionPostales">
-										<div class="col-xs-9 col-md-10 col-lg-12">
-											<div class="col-lg-6 positionRelativeTictacticas postales1xs">
-												<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/maleta.jpg">
-													<img src="./assets/img/postales/maleta.jpg" class="video1 grayscale" alt="Tictácticas">
-												</a>
-											</div>
-											<div class="col-lg-6 positionRelativePostales2">
-												<div class="col-lg-12 postales2md postales2xs">
-													<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/mentiras.jpg">
-														<img src="./assets/img/postales/mentiras.jpg" class="video2 grayscale" alt="Tictácticas">
-													</a>
-												</div>
-												<br>
-												<div class="col-lg-12 postales2md postales2xs">
-													<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/micro.jpg">
-														<img src="./assets/img/postales/micro.jpg" class="video3 grayscale" alt="Tictácticas">
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
+								<div class="grid-mobile">
+									<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/maleta.jpg">
+										<img src="./assets/img/postales/maleta.jpg" class="img-responsive grid-item-mobile grayscale">
+									</a>
+									<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/mentiras.jpg">
+										<img src="./assets/img/postales/mentiras.jpg" class="img-responsive grid-item-mobile grayscale">
+									</a>
+									<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/micro.jpg">
+										<img src="./assets/img/postales/micro.jpg" class="img-responsive grid-item-mobile grayscale">
+									</a>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="slide hidden-lg">
+					<div class="visible-xs visible-sm slide">
 						<div class="container">
 							<div class="row">
-								<div class="">
-									<div class="col-xs-12 col-lg-12 collectionPostales">
-										<div class="col-xs-9 col-md-10 col-lg-12">
-											<div class="col-lg-6 positionRelativeTictacticas postales1xs">
-												<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/salvavidas.jpg">
-													<img src="./assets/img/postales/salvavidas.jpg" class="video1 grayscale" alt="Tictácticas">
-												</a>
-											</div>
-											<div class="col-lg-6 positionRelativePostales2">
-												<div class="col-lg-12 postales2md postales2xs">
-													<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/serpiente.jpg">
-														<img src="./assets/img/postales/serpiente.jpg" class="video2 grayscale" alt="Tictácticas">
-													</a>
-												</div>
-												<br>
-												<div class="col-lg-12 postales2md postales2xs">
-													<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/voto.jpg">
-														<img src="./assets/img/postales/voto.jpg" class="video3 grayscale" alt="Tictácticas">
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
+								<div class="grid-mobile">
+									<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/salvavidas.jpg">
+										<img src="./assets/img/postales/salvavidas.jpg" class="img-responsive grid-item-mobile grayscale">
+									</a>
+									<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/serpiente.jpg">
+										<img src="./assets/img/postales/serpiente.jpg" class="img-responsive grid-item-mobile grayscale">
+									</a>
+									<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/voto.jpg">
+										<img src="./assets/img/postales/voto.jpg" class="img-responsive grid-item-mobile grayscale">
+									</a>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="slide hidden-lg hidden-md hidden-sm hidden-xs">
-						<div class="container">
-							<div class="row">
-								<!--<div class="">
-									<div class="col-xs-12 col-lg-12 collectionPostales">
-										<div class="col-xs-9 col-md-10 col-lg-12">
-											<div class="col-lg-6 positionRelativeTictacticas postales1xs">
-												<a class="html5lightbox" data-showsocial="true" href="./assets/img/postales/salvavidas.jpg">
-													<img src="./assets/img/postales/salvavidas.jpg" class="video1 grayscale" alt="Tictácticas">
-												</a>
-											</div>
-											<div class="col-lg-6 positionRelativePostales2">
-												<div class="col-lg-12 postales2md postales2xs">
-													<a class="html5lightbox" data-showsocial="true" href="./assets/img/postales/serpiente.jpg">
-														<img src="./assets/img/postales/serpiente.jpg" class="video2 grayscale" alt="Tictácticas">
-													</a>
-												</div>
-												<br>
-												<div class="col-lg-12 postales2md postales2xs">
-													<a class="html5lightbox" data-showsocial="true" href="./assets/img/postales/voto.jpg">
-														<img src="./assets/img/postales/voto.jpg" class="video3 grayscale" alt="Tictácticas">
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>-->
-							</div>
-						</div>
-					</div>
+					<!-- Tablet Móvil -->
 				</div>
 			</div>
 		</div>
@@ -981,6 +952,7 @@
 	<!--Postales 2.0-->
 
 	<!--Ecommerce-->
+	<div class="section" id="section2">
 		<style>
 			/*iPhone´s*/
 			@media screen and (max-width: 375px) {
@@ -1025,7 +997,6 @@
 				}
 			}
 		</style>
-	<div class="section" id="section2">
 		<div id="ecommerce" class="slide">
 			<div class="container-fluid">
 				<div class="row align-items-center">
@@ -1276,8 +1247,6 @@
 				</div>
 				<div class="hidden-lg">
 					<style>
-						@media only screen and (min-width: 1024px) and (max-width : 1199px) {
-			            }
 			            @media screen and (min-width: 780px) and (max-width: 1199px) {
 			            	.imgResponsiveTictacticas {
 								width: 50%;
@@ -1309,24 +1278,25 @@
 								margin-top: 15%;
 							}
 							.video1-480 {
-								width: 59%;
+								width: 85%;
 								margin-top: 6%;
+								height: auto;
 							}
 			            }
 					</style>
-					<div class="col-xs-12 col-sm-12">
+					<div class="">
 						<a href="https://www.youtube.com/embed/AHg4yyLLv6E?rel=0" data-showsocial="true" class="html5lightbox" title="Tictácticas">
-							<img src="./assets/img/tictacticas/video-1.png" class="video1-480-780 video1-780-1024 imgResponsiveTictacticas" alt="Galatzia TicTac">
+							<img src="./assets/img/tictacticas/video-1.png" class="video1-480 video1-780-1024 imgResponsiveTictacticas" alt="Galatzia TicTac">
 						</a>
 					</div>
-					<div class="col-xs-6 col-sm-6 text-right">
+					<div class="">
 						<a href="https://www.youtube.com/embed/AHg4yyLLv6E?rel=0" data-showsocial="true" class="html5lightbox" title="Tictácticas">
-							<img src="./assets/img/tictacticas/video-1.png" class="video1-480 imgResponsiveTictacticas" alt="Galatzia TicTac">
+							<img src="./assets/img/tictacticas/video-2.png" class="video1-480 imgResponsiveTictacticas" alt="Galatzia TicTac">
 						</a>
 					</div>
-					<div class="col-xs-6 col-sm-6 text-left">
+					<div class="hidden-xs">
 						<a href="https://www.youtube.com/embed/AHg4yyLLv6E?rel=0" data-showsocial="true" class="html5lightbox" title="Tictácticas">
-							<img src="./assets/img/tictacticas/video-1.png" class="video1-480 imgResponsiveTictacticas" alt="Galatzia TicTac">
+							<img src="./assets/img/tictacticas/video-3.png" class="video1-480 imgResponsiveTictacticas" alt="Galatzia TicTac">
 						</a>
 					</div>
 				</div>
@@ -1346,51 +1316,55 @@
 				    		height: 700px;
 						}
 						.cajitas {
-							width: 15% !important;
+							width: 15%;
 						}
 						.yerbabuena {
 						    position: absolute;
-						    top: 40%;
-						    left: 18.5%;
+						    top: 50%;
+						    left: 22%;
+						    width: 12.5%;
 						}
 						.naranja{
 						    position: absolute;
-						    top: 45%;
-						    left: 30%;
+						    top: 55%;
+						    left: 32%;
 						    z-index: 3;
+						    width: 12.5%;
 						}
 						.arandano {
-						    width: 17% !important;
+						    width: 16%;
 						    position: absolute;
-						    top: 52%;
+						    top: 60%;
 						    left: 42%;
 						    z-index: 5;
 						}
 						.fresa {
 						    position: absolute;
-						    top: 45%;
-						    left: 56%;
+						    top: 55%;
+						    left: 55.5%;
 						    z-index: 3;
+						    width: 12.5%;
 						}
 						.menta{
 							position: absolute;
-						    top: 40%;
-						    left: 68%;
+						    top: 50%;
+						    left: 65.5%;
+						    width: 12.5%;
 						}
 						.texto-arandano-frambuesa {
 						    position: relative;
-						    top: 15%;
+						    top: 10%;
 						    left: 40%;
 						    width: 20%;
 						}
 						.frescura-diferente {
 						    position: relative;
-						    top: 100%;
+						    top: 105%;
 						    left: 40%;
 						    width: 20%;
 						}
 						.cajitas {
-							opacity: 0.2;
+							opacity: 0.4;
 							transition: .5s ease;
 						}
 						.cajitas:hover {
@@ -1514,12 +1488,14 @@
 							    top: 15%;
 							    left: 25%;
 							    width: 50%;
+							    z-index: 900;
 							}
 							.frescura-diferente {
 							    position: relative;
-							    top: 80%;
+							    top: 48%;
 							    left: 16%;
 							    width: 70%;
+							    z-index: 900;
 							}
 							.yerbabuena {
 								position: absolute;
@@ -1593,7 +1569,7 @@
 					</script>
 				</div>
 				<div class="col-lg-12">
-					<a class="hidden-xs hidden-sm boton-legales banda-regular hvr-float-shadow" href="aviso-de-privacidad.html">
+					<a class="boton-legales banda-regular hvr-float-shadow" href="aviso-de-privacidad.html">
 						Aviso de Privacidad
 					</a>
 				</div>

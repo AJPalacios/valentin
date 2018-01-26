@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="es-Mx">
+<html lang="es">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
-	<title>Un San Valentin Diferente</title>
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;">
+	<title>UnSanValentinDiferente.com</title>
 	<link rel="shortcut icon" type="image/x-icon" href="./assets/img/icons/favicon.ico">
 	<link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
 	<!--<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">-->
@@ -13,7 +13,7 @@
 	<link rel="stylesheet" type="text/css" href="./assets/css/backgrounds.css" />
 	<link rel="stylesheet" type="text/css" href="./assets/css/animate.css">
 	<link rel="stylesheet" type="text/css" href="./assets/css/hover.css">
-	<link rel="stylesheet" type="text/css" href="./assets/css/main.css?version=1.7">
+	<link rel="stylesheet" type="text/css" href="./assets/css/main.css?version=2.4">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.0/jquery.js"></script>
 	<script type="text/javascript" src="./assets/js/html5lightbox/html5lightbox.js"></script>
 	<!--[if IE]>
@@ -27,1164 +27,227 @@
 		$(document).ready(function() {
 			$('.dropdown-toggle').dropdown();
 			var pepe = $.fn.fullpage({
-				slidesColor: ['#FC69BF', '#FC69BF', '#FC69BF', '#FC69BF', '#FC69BF'], // Bootstrap
-				// Si se le deja este parametro no hace bien la función de linkeo el menu, PERO HACE EFECTO DE TRANSICION
-				// anchors: ['inicio', 'postales', 'ecommerce', 'tictacticas', 'productos'],
-				menu: '#menu'
+				slidesColor: ['#428BCA', '#5CB85C', '#5BC0DE', '#F0AD4E'], // Bootstrap
+				anchors: ['postales']
 			});
 		});
 	</script>
-	<script type="text/javascript">
-		$(window).load(function(){
-			/*Al terminar de cargar el sitio, primero se va la animación del Preloader*/
-			$("#loader").fadeOut();
-			/*Medio segundo despues, se va poco a poco el fondo del preloader*/
-			$("#loader-wrapper").delay(500).fadeOut("slow")
-		});
-	</script>
-	<script>
-		function openNav() {
-			document.getElementById("mySidenav").style.width = "250px";
-			document.getElementById("main").style.marginLeft = "250px";
-		}
-		function closeNav() {
-			document.getElementById("mySidenav").style.width = "0";
-			document.getElementById("main").style.marginLeft= "0";
-		}
-	</script>
 	<style type="text/css">
-		/* PRELOADER */
-		#loader-wrapper{
-			position: fixed;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			z-index: 9999999;
-			background: rgb(203,51,101);
-			background: -moz-linear-gradient(-45deg, rgba(203,51,101,1) 0%, rgba(116,63,139,1) 100%);
-			background: -webkit-linear-gradient(-45deg, rgba(203,51,101,1) 0%,rgba(106,63,139,1) 100%);
-			background: linear-gradient(135deg, rgba(203,51,101,1) 0%,rgba(116,63,139,1) 100%);
-			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb3365', endColorstr='#743f8b',GradientType=1 );
-		}
-		#loader{
-			display: block;
-			/*content: url('http://3.bp.blogspot.com/-tgQ96hd6NJI/VeenZ1Lk8PI/AAAAAAAAAK4/Vx5L5w0SXQo/s1600/gif.gif');*/
-			content: url("./assets/img/inicio/logotipo-tictac.svg");
-			position: relative;
-			left: 40%;
-			top: 35%;
-			z-index: 99999999;
-		}
-		/* PRELOADER */
-		#section0{
-			background: rgb(209,43,189);
-			background: -moz-linear-gradient(45deg, rgba(209,43,189,1) 0%, rgba(255,118,160,1) 100%);
-			background: -webkit-linear-gradient(45deg, rgba(209,43,189,1) 0%,rgba(255,118,160,1) 100%);
-			background: linear-gradient(45deg, rgba(209,43,189,1) 0%,rgba(255,118,160,1) 100%);
-			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d12bbd', endColorstr='#ff76a0',GradientType=1 );
-		}
-		.logotipo {
-			margin-bottom: -10px;
-			margin-top: 20px;
-			width: 8%;
-		}
-		.h1 {
-			color: #FFFFFF;
-			font-size: 3em !important;
-			text-transform: uppercase;
-			z-index: 100;
-			margin-top: 3%;
-			margin-bottom: 1%;
-		}
-		.lampara {
-			height: 250px;
-			position: fixed;
-			left: 41%;
-		}
-		.banca {
-			height: 250px;
-		}
-		.basura {
-			height: 250px;
-			position: fixed;
-			right: 39%;
-		}
-		.UnSanValentinDiferente {
-			width: 50%;
-			position: relative;
-			top: -60px;
-		}
-		.scroll {
-			width: 25px;
-			position: fixed;
-			bottom: 25px;
-		}
-		#section1 {
+		#section2 {
 			background: rgb(197,0,90);
 			background: -moz-linear-gradient(45deg, rgba(197,0,90,1) 0%, rgba(141,43,182,1) 100%);
 			background: -webkit-linear-gradient(45deg, rgba(197,0,90,1) 0%,rgba(141,43,182,1) 100%);
 			background: linear-gradient(45deg, rgba(197,0,90,1) 0%,rgba(141,43,182,1) 100%);
 			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c5005a', endColorstr='#8d2bb6',GradientType=1 );
 		}
-		#section3 {
-			background: rgb(243,73,115);
-			background: -moz-linear-gradient(left, rgba(243,73,115,1) 0%, rgba(207,66,144,1) 100%);
-			background: -webkit-linear-gradient(left, rgba(243,73,115,1) 0%,rgba(207,66,144,1) 100%);
-			background: linear-gradient(to right, rgba(243,73,115,1) 0%,rgba(207,66,144,1) 100%);
-			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f34973', endColorstr='#cf4290',GradientType=1 );
+		.header-postales {
+			padding-top: 5em;
+			padding-bottom: 10em;
 		}
-		.tictacticas {
+		.uppercaser {
 			text-transform: uppercase;
-			margin-top: 5%;
-			color:#f7a0bf;
 		}
-		.tictacticasP {
-			color: #FFFFFF;
-			font-size: 1.8em !important;
+		.grayscale {
+			/* filter: url(filters.svg#grayscale); Firefox 3.5+ */
+			filter: gray; /* IE5+ */
+			-webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+			-webkit-transition: all .8s ease-in-out;
 		}
-		.collectionvideos {
-			margin-top: 6em;
+		.grayscale:hover {
+			filter: none;
+			-webkit-filter: grayscale(0);
+			-webkit-transform: scale(1.01);
 		}
-		.positionRelativeTictacticas {
-			position: relative;
-			left: 11%;
-			z-index: 1;
+		#html5-watermark {
+			display:none !important;
 		}
-		.positionRelativeTictacticas2 {
-			position: relative;
-			left: -4%;
+		.grid {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+			grid-template-rows: ;
+			grid-gap: 10px;
 		}
-		.video1 {
-			width: 92%;
-			position: relative;
-			left: 5%;
+		.grid-item {
+			display: flex;
+			align-items: center;
+			justify-content: center;
 		}
-		.play1, .play2, .play3 {
-			position: absolute;
+		:first-child {
+			grid-column: span 2;
+			grid-row: span 2;
 		}
-		#html5-watermark { display:none !important; }
-		.play1 {
-			top: 39%;
-			left: 45%;
-			width: 20%;
+		:nth-child(3) {
+			grid-column: span 2;
+			grid-row: span 2;
 		}
-		.play2, .play3 {
-			left: 39%;
-			width: 20%;
-			top: 25%;
+		.grid-mobile {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr ;
+			grid-template-rows: ;
+			grid-gap: 10px;
 		}
-		.video2, .video3 {
-			width: 50%;
-			padding-left: 2%;
+		.grid-item-mobile {
+			display: flex;
+			align-items: center;
+			justify-content: center;
 		}
-		.video2 {
-			padding-bottom: 2%;
+		:first-child {
+			grid-column: span 2;
+			grid-row: span 2;
 		}
-		#section4 {
-		    background: url('./assets/img/productos/tictac-productos.jpg');
-		    background-repeat: no-repeat;
-		    background-size: cover;
-		}
-		.boton-legales {
-			font-size: 1.2em;
-			position: fixed;
-		    bottom: 2%;
-		    right: 1.2%;
-		    border: 2px solid #ffffff;
-		    border-radius: 20px;
-		    padding: 10px;
-		    z-index: 99999;
-		    color: #fff;
-		}
-		.boton-legales:hover {
-			color: #fff !important;
-			text-decoration: none;
-		}
-		.section { margin: 0;}
-		.controlArrow {
-			z-index: 500;
-			opacity: 0.5;
-		}
-		.controlArrow:hover { opacity: 1;}
-		@media (max-width: 768px) {
-			.container { margin:0 10px;}
-			h1{ font-size: 26px !important;	}
-			p, label{ font-size: 16px !important; }
-		}
-		@media  (min-width: 769px) and (max-width: 980px) {
-			h1{ font-size: 34px !important;	}
-			p, label{ font-size: 20px !important; }
-		}
-		@media (min-width: 981px) {
-			h1{ font-size: 48px !important;	}
-			p, label{ font-size: 24px !important; }
-		}
-		.imagenMenuResponsive {
-			height: 35px;
-			position: fixed;
-			right: 0;
-			top: 0;
-			z-index: 9999;
-		}
-		.imagenMenuResponsiveInt {
-			    width: 98%;
-		}
-		.sidenav {
-			height: 100%;
-			width: 0;
-			position: fixed;
-			z-index: 1;
-			top: 0;
-			right: 0;
-			background: -moz-linear-gradient(left, rgba(0,0,0,0) 1%, rgba(92,8,138,0.82) 50%);
-			background: -webkit-linear-gradient(left, rgba(0,0,0,0) 1%,rgba(92,8,138,0.82) 50%);
-			background: linear-gradient(to right, rgba(0,0,0,0) 1%,rgba(92,8,138,0.82) 50%);
-			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#d15c088a',GradientType=1 );
-			overflow-x: hidden;
-			overflow-: hidden;
-			transition: 0.5s;
-			padding-top: 60px;
-			z-index: 99999;
-		}
-		.sidenav a {
-			display: block;
-			transition: 0.3s;
-		}
-		.sidenav .closebtn {
-			position: absolute;
-			top: 0;
-			right: 25px;
-			font-size: 4.5em;
-			margin-left: 50px;
-			color: #fff;
-			text-decoration: none;
-			}
-		#main {
-			transition: margin-left .5s;
-		}
-		@media screen and (max-height: 450px) {
-			.sidenav {padding-top: 15px;}
-		}
+		:last-child {
+			grid-column: span 1;
+			grid-row: span 1;
+		}		
+		/*
+		@media only screen and (min-width: 1200px;) {}
+		@media only screen and (min-width: 1024px;) and (max-width: 1200px;) {}
+		@media screen and (min-width: 780px;) and (max-width: 1024px;) {}
+		@media screen and (min-width: 480px;) and (max-width: 780px;) {}
+		@media screen and (max-width: 480px;) {}
+		@media screen and (max-width: 375px;) {}
+		*/
 	</style>
 </head>
 <body>
-
-	<!--Preloader
-	<div id="loader-wrapper">
-		<div id="loader"></div>
+<div class="section" id="section2">
+	<div class="header-postales">
+		<h1 class="peace-sans white uppercaser">
+			Postales
+		</h1>
+		<p class="banda-regular white uppercaser">
+			Comparte una postal para que le llegue la indirecta a esa persona que te quita la frescura.
+		</p>
 	</div>
-	Preloader-->
-
-	<!--Menu-->
-	<div id="mySidenav" class="sidenav visible-xs visible-sm hidden-md hidden-lg">
-		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-		<a href="#inicio">
-			<img src="./assets/img/menu/inicio-tictac.png" class="imagenMenuResponsiveInt">
-		</a>
-		<a href="#postales">
-			<img src="./assets/img/menu/postales-tictac.png" class="imagenMenuResponsiveInt">
-		</a>
-		<a href="#ecommerce">
-			<img src="./assets/img/menu/ecommerce-tictac.png" class="imagenMenuResponsiveInt">
-		</a>
-		<a href="#tictacticas">
-			<img src="./assets/img/menu/tictacticas-tictac.png" class="imagenMenuResponsiveInt">
-		</a>
-		<a href="#productos">
-			<img src="./assets/img/menu/productos-tictac.png" class="imagenMenuResponsiveInt">
-		</a>
-	</div>
-	<div id="main" class="visible-xs visible-sm hidden-md hidden-lg">
-		<a style="cursor:pointer;" onclick="openNav()">
-			<img src="./assets/img/menu/menu-tictac.png" alt="" class="imagenMenuResponsive">
-		</a>
-	</div>
-	<div class="visible-lg visible-md hidden-sm hidden-xs menuShadowSecciones">
-		<div class="shadow">
-			<ul class="menuTicTac">
-				<li>
-					<a href="#inicio">
-						<img src="./assets/img/menu/inicio-tictac.png" id="iconos">
-					</a>
-				</li>
-				<li>
-					<a href="#postales">
-						<img src="./assets/img/menu/postales-tictac.png" id="iconos">
-					</a>
-				</li>
-				<li>
-					<a href="#ecommerce">
-						<img src="./assets/img/menu/ecommerce-tictac.png" id="iconos">
-					</a>
-				</li>
-				<li>
-					<a href="#tictacticas">
-						<img src="./assets/img/menu/tictacticas-tictac.png" id="iconos">
-					</a>
-				</li>
-				<li>
-					<a href="#productos">
-						<img src="./assets/img/menu/productos-tictac.png" id="iconos">
-					</a>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<!--Menu-->
-
-	<div class="section" id="section0">
-		<div id="myCarousel" class="carousel slide" data-ride="carousel">
-		  <!-- Indicators -->
-		  <ol class="carousel-indicators">
-		    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-		    <li data-target="#myCarousel" data-slide-to="1"></li>
-		    <li data-target="#myCarousel" data-slide-to="2"></li>
-		  </ol>
-
-		  <!-- Wrapper for slides -->
-		  <div class="carousel-inner">
-		    <div class="item active">
-		      <img src="la.jpg" alt="Los Angeles">
-		    </div>
-
-		    <div class="item">
-		      <img src="chicago.jpg" alt="Chicago">
-		    </div>
-
-		    <div class="item">
-		      <img src="ny.jpg" alt="New York">
-		    </div>
-		  </div>
-
-		  <!-- Left and right controls -->
-		  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-		    <span class="glyphicon glyphicon-chevron-left"></span>
-		    <span class="sr-only">Previous</span>
-		  </a>
-		  <a class="right carousel-control" href="#myCarousel" data-slide="next">
-		    <span class="glyphicon glyphicon-chevron-right"></span>
-		    <span class="sr-only">Next</span>
-		  </a>
-		</div>
-	</div>
-
-	<!--Postales 2.0-->
-	<div class="section" id="section1">
-		<div id="postales" class="col-lg-12 ">
-			<style>
-				.tituloPostales {
-				    position: fixed;
-				    left: 29%;
-				}
-				.copyPostales {
-					font-size: 1.8em !important;
-				}
-				.collectionPostales {
-				    margin-top: 2em;
-				}
-				.positionRelativePostales{
-					position: relative;
-					left: 11%;
-					z-index: 1;
-				}
-				.positionRelativePostales2 {
-					position: relative;
-					left: -4%;
-				}
-				.grayscale{
-			    	/* filter: url(filters.svg#grayscale); Firefox 3.5+ */
-			    	filter: gray; /* IE5+ */
-			    	-webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
-			    	-webkit-transition: all .8s ease-in-out;
-			    }
-			    .grayscale:hover {
-			    	filter: none;
-			    	-webkit-filter: grayscale(0);
-			    	-webkit-transform: scale(1.01);
-				}
-	            @media only screen and (min-width: 1024px) and (max-width : 1199px) {
-	                .positionRelativeTictacticas {
-						position: relative;
-						left: -14%;
-						z-index: 1;
-						width: 75%;
-					}
-					.positionRelativePostales2 {
-						position: absolute;
-						top: 0%;
-						left: 30%;
-					}
-					.postales2md {
-						left: 15%;
-					}
-	            }
-	            @media screen and (min-width: 780px) and (max-width: 1024px) {
-	            	.positionRelativeTictacticas {
-						position: relative;
-						left: -14%;
-						z-index: 1;
-						width: 75%;
-					}
-					.positionRelativePostales2 {
-						position: absolute;
-						top: 0%;
-						left: 30%;
-					}
-					.postales1xs {
-						width: 95%;
-						left: -6%;
-					}
-					.postales2xs {
-						left: 50%;
-						width: 127%;
-					}
-					.collectionPostales {
-						margin-top: 15%;
-					}
-	            }
-	            @media screen and (min-width: 480px) and (max-width: 780px) {
-	            	.positionRelativeTictacticas {
-						position: relative;
-						left: -14%;
-						z-index: 1;
-						width: 75%;
-					}
-					.positionRelativePostales2 {
-						position: absolute;
-						top: 0%;
-						left: 30%;
-					}
-					.postales1xs {
-						width: 95%;
-						left: -6%;
-					}
-					.postales2xs {
-						left: 50%;
-						width: 127%;
-					}
-					.collectionPostales {
-						margin-top: 15%;
-					}
-					.controlArrow.prev {
-						display: none !important;
-						left: 40% !important;
-						border-width: 38.5px 0 38.5px 34px;
-						border-color: transparent transparent transparent #fff;
-					}
-	            }
-	            @media screen and (max-width: 480px) {
-	            	.positionRelativeTictacticas {
-						position: relative;
-						left: -14%;
-						z-index: 1;
-						width: 75%;
-					}
-					.positionRelativePostales2 {
-						position: absolute;
-						top: 0%;
-						left: 30%;
-					}
-					.postales1xs {
-						width: 95%;
-						left: -6%;
-					}
-					.postales2xs {
-						left: 50%;
-						width: 127%;
-					}
-	                .collectionPostales {
-						margin-top: 50%;
-					}
-					.controlArrow.prev {
-						display: none !important;
-						left: 40% !important;
-						border-width: 38.5px 0 38.5px 34px;
-						border-color: transparent transparent transparent #fff;
-					}
-					.controlArrow.next {
-						top: 50%;
-						right: 8% !important;
-						border-width: 38.5px 0 38.5px 34px;
-						border-color: transparent transparent transparent #fff;
-					}
-	            }
-	            /*iPhone´s*/
-				@media screen and (max-width: 375px) {
-					/*postales*/
-					.collectionPostales {
-						margin-top: 27%;
-					}
-					.postales1xs {
-						width: 121%;
-						left: -24%;
-					}
-					.postales2xs {
-						left: 45%;
-						width: 168%;
-					}
-	            }
-	            @media screen and (max-width: 320px) {
-	            	.copyPostales {
-							font-size: 1.5em !important;
-					}
-					.controlArrow.next {
-						top: 51%;
-						right: 2% !important;
-						border-width: 38.5px 0 38.5px 26px;
-						border-color: transparent transparent transparent #fff;
-					}
-	            }
-			</style>
-			<style type="text/css">
-			#postales {margin-bottom: 2%;}
-			.test-postales-1 {width: 100%;}
-			.test-postales-2 {width: 100%;}
-			</style>
-			<br class="visible-xs"><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
-			<h1 class="peace-sans white margin-top header-seccion-postales">
-				POSTALES
-			</h1>
-			<p class="banda-regular white copyPostales" style="text-transform: uppercase;">
-				Comparte una postal para que le llegue la indirecta a esa persona que te quita la frescura.
-			</p>
-		</div>
+	<!-- Desktop Laptop -->
+	<div class="visible-md visible-lg slide">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-12">
-					<div class="slide hidden-xs hidden-sm hidden-md">
-						<div class="col-lg-12">
-							<div class="col-lg-6">
-								<div class="col-lg-8">
-									<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/calendario.jpg">
-										<img src="./assets/img/postales/cama.jpg" class="test-postales-1 grayscale">
-									</a>
-								</div>
-								<div class="col-lg-4">
-									<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/calendario.jpg">
-										<img src="./assets/img/postales/cama.jpg" class="test-postales-1 grayscale">
-									</a>
-									<br class="hidden-xs"><br class="hidden-xs"><br class="hidden-xs">
-									<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/calendario.jpg">
-										<img src="./assets/img/postales/cama.jpg" class="test-postales-1 grayscale">
-									</a>
-								</div>
-							</div>
-							<div class="col-lg-6">
-								<div class="col-lg-8">
-									<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/calendario.jpg">
-										<img src="./assets/img/postales/cama.jpg" class="test-postales-1 grayscale">
-									</a>
-								</div>
-								<div class="col-lg-4">
-									<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/calendario.jpg">
-										<img src="./assets/img/postales/cama.jpg" class="test-postales-1 grayscale">
-									</a>
-									<br class="hidden-xs"><br class="hidden-xs"><br class="hidden-xs">
-									<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/calendario.jpg">
-										<img src="./assets/img/postales/cama.jpg" class="test-postales-1 grayscale">
-									</a>
-								</div>
-							</div>
-
-							<div class="col-lg-6" style="margin-top:2%;">
-								<div class="col-lg-4">
-									<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/calendario.jpg">
-										<img src="./assets/img/postales/cama.jpg" class="test-postales-1 grayscale">
-									</a>
-									<br class="hidden-xs"><br class="hidden-xs"><br class="hidden-xs">
-									<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/calendario.jpg">
-										<img src="./assets/img/postales/cama.jpg" class="test-postales-1 grayscale">
-									</a>
-								</div>
-								<div class="col-lg-8">
-									<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/calendario.jpg">
-										<img src="./assets/img/postales/cama.jpg" class="test-postales-1 grayscale">
-									</a>
-								</div>
-							</div>
-							<div class="col-lg-6" style="margin-top:2%;">
-								<div class="col-lg-4">
-									<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/calendario.jpg">
-										<img src="./assets/img/postales/cama.jpg" class="test-postales-1 grayscale">
-									</a>
-									<br class="hidden-xs"><br class="hidden-xs"><br class="hidden-xs">
-									<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/calendario.jpg">
-										<img src="./assets/img/postales/cama.jpg" class="test-postales-1 grayscale">
-									</a>
-								</div>
-								<div class="col-lg-8">
-									<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/calendario.jpg">
-										<img src="./assets/img/postales/cama.jpg" class="test-postales-1 grayscale">
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="slide hidden-xs hidden-sm hidden-md">
-						<div class="col-lg-12">
-							<div class="col-lg-6">
-								<div class="col-lg-8">
-									<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/calendario.jpg">
-										<img src="./assets/img/postales/cama.jpg" class="test-postales-1 grayscale">
-									</a>
-								</div>
-								<div class="col-lg-4">
-									<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/calendario.jpg">
-										<img src="./assets/img/postales/cama.jpg" class="test-postales-1 grayscale">
-									</a>
-									<br class="hidden-xs"><br class="hidden-xs"><br class="hidden-xs">
-									<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/calendario.jpg">
-										<img src="./assets/img/postales/cama.jpg" class="test-postales-1 grayscale">
-									</a>
-								</div>
-							</div>
-							<div class="col-lg-6">
-								<div class="col-lg-8">
-									<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/calendario.jpg">
-										<img src="./assets/img/postales/cama.jpg" class="test-postales-1 grayscale">
-									</a>
-								</div>
-								<div class="col-lg-4">
-									<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/calendario.jpg">
-										<img src="./assets/img/postales/cama.jpg" class="test-postales-1 grayscale">
-									</a>
-									<br class="hidden-xs"><br class="hidden-xs"><br class="hidden-xs">
-									<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/calendario.jpg">
-										<img src="./assets/img/postales/cama.jpg" class="test-postales-1 grayscale">
-									</a>
-								</div>
-							</div>
-
-							<div class="col-lg-6" style="margin-top:2%;">
-								<div class="col-lg-4">
-									<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/calendario.jpg">
-										<img src="./assets/img/postales/cama.jpg" class="test-postales-1 grayscale">
-									</a>
-									<br class="hidden-xs"><br class="hidden-xs"><br class="hidden-xs">
-									<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/calendario.jpg">
-										<img src="./assets/img/postales/cama.jpg" class="test-postales-1 grayscale">
-									</a>
-								</div>
-								<div class="col-lg-8">
-									<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/calendario.jpg">
-										<img src="./assets/img/postales/cama.jpg" class="test-postales-1 grayscale">
-									</a>
-								</div>
-							</div>
-							<div class="col-lg-6" style="margin-top:2%;">
-								<div class="col-lg-4">
-									<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/calendario.jpg">
-										<img src="./assets/img/postales/cama.jpg" class="test-postales-1 grayscale">
-									</a>
-									<br class="hidden-xs"><br class="hidden-xs"><br class="hidden-xs">
-									<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/calendario.jpg">
-										<img src="./assets/img/postales/cama.jpg" class="test-postales-1 grayscale">
-									</a>
-								</div>
-								<div class="col-lg-8">
-									<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/calendario.jpg">
-										<img src="./assets/img/postales/cama.jpg" class="test-postales-1 grayscale">
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="slide hidden-lg">
-						<div class="container">
-							<div class="row">
-								<div class="">
-									<div class="col-xs-12 col-lg-12 collectionPostales">
-										<div class="col-xs-9 col-md-10 col-lg-12">
-											<div class="col-lg-6 positionRelativeTictacticas postales1xs">
-												<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/calendario.jpg">
-													<img src="./assets/img/postales/calendario.jpg" class="video1 grayscale" alt="Tictácticas">
-												</a>
-											</div>
-											<div class="col-lg-6 positionRelativePostales2">
-												<div class="col-lg-12 postales2md postales2xs">
-													<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/cama.jpg">
-														<img src="./assets/img/postales/cama.jpg" class="video2 grayscale" alt="Tictácticas">
-													</a>
-												</div>
-												<br>
-												<div class="col-lg-12 postales2md postales2xs">
-													<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/cerebro.jpg">
-														<img src="./assets/img/postales/cerebro.jpg" class="video3 grayscale" alt="Tictácticas">
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="slide hidden-lg">
-						<div class="container">
-							<div class="row">
-								<div class="">
-									<div class="col-xs-12 col-lg-12 collectionPostales">
-										<div class="col-xs-9 col-md-10 col-lg-12">
-											<div class="col-lg-6 positionRelativeTictacticas postales1xs">
-												<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/cofre.jpg">
-													<img src="./assets/img/postales/cofre.jpg" class="video1 grayscale" alt="Tictácticas">
-												</a>
-											</div>
-											<div class="col-lg-6 positionRelativePostales2">
-												<div class="col-lg-12 postales2md postales2xs">
-													<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/libro.jpg">
-														<img src="./assets/img/postales/libro.jpg" class="video2 grayscale" alt="Tictácticas">
-													</a>
-												</div>
-												<br>
-												<div class="col-lg-12 postales2md postales2xs">
-													<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/luna.jpg">
-														<img src="./assets/img/postales/luna.jpg" class="video3 grayscale" alt="Tictácticas">
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="slide hidden-lg">
-						<div class="container">
-							<div class="row">
-								<div class="">
-									<div class="col-xs-12 col-lg-12 collectionPostales">
-										<div class="col-xs-9 col-md-10 col-lg-12">
-											<div class="col-lg-6 positionRelativeTictacticas postales1xs">
-												<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/maleta.jpg">
-													<img src="./assets/img/postales/maleta.jpg" class="video1 grayscale" alt="Tictácticas">
-												</a>
-											</div>
-											<div class="col-lg-6 positionRelativePostales2">
-												<div class="col-lg-12 postales2md postales2xs">
-													<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/mentiras.jpg">
-														<img src="./assets/img/postales/mentiras.jpg" class="video2 grayscale" alt="Tictácticas">
-													</a>
-												</div>
-												<br>
-												<div class="col-lg-12 postales2md postales2xs">
-													<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/micro.jpg">
-														<img src="./assets/img/postales/micro.jpg" class="video3 grayscale" alt="Tictácticas">
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="slide hidden-lg">
-						<div class="container">
-							<div class="row">
-								<div class="">
-									<div class="col-xs-12 col-lg-12 collectionPostales">
-										<div class="col-xs-9 col-md-10 col-lg-12">
-											<div class="col-lg-6 positionRelativeTictacticas postales1xs">
-												<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/salvavidas.jpg">
-													<img src="./assets/img/postales/salvavidas.jpg" class="video1 grayscale" alt="Tictácticas">
-												</a>
-											</div>
-											<div class="col-lg-6 positionRelativePostales2">
-												<div class="col-lg-12 postales2md postales2xs">
-													<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/serpiente.jpg">
-														<img src="./assets/img/postales/serpiente.jpg" class="video2 grayscale" alt="Tictácticas">
-													</a>
-												</div>
-												<br>
-												<div class="col-lg-12 postales2md postales2xs">
-													<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/voto.jpg">
-														<img src="./assets/img/postales/voto.jpg" class="video3 grayscale" alt="Tictácticas">
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="slide hidden-lg hidden-md hidden-sm hidden-xs">
-						<div class="container">
-							<div class="row">
-								<!--<div class="">
-									<div class="col-xs-12 col-lg-12 collectionPostales">
-										<div class="col-xs-9 col-md-10 col-lg-12">
-											<div class="col-lg-6 positionRelativeTictacticas postales1xs">
-												<a class="html5lightbox" data-showsocial="true" href="./assets/img/postales/salvavidas.jpg">
-													<img src="./assets/img/postales/salvavidas.jpg" class="video1 grayscale" alt="Tictácticas">
-												</a>
-											</div>
-											<div class="col-lg-6 positionRelativePostales2">
-												<div class="col-lg-12 postales2md postales2xs">
-													<a class="html5lightbox" data-showsocial="true" href="./assets/img/postales/serpiente.jpg">
-														<img src="./assets/img/postales/serpiente.jpg" class="video2 grayscale" alt="Tictácticas">
-													</a>
-												</div>
-												<br>
-												<div class="col-lg-12 postales2md postales2xs">
-													<a class="html5lightbox" data-showsocial="true" href="./assets/img/postales/voto.jpg">
-														<img src="./assets/img/postales/voto.jpg" class="video3 grayscale" alt="Tictácticas">
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>-->
-							</div>
-						</div>
-					</div>
+				<div class="grid">
+					<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/calendario.jpg">
+						<img src="./assets/img/postales/calendario.jpg" class="img-responsive grid-item grayscale">
+					</a>
+					<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/cama.jpg">
+						<img src="./assets/img/postales/cama.jpg" class="img-responsive grid-item grayscale">
+					</a>
+					<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/cerebro.jpg">
+						<img src="./assets/img/postales/cerebro.jpg" class="img-responsive grid-item grayscale">
+					</a>
+					<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/cofre.jpg">
+						<img src="./assets/img/postales/cofre.jpg" class="img-responsive grid-item grayscale">
+					</a>
+					<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/libro.jpg">
+						<img src="./assets/img/postales/libro.jpg" class="img-responsive grid-item grayscale">
+					</a>
+					<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/luna.jpg">
+						<img src="./assets/img/postales/luna.jpg" class="img-responsive grid-item grayscale">
+					</a>
 				</div>
 			</div>
 		</div>
 	</div>
-	<!--Postales 2.0-->
-
-	<!--Postales Respaldo-->
-	<div class="section" id="section1">
-		<div id="postales" class="col-lg-12 ">
-			<style>
-				.tituloPostales {
-				    position: fixed;
-				    left: 29%;
-				}
-				.copyPostales {
-					font-size: 1.8em !important;
-				}
-				.collectionPostales {
-				    margin-top: 2em;
-				}
-				.positionRelativePostales{
-					position: relative;
-					left: 11%;
-					z-index: 1;
-				}
-				.positionRelativePostales2 {
-					position: relative;
-					left: -4%;
-				}
-				.grayscale{
-			    	/* filter: url(filters.svg#grayscale); Firefox 3.5+ */
-			    	filter: gray; /* IE5+ */
-			    	-webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
-			    	-webkit-transition: all .8s ease-in-out;
-			    }
-			    .grayscale:hover {
-			    	filter: none;
-			    	-webkit-filter: grayscale(0);
-			    	-webkit-transform: scale(1.01);
-				}
-	            @media only screen and (min-width: 1024px) and (max-width : 1199px) {
-	                .positionRelativeTictacticas {
-						position: relative;
-						left: -14%;
-						z-index: 1;
-						width: 75%;
-					}
-					.positionRelativePostales2 {
-						position: absolute;
-						top: 0%;
-						left: 30%;
-					}
-					.postales2md {
-						left: 15%;
-					}
-	            }
-	            @media screen and (min-width: 780px) and (max-width: 1024px) {
-	            	.positionRelativeTictacticas {
-						position: relative;
-						left: -14%;
-						z-index: 1;
-						width: 75%;
-					}
-					.positionRelativePostales2 {
-						position: absolute;
-						top: 0%;
-						left: 30%;
-					}
-					.postales1xs {
-						width: 95%;
-						left: -6%;
-					}
-					.postales2xs {
-						left: 50%;
-						width: 127%;
-					}
-					.collectionPostales {
-						margin-top: 15%;
-					}
-	            }
-	            @media screen and (min-width: 480px) and (max-width: 780px) {
-	            	.positionRelativeTictacticas {
-						position: relative;
-						left: -14%;
-						z-index: 1;
-						width: 75%;
-					}
-					.positionRelativePostales2 {
-						position: absolute;
-						top: 0%;
-						left: 30%;
-					}
-					.postales1xs {
-						width: 95%;
-						left: -6%;
-					}
-					.postales2xs {
-						left: 50%;
-						width: 127%;
-					}
-					.collectionPostales {
-						margin-top: 15%;
-					}
-					.controlArrow.prev {
-						display: none !important;
-						left: 40% !important;
-						border-width: 38.5px 0 38.5px 34px;
-						border-color: transparent transparent transparent #fff;
-					}
-	            }
-	            @media screen and (max-width: 480px) {
-	            	.positionRelativeTictacticas {
-						position: relative;
-						left: -14%;
-						z-index: 1;
-						width: 75%;
-					}
-					.positionRelativePostales2 {
-						position: absolute;
-						top: 0%;
-						left: 30%;
-					}
-					.postales1xs {
-						width: 95%;
-						left: -6%;
-					}
-					.postales2xs {
-						left: 50%;
-						width: 127%;
-					}
-	                .collectionPostales {
-						margin-top: 50%;
-					}
-					.controlArrow.prev {
-						display: none !important;
-						left: 40% !important;
-						border-width: 38.5px 0 38.5px 34px;
-						border-color: transparent transparent transparent #fff;
-					}
-					.controlArrow.next {
-						top: 50%;
-						right: 8% !important;
-						border-width: 38.5px 0 38.5px 34px;
-						border-color: transparent transparent transparent #fff;
-					}
-	            }
-	            /*iPhone´s*/
-				@media screen and (max-width: 375px) {
-					/*postales*/
-					.collectionPostales {
-						margin-top: 27%;
-					}
-					.postales1xs {
-						width: 121%;
-						left: -24%;
-					}
-					.postales2xs {
-						left: 45%;
-						width: 168%;
-					}
-	            }
-	            @media screen and (max-width: 320px) {
-	            	.copyPostales {
-							font-size: 1.5em !important;
-					}
-					.controlArrow.next {
-						top: 51%;
-						right: 2% !important;
-						border-width: 38.5px 0 38.5px 26px;
-						border-color: transparent transparent transparent #fff;
-					}
-	            }
-			</style>
-			<br class="visible-xs">
-			<br class="visible-xs">
-			<br class="visible-xs">
-			<br class="visible-xs">
-			<h1 class="peace-sans white margin-top header-seccion-postales">
-				POSTALES
-			</h1>
-			<p class="banda-regular white copyPostales" style="text-transform: uppercase;">
-				Comparte una postal para que le llegue la indirecta a esa persona que te quita la frescura.
-			</p>
-		</div>
-		<div>
-			<div class="slide">
-				<div class="container">
-					<div class="row">
-						<div class="">
-							<div class="col-xs-12 col-lg-12 collectionPostales">
-								<div class="col-xs-9 col-md-10 col-lg-12">
-									<div class="col-lg-6 positionRelativeTictacticas postales1xs">
-										<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/calendario.jpg">
-											<img src="./assets/img/postales/calendario.jpg" class="video1 grayscale" alt="Tictácticas">
-										</a>
-									</div>
-									<div class="col-lg-6 positionRelativePostales2">
-										<div class="col-lg-12 postales2md postales2xs">
-											<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/cama.jpg">
-												<img src="./assets/img/postales/cama.jpg" class="video2 grayscale" alt="Tictácticas">
-											</a>
-										</div>
-										<br>
-										<div class="col-lg-12 postales2md postales2xs">
-											<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/cerebro.jpg">
-												<img src="./assets/img/postales/cerebro.jpg" class="video3 grayscale" alt="Tictácticas">
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="slide">
-				<div class="container">
-					<div class="row">
-						<div class="">
-							<div class="col-xs-12 col-lg-12 collectionPostales">
-								<div class="col-xs-9 col-md-10 col-lg-12">
-									<div class="col-lg-6 positionRelativeTictacticas postales1xs">
-										<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/cofre.jpg">
-											<img src="./assets/img/postales/cofre.jpg" class="video1 grayscale" alt="Tictácticas">
-										</a>
-									</div>
-									<div class="col-lg-6 positionRelativePostales2">
-										<div class="col-lg-12 postales2md postales2xs">
-											<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/libro.jpg">
-												<img src="./assets/img/postales/libro.jpg" class="video2 grayscale" alt="Tictácticas">
-											</a>
-										</div>
-										<br>
-										<div class="col-lg-12 postales2md postales2xs">
-											<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/luna.jpg">
-												<img src="./assets/img/postales/luna.jpg" class="video3 grayscale" alt="Tictácticas">
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="slide">
-				<div class="container">
-					<div class="row">
-						<div class="">
-							<div class="col-xs-12 col-lg-12 collectionPostales">
-								<div class="col-xs-9 col-md-10 col-lg-12">
-									<div class="col-lg-6 positionRelativeTictacticas postales1xs">
-										<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/maleta.jpg">
-											<img src="./assets/img/postales/maleta.jpg" class="video1 grayscale" alt="Tictácticas">
-										</a>
-									</div>
-									<div class="col-lg-6 positionRelativePostales2">
-										<div class="col-lg-12 postales2md postales2xs">
-											<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/mentiras.jpg">
-												<img src="./assets/img/postales/mentiras.jpg" class="video2 grayscale" alt="Tictácticas">
-											</a>
-										</div>
-										<br>
-										<div class="col-lg-12 postales2md postales2xs">
-											<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/micro.jpg">
-												<img src="./assets/img/postales/micro.jpg" class="video3 grayscale" alt="Tictácticas">
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="slide">
-				<div class="container">
-					<div class="row">
-						<div class="">
-							<div class="col-xs-12 col-lg-12 collectionPostales">
-								<div class="col-xs-9 col-md-10 col-lg-12">
-									<div class="col-lg-6 positionRelativeTictacticas postales1xs">
-										<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/salvavidas.jpg">
-											<img src="./assets/img/postales/salvavidas.jpg" class="video1 grayscale" alt="Tictácticas">
-										</a>
-									</div>
-									<div class="col-lg-6 positionRelativePostales2">
-										<div class="col-lg-12 postales2md postales2xs">
-											<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/serpiente.jpg">
-												<img src="./assets/img/postales/serpiente.jpg" class="video2 grayscale" alt="Tictácticas">
-											</a>
-										</div>
-										<br>
-										<div class="col-lg-12 postales2md postales2xs">
-											<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/voto.jpg">
-												<img src="./assets/img/postales/voto.jpg" class="video3 grayscale" alt="Tictácticas">
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="slide hidden-lg hidden-md hidden-sm hidden-xs">
-				<div class="container">
-					<div class="row">
-						<!--<div class="">
-							<div class="col-xs-12 col-lg-12 collectionPostales">
-								<div class="col-xs-9 col-md-10 col-lg-12">
-									<div class="col-lg-6 positionRelativeTictacticas postales1xs">
-										<a class="html5lightbox" data-showsocial="true" href="./assets/img/postales/salvavidas.jpg">
-											<img src="./assets/img/postales/salvavidas.jpg" class="video1 grayscale" alt="Tictácticas">
-										</a>
-									</div>
-									<div class="col-lg-6 positionRelativePostales2">
-										<div class="col-lg-12 postales2md postales2xs">
-											<a class="html5lightbox" data-showsocial="true" href="./assets/img/postales/serpiente.jpg">
-												<img src="./assets/img/postales/serpiente.jpg" class="video2 grayscale" alt="Tictácticas">
-											</a>
-										</div>
-										<br>
-										<div class="col-lg-12 postales2md postales2xs">
-											<a class="html5lightbox" data-showsocial="true" href="./assets/img/postales/voto.jpg">
-												<img src="./assets/img/postales/voto.jpg" class="video3 grayscale" alt="Tictácticas">
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>-->
-					</div>
+	<div class="visible-md visible-lg slide">
+		<div class="container">
+			<div class="row">
+				<div class="grid">
+					<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/maleta.jpg">
+						<img src="./assets/img/postales/maleta.jpg" class="img-responsive grid-item grayscale">
+					</a>
+					<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/mentiras.jpg">
+						<img src="./assets/img/postales/mentiras.jpg" class="img-responsive grid-item grayscale">
+					</a>
+					<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/micro.jpg">
+						<img src="./assets/img/postales/micro.jpg" class="img-responsive grid-item grayscale">
+					</a>
+					<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/salvavidas.jpg">
+						<img src="./assets/img/postales/salvavidas.jpg" class="img-responsive grid-item grayscale">
+					</a>
+					<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/serpiente.jpg">
+						<img src="./assets/img/postales/serpiente.jpg" class="img-responsive grid-item grayscale">
+					</a>
+					<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/voto.jpg">
+						<img src="./assets/img/postales/voto.jpg" class="img-responsive grid-item grayscale">
+					</a>
 				</div>
 			</div>
 		</div>
 	</div>
-	<!--Postales Respaldo-->
-
-	<script src="./assets/js/wow.min.js" type="text/javascript"></script>
-    <script>
+	<!-- Desktop Laptop -->
+	<!-- Tablet Móvil -->
+	<div class="visible-xs visible-sm slide">
+		<div class="container">
+			<div class="row">
+				<div class="grid-mobile">
+					<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/calendario.jpg">
+						<img src="./assets/img/postales/calendario.jpg" class="img-responsive grid-item-mobile grayscale">
+					</a>
+					<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/cama.jpg">
+						<img src="./assets/img/postales/cama.jpg" class="img-responsive grid-item-mobile grayscale">
+					</a>
+					<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/cerebro.jpg">
+						<img src="./assets/img/postales/cerebro.jpg" class="img-responsive grid-item-mobile grayscale">
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="visible-xs visible-sm slide">
+		<div class="container">
+			<div class="row">
+				<div class="grid-mobile">
+					<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/cofre.jpg">
+						<img src="./assets/img/postales/cofre.jpg" class="img-responsive grid-item-mobile grayscale">
+					</a>
+					<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/libro.jpg">
+						<img src="./assets/img/postales/libro.jpg" class="img-responsive grid-item-mobile grayscale">
+					</a>
+					<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/luna.jpg">
+						<img src="./assets/img/postales/luna.jpg" class="img-responsive grid-item-mobile grayscale">
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="visible-xs visible-sm slide">
+		<div class="container">
+			<div class="row">
+				<div class="grid-mobile">
+					<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/maleta.jpg">
+						<img src="./assets/img/postales/maleta.jpg" class="img-responsive grid-item-mobile grayscale">
+					</a>
+					<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/mentiras.jpg">
+						<img src="./assets/img/postales/mentiras.jpg" class="img-responsive grid-item-mobile grayscale">
+					</a>
+					<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/micro.jpg">
+						<img src="./assets/img/postales/micro.jpg" class="img-responsive grid-item-mobile grayscale">
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="visible-xs visible-sm slide">
+		<div class="container">
+			<div class="row">
+				<div class="grid-mobile">
+					<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/salvavidas.jpg">
+						<img src="./assets/img/postales/salvavidas.jpg" class="img-responsive grid-item-mobile grayscale">
+					</a>
+					<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/serpiente.jpg">
+						<img src="./assets/img/postales/serpiente.jpg" class="img-responsive grid-item-mobile grayscale">
+					</a>
+					<a class="html5lightbox hvr-float-shadow" data-showsocial="true" href="./assets/img/postales/voto.jpg">
+						<img src="./assets/img/postales/voto.jpg" class="img-responsive grid-item-mobile grayscale">
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Tablet Móvil -->
+</div>
+<script src="./assets/js/wow.min.js" type="text/javascript"></script>
+	<script>
 		new WOW().init();
-    </script>
+	</script>
 	<script src="./assets/js/bootstrap.min.js" type="text/javascript"></script>
-	<script src="./assets/js/lightbox-2.6.min.js" type="text/javascript"></script>
 </body>
 </html>
