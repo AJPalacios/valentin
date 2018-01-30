@@ -848,7 +848,7 @@ h1{
     background-size: cover; 
 }
   .thin-cintillo{
-    font-size: 1em !important;
+    font-size: .8em !important;
   }
   .cintillo{
     padding: 10px;
@@ -1023,7 +1023,7 @@ h1{
     background-size: cover;
 }
   .thin-cintillo{
-    font-size: 1.5em !important;
+    font-size: .8em !important;
   }
   .cintillo{
     padding: 10px;
