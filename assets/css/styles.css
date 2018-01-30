@@ -678,7 +678,7 @@
 .tictacticas-proximamente {
 			text-transform: uppercase;
 			color: #f7a0bf;
-			font-size: 7em;
+			font-size: 6.5em;
 }
 @media screen and (max-width: 320px){
 	.tictacticas-proximamente {
