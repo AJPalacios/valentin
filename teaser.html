@@ -65,12 +65,6 @@
 	(function(doc){var addEvent='addEventListener',type='gesturestart',qsa='querySelectorAll',scales=[1,1],meta=qsa in doc?doc[qsa]('meta[name=viewport]'):[];function fix(){meta.content='width=device-width,minimum-scale='+scales[0]+',maximum-scale='+scales[1];doc.removeEventListener(type,fix,true);}if((meta=meta[meta.length-1])&&addEvent in doc){fix();scales=[.25,1.6];doc[addEvent](type,fix,true);}}(document));
 	</script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.0/jquery.js"></script>
-	<script type="text/javascript" src="./assets/js/html5lightbox/html5lightbox.js"></script>
-	<!--[if IE]>
-		<script type="text/javascript">
-			 var console = { log: function() {} };
-		</script>
-	<![endif]-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="./assets/js/jquery.fullPage.min.js"></script>
 	<script type="text/javascript">
@@ -83,24 +77,6 @@
 				menu: '#menu'
 			});
 		});
-	</script>
-	<script type="text/javascript">
-		$(window).load(function(){
-			/*Al terminar de cargar el sitio, primero se va la animación del Preloader*/
-			$("#loader").fadeOut();
-			/*Medio segundo despues, se va poco a poco el fondo del preloader*/
-			$("#loader-wrapper").delay(500).fadeOut("slow")
-		});
-	</script>
-	<script>
-		function openNav() {
-			document.getElementById("mySidenav").style.width = "180px";
-			document.getElementById("main").style.marginLeft = "180px";
-		}
-		function closeNav() {
-			document.getElementById("mySidenav").style.width = "0";
-			document.getElementById("main").style.marginLeft= "0";
-		}
 	</script>
 </head>
 <body>
@@ -131,8 +107,8 @@
 							<br>
 							que te quita la frescura
 						</h1>
-						<img style="width:65%;" src="assets/img/inicio/unsanvalentindiferente.png" class="wow animated fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s" alt="UnSanValentinDiferente">
-						<h1 class="banda-bold h1">
+						<img style="width:60%;" src="assets/img/inicio/unsanvalentindiferente.png" class="wow animated fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s" alt="UnSanValentinDiferente">
+						<h1 class="banda-bold h1" style="margin-top: 0;">
 							Próximamente
 						</h1>
 					</div>
