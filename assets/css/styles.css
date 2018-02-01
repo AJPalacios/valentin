@@ -590,6 +590,7 @@
 #postales {margin-bottom: 2%;}
 
 /*GRID*/
+
 .grid {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -628,6 +629,7 @@
 	grid-column: span 1;
 	grid-row: span 1;
 }
+/*GRID*/
 
 /*ECOMMERCE*/
 /*iPhone´s*/
