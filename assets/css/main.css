@@ -384,7 +384,7 @@ h1{
   width: 100%;
   position: absolute;
   background-color:  white;
-  height: 9em;
+  height: 9em; /* estaba en 10 pero lo baje para que no choque con botones de share argenis*/
   z-index: 100;
 }
 
