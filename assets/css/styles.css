@@ -835,7 +835,52 @@
 		bottom: 0;
 		right: 0;
 }
-@media only screen and (min-width: 1024px) and (max-width : 1199px) {
+@media only screen and (min-width: 1024px) and (max-width : 1399px) {
+	.texto-arandano-frambuesa {
+		position: relative;
+		top: 5%;
+		left: 40%;
+		width: 20%;
+	}
+	.yerbabuena {
+		position: absolute;
+		top: 25%;
+		left: 22%;
+		width: 12.5%;
+	}
+	.menta {
+		position: absolute;
+		top: 25%;
+		left: 65.5%;
+		width: 12.5%;
+	}
+	.naranja {
+		position: absolute;
+		top: 30%;
+		left: 32%;
+		z-index: 3;
+		width: 12.5%;
+	}
+	.fresa {
+		position: absolute;
+		top: 30%;
+		left: 55.5%;
+		z-index: 3;
+		width: 12.5%;
+	}
+	.arandano {
+		width: 16%;
+		position: absolute;
+		top: 35%;
+		left: 42%;
+		z-index: 5;
+	}
+	.frescura-diferente {
+		position: relative;
+		top: 60%;
+		left: 40%;
+		width: 20%;
+	}
 }
 @media screen and (min-width: 780px) and (max-width: 1199px) {
 }
