@@ -99,8 +99,12 @@ ul li {
 
   width: 9%;
   top: 5%;
-  margin-top: 5%;
+  margin-top: 2%; /* Subi el logo y contenido más arriba*/
 
+}
+
+.lampara-banca-basura { /* subi el div para que se ajuste mejor en desk*/
+	margin-top: -25px;
 }
 
 

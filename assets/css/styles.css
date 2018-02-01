@@ -88,8 +88,8 @@
 	color: #FFFFFF;
 	font-size: 1.8em !important;
 }
-.collectionvideos {
-	margin-top: 6em;
+.collectionvideos { /* pegue un poco la caja de tictacticas al copy para que se vea mejor en dektop*/
+	margin-top: 2em;
 }
 .positionRelativeTictacticas {
 	position: relative;
@@ -678,7 +678,7 @@
 .tictacticas-proximamente {
 			text-transform: uppercase;
 			color: #f7a0bf;
-			font-size: 6.5em;
+			font-size: 4.5em;
 }
 @media screen and (max-width: 320px){
 	.tictacticas-proximamente {
