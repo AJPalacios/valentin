@@ -56,10 +56,6 @@
 	<link rel="stylesheet" type="text/css" href="./assets/css/styles.css?version=1.0">
 	<link rel="stylesheet" type="text/css" href="./assets/css/main.css?version=2.4">
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-
-	
-		
-
 	<!--[if lt IE 9]>
 		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -149,9 +145,9 @@
 	Creation Date: 01/30/2018
 	-->
 	<script type="text/javascript">
-	var axel = Math.random() "";
+	var axel = Math.random() + "";
 	var a = axel * 10000000000000;
-	document.write('<iframe src="https://5229310.fls.doubleclick.net/activityi;src=5229310;type=ticta0;cat=ferre0;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=' a '?" width="1" height="1" frameborder="0" style="display:none"></iframe>');
+	document.write('<iframe src="https://5229310.fls.doubleclick.net/activityi;src=5229310;type=ticta0;cat=ferre0;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>');
 	</script>
 	<noscript>
 	<iframe src="https://5229310.fls.doubleclick.net/activityi;src=5229310;type=ticta0;cat=ferre0;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=1?" width="1" height="1" frameborder="0" style="display:none"></iframe>
@@ -227,8 +223,8 @@
 		</div>
 	<!--Menu-->
 	<!--Inicio-->
-		<div class="section" id="section0">
-			<div id="inicio" class=" container-fluid">
+		<div class="section " id="section0">
+			<div id="inicio" class="container-fluid">
 				<div class="row">
 					<div class="col-xs-12">
 						<img src="assets/img/inicio/logotipo-tictac.svg" class="logotipo animated fadeInDownBig" alt="TicTac Logotipo">
@@ -258,7 +254,6 @@
 			</div>
 		</div>
 	<!--Inicio-->
-
 	<!--Postales Bootstrap-->
 	  	<div class="section" id="section1">
 			<style type="text/css">.test-postales-1 {width: 100% !important;}</style>
@@ -392,7 +387,6 @@
 	  		</div>
 		</div>
 	<!--Postales Bootstrap-->
-
 	<!--Ecommerce-->
 		<div class="section" id="section2">
 			<div id="ecommerce" class="slide">
@@ -695,13 +689,13 @@
 								if (i != 0) {
 									$("#beep-two")
 									.clone()
-									.attr("id", "beep-two" i)
+									.attr("id", "beep-two" + i)
 									.appendTo($(this).parent());
 								}
 								$(this).data("beeper", i);
 							})
 							.mouseenter(function() {
-								$("#beep-two" $(this).data("beeper"))[0].play();
+								$("#beep-two" + $(this).data("beeper"))[0].play();
 							});
 							$("#beep-two").attr("id", "beep-two0");
 						</script>
