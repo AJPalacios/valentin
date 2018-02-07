@@ -1,220 +1,1021 @@
-#loader-wrapper{position:fixed;top:0;left:0;width:100%;height:100%;z-index:9999999;background:rgb(203,51,101);background:-moz-linear-gradient(-45deg, rgba(203,51,101,1) 0%, rgba(116,63,139,1) 100%);background:-webkit-linear-gradient(-45deg, rgba(203,51,101,1) 0%,rgba(106,63,139,1) 100%);background:linear-gradient(135deg, rgba(203,51,101,1) 0%,rgba(116,63,139,1) 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#cb3365', endColorstr='#743f8b',GradientType=1);}
-#loader{display:block;content:url("./assets/img/inicio/logotipo-tictac.svg");position:relative;left:40%;top:35%;z-index:99999999;}
-#section0{background:rgb(209,43,189);background:-moz-linear-gradient(45deg, rgba(209,43,189,1) 0%, rgba(255,118,160,1) 100%);background:-webkit-linear-gradient(45deg, rgba(209,43,189,1) 0%,rgba(255,118,160,1) 100%);background:linear-gradient(45deg, rgba(209,43,189,1) 0%,rgba(255,118,160,1) 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#d12bbd', endColorstr='#ff76a0',GradientType=1);}
-.logotipo{margin-bottom:-10px;margin-top:20px;width:8%;}
-.h1{color:#FFFFFF;font-size:3em !important;text-transform:uppercase;z-index:100;margin-top:3%;margin-bottom:1%;}
-.lampara{height:250px;position:fixed;left:41%;}
-.banca{height:250px;}
-.basura{height:250px;position:fixed;right:39%;}
-.UnSanValentinDiferente{width:50%;position:relative;top:-60px;}
-.scroll{width:25px;position:fixed;bottom:25px;}
-#section1{background:rgb(197,0,90);background:-moz-linear-gradient(45deg, rgba(197,0,90,1) 0%, rgba(141,43,182,1) 100%);background:-webkit-linear-gradient(45deg, rgba(197,0,90,1) 0%,rgba(141,43,182,1) 100%);background:linear-gradient(45deg, rgba(197,0,90,1) 0%,rgba(141,43,182,1) 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c5005a', endColorstr='#8d2bb6',GradientType=1);}
-#section3{background:rgb(243,73,115);background:-moz-linear-gradient(left, rgba(243,73,115,1) 0%, rgba(207,66,144,1) 100%);background:-webkit-linear-gradient(left, rgba(243,73,115,1) 0%,rgba(207,66,144,1) 100%);background:linear-gradient(to right, rgba(243,73,115,1) 0%,rgba(207,66,144,1) 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f34973', endColorstr='#cf4290',GradientType=1);}
-.tictacticas{text-transform:uppercase;margin-top:5%;color:#f7a0bf;}
-.tictacticasP{color:#FFFFFF;font-size:1.8em !important;}
-.collectionvideos{margin-top:2em;}
-.positionRelativeTictacticas{position:relative;left:11%;z-index:1;}
-.positionRelativeTictacticas2{position:relative;left:-4%;}
-.video1{width:92%;position:relative;left:5%;}
-.play1, .play2, .play3{position:absolute;}
-#html5-watermark{display:none !important;}
-.play1{top:39%;left:45%;width:20%;}
-.play2, .play3{left:39%;width:20%;top:25%;}
-.video2, .video3{width:50%;padding-left:2%;}
-.video2{padding-bottom:2%;}
-#section4{background:url('https://unsanvalentindiferente.com.mx/assets/img/productos/tictac-productos.jpg');background-repeat:no-repeat;background-size:cover;}
-.boton-legales-mobile{font-size:2em;position:absolute;bottom:3%;right:5%;border:2px solid #ffffff;border-radius:20px;padding:10px;color:#fff;}
-.boton-legales-mobile:hover{color:#fff !important;text-decoration:none;}
-.boton-legales{font-size:1.2em;position:fixed;bottom:2%;right:1.2%;border:2px solid #ffffff;border-radius:20px;padding:10px;z-index:99999;color:#fff;}
-.boton-legales:hover{color:#fff !important;text-decoration:none;}
-.section{margin:0;}
-.controlArrow{z-index:500;opacity:0.5;}
-.controlArrow:hover{opacity:1;}
-@media (max-width:768px){.container{margin:0 10px;}
-h1{font-size:26px !important;}
-p, label{font-size:16px !important;}
+/* PRELOADER */
+#loader-wrapper{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9999999;
+	background: rgb(203,51,101);
+	background: -moz-linear-gradient(-45deg, rgba(203,51,101,1) 0%, rgba(116,63,139,1) 100%);
+	background: -webkit-linear-gradient(-45deg, rgba(203,51,101,1) 0%,rgba(106,63,139,1) 100%);
+	background: linear-gradient(135deg, rgba(203,51,101,1) 0%,rgba(116,63,139,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb3365', endColorstr='#743f8b',GradientType=1 );
 }
-@media (min-width:769px) and (max-width:980px){h1{font-size:34px !important;}
-p, label{font-size:20px !important;}
+#loader{
+	display: block;
+	/*content: url('http://3.bp.blogspot.com/-tgQ96hd6NJI/VeenZ1Lk8PI/AAAAAAAAAK4/Vx5L5w0SXQo/s1600/gif.gif');*/
+	content: url("./assets/img/inicio/logotipo-tictac.svg");
+	position: relative;
+	left: 40%;
+	top: 35%;
+	z-index: 99999999;
 }
-@media (min-width:981px){h1{font-size:48px !important;}
-p, label{font-size:24px !important;}
+/* PRELOADER */
+#section0{
+	background: rgb(209,43,189);
+	background: -moz-linear-gradient(45deg, rgba(209,43,189,1) 0%, rgba(255,118,160,1) 100%);
+	background: -webkit-linear-gradient(45deg, rgba(209,43,189,1) 0%,rgba(255,118,160,1) 100%);
+	background: linear-gradient(45deg, rgba(209,43,189,1) 0%,rgba(255,118,160,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d12bbd', endColorstr='#ff76a0',GradientType=1 );
 }
-.imagenMenuResponsive{height:35px;position:fixed;right:0;top:0;z-index:9999;}
-.imagenMenuResponsiveInt{width:98%;}
-.sidenav{height:100%;width:0;position:fixed;z-index:1;top:0;right:0;background:#74199e;background:-moz-linear-gradient(top, #74199e 0%, #c5005a 100%);background:-webkit-linear-gradient(top, #74199e 0%,#c5005a 100%);background:linear-gradient(to bottom, #74199e 0%,#c5005a 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#74199e', endColorstr='#c5005a',GradientType=0);overflow-x:hidden;overflow-:hidden;transition:0.5s;padding-top:60px;z-index:99999;}
-.logo-tictac-menu-mobile{width:60px;}
-.sidenav a{display:block;transition:0.3s;padding-left:5%;}
-.sidenav .closebtn{position:absolute;top:0;right:25px;font-size:4.5em;margin-left:50px;color:#fff;text-decoration:none;}
-#main{transition:margin-left .5s;}
-@media screen and (max-height:450px){.sidenav{padding-top:15px;}
+.logotipo {
+	margin-bottom: -10px;
+	margin-top: 20px;
+	width: 8%;
 }
-@media screen and (max-width:991px){.boton-legales{display:none;}
+.h1 {
+	color: #FFFFFF;
+	font-size: 3em !important;
+	text-transform: uppercase;
+	z-index: 100;
+	margin-top: 3%;
+	margin-bottom: 1%;
 }
-@media screen and (min-width:779px) and (max-width:1199px){.logotipo{margin-bottom:-1%;margin-top:5%;width:15%;}
-.h1{color:#FFFFFF;font-size:2.5em !important;text-transform:uppercase;z-index:100;}
-.lampara{height:250px;position:fixed;left:32%;}
-.banca{height:250px;position:fixed;left:35%;}
-.basura{height:250px;position:fixed;left:50%;}
-.UnSanValentinDiferente{width:75%;position:fixed;top:60%;left:10%;}
+.lampara {
+	height: 250px;
+	position: fixed;
+	left: 41%;
 }
-@media screen and (min-width:480px) and (max-width:780px){.logotipo{margin-bottom:3%;margin-top:10%;width:25%;}
-.h1{color:#FFFFFF;font-size:3em !important;text-transform:uppercase;z-index:100;}
-.lampara{height:250px;position:fixed;left:32%;}
-.banca{height:250px;position:fixed;left:35%;}
-.basura{height:250px;position:fixed;left:50%;}
-.UnSanValentinDiferente{width:90%;position:fixed;top:60%;left:5%;}
+.banca {
+	height: 250px;
 }
-@media screen and (max-width:479px){.logotipo{margin-bottom:3%;margin-top:10%;width:25%;}
-.h1{color:#FFFFFF;font-size:3em !important;text-transform:uppercase;z-index:100;}
-.lampara{height:250px;position:fixed;left:24%;}
-.banca{height:250px;position:fixed;left:29%;}
-.basura{height:250px;position:fixed;left:56%;}
-.UnSanValentinDiferente{width:90%;position:fixed;top:54%;left:5%;}
+.basura {
+	height: 250px;
+	position: fixed;
+	right: 39%;
 }
-@media screen and (max-width:375px){.logotipo{margin-bottom:3%;margin-top:10%;width:20%;}
-.lampara{height:230px;position:fixed;left:20%;}
-.banca{height:230px;position:fixed;left:25%;}
-.basura{height:230px;position:fixed;left:60%;}
-.UnSanValentinDiferente{width:80%;position:fixed;top:54%;left:5%;}
-.h1{color:#FFFFFF;font-size:1.3em !important;text-transform:uppercase;z-index:100;}
-.UnSanValentinDiferente{width:90%;position:fixed;top:64%;left:5%;}
+.UnSanValentinDiferente {
+	width: 50%;
+	position: relative;
+	top: -60px;
 }
-@media screen and (max-width:320px){.logotipo{margin-bottom:3%;margin-top:10%;width:20%;}
-.h1{color:#FFFFFF;font-size:1.2em !important;text-transform:uppercase;z-index:100;}
-.lampara-banca-basura{margin-top:-8px;}
-.lampara{height:250px;position:fixed;left:16%;}
-.banca{height:250px;position:fixed;left:20%;}
-.basura{height:250px;position:fixed;left:60%;}
-.UnSanValentinDiferente{width:90%;position:fixed;top:68%;left:5%;}
-.scroll{width:15px;position:fixed;bottom:0;}
+.scroll {
+	width: 25px;
+	position: fixed;
+	bottom: 25px;
 }
-@media (min-width:1200px){.container{width:1000px !important;}
+#section1 {
+	background: rgb(197,0,90);
+	background: -moz-linear-gradient(45deg, rgba(197,0,90,1) 0%, rgba(141,43,182,1) 100%);
+	background: -webkit-linear-gradient(45deg, rgba(197,0,90,1) 0%,rgba(141,43,182,1) 100%);
+	background: linear-gradient(45deg, rgba(197,0,90,1) 0%,rgba(141,43,182,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c5005a', endColorstr='#8d2bb6',GradientType=1 );
 }
-.tituloPostales{position:fixed;left:29%;}
-.copyPostales{font-size:1.8em !important;}
-.collectionPostales{margin-top:2em;}
-.positionRelativePostales{position:relative;left:11%;z-index:1;}
-.positionRelativePostales2{position:relative;left:-4%;}
-.grayscale{filter:gray;-webkit-filter:grayscale(1);-webkit-transition:all .8s ease-in-out;}
-.grayscale:hover{filter:none;-webkit-filter:grayscale(0);-webkit-transform:scale(1.01);}
-@media only screen and (min-width:1024px) and (max-width:1199px){.positionRelativeTictacticas{position:relative;left:-14%;z-index:1;width:75%;}
-.positionRelativePostales2{position:absolute;top:0%;left:30%;}
-.postales2md{left:15%;}
+#section3 {
+	background: rgb(243,73,115);
+	background: -moz-linear-gradient(left, rgba(243,73,115,1) 0%, rgba(207,66,144,1) 100%);
+	background: -webkit-linear-gradient(left, rgba(243,73,115,1) 0%,rgba(207,66,144,1) 100%);
+	background: linear-gradient(to right, rgba(243,73,115,1) 0%,rgba(207,66,144,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f34973', endColorstr='#cf4290',GradientType=1 );
 }
-@media screen and (min-width:780px) and (max-width:1024px){.positionRelativeTictacticas{position:relative;left:-14%;z-index:1;width:75%;}
-.positionRelativePostales2{position:absolute;top:0%;left:30%;}
-.postales1xs{width:95%;left:-6%;}
-.postales2xs{left:50%;width:127%;}
-.collectionPostales{margin-top:15%;}
+.tictacticas {
+	text-transform: uppercase;
+	margin-top: 5%;
+	color:#f7a0bf;
 }
-@media screen and (min-width:480px) and (max-width:780px){.positionRelativeTictacticas{position:relative;left:-14%;z-index:1;width:75%;}
-.positionRelativePostales2{position:absolute;top:0%;left:30%;}
-.postales1xs{width:95%;left:-6%;}
-.postales2xs{left:50%;width:127%;}
-.collectionPostales{margin-top:15%;}
-.controlArrow.prev{left:40% !important;border-width:38.5px 0 38.5px 34px;border-color:transparent transparent transparent #fff;}
+.tictacticasP {
+	color: #FFFFFF;
+	font-size: 1.8em !important;
 }
-@media screen and (max-width:480px){.positionRelativeTictacticas{position:relative;left:-14%;z-index:1;width:75%;}
-.positionRelativePostales2{position:absolute;top:0%;left:30%;}
-.postales1xs{width:95%;left:-6%;}
-.postales2xs{left:50%;width:127%;}
-.collectionPostales{margin-top:50%;}
+.collectionvideos { /* pegue un poco la caja de tictacticas al copy para que se vea mejor en dektop*/
+	margin-top: 2em;
 }
-@media screen and (max-width:375px){.copyPostales{font-size:1.3em !important;}
-.collectionPostales{margin-top:27%;}
-.postales1xs{width:121%;left:-24%;}
-.postales2xs{left:45%;width:168%;}
+.positionRelativeTictacticas {
+	position: relative;
+	left: 11%;
+	z-index: 1;
 }
-@media screen and (max-width:320px){.copyPostales{font-size:1.3em !important;}
+.positionRelativeTictacticas2 {
+	position: relative;
+	left: -4%;
 }
-#postales{margin-bottom:2%;}
-.grid{display:grid;grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;grid-template-rows:;grid-gap:10px;}
-.grid-item{display:flex;align-items:center;justify-content:center;}
-:first-child{grid-column:span 2;grid-row:span 2;}
-:nth-child(3){grid-column:span 2;grid-row:span 2;}
-.grid-mobile{display:grid;grid-template-columns:1fr 1fr 1fr;grid-template-rows:;grid-gap:10px;}
-.grid-item-mobile{display:flex;align-items:center;justify-content:center;}
-:first-child{grid-column:span 2;grid-row:span 2;}
-:last-child{grid-column:span 1;grid-row:span 1;}
-@media screen and (max-width:375px){.ecommerce-title{font-size:2em;margin-top:15%;color:white;}
-.thin-cintillo{font-size:.8em !important;}
-.boton-comprar-globo{border-style:solid;border-width:thin;border-color:#ff3e70;background-color:transparent;color:#ff3e70;text-align:center;text-decoration:none;display:inline-block;font-size:11px;margin:15px 35px;cursor:pointer;border-radius:60px;float:left;}
-.boton-comprar-choco{border-style:solid;border-width:thin;border-color:#9e4934;background-color:transparent;color:#9e4934;text-align:center;text-decoration:none;display:inline-block;font-size:11px;cursor:pointer;border-radius:60px;float:left;}
+.video1 {
+	width: 92%;
+	position: relative;
+	left: 5%;
 }
-.tictacticas-proximamente{text-transform:uppercase;color:#f7a0bf;font-size:4.5em;}
-@media screen and (max-width:320px){.tictacticas-proximamente{font-size:2em;}
+.play1, .play2, .play3 {
+	position: absolute;
 }
-@media screen and (max-width:375px){.tictacticas-proximamente{font-size:2em;}
+#html5-watermark { display:none !important; }
+.play1 {
+	top: 39%;
+	left: 45%;
+	width: 20%;
 }
-@media screen and (max-width:380px){.tictacticas-proximamente{font-size:2em;}
+.play2, .play3 {
+	left: 39%;
+	width: 20%;
+	top: 25%;
 }
-@media screen and (max-width:425px){.tictacticas-proximamente{font-size:3.5em;}
+.video2, .video3 {
+	width: 50%;
+	padding-left: 2%;
 }
-@media screen and (max-width:375px){.tictacticas{text-transform:uppercase;margin-top:15%;color:#f7a0bf;}
-.tictacticasP{color:#FFFFFF;font-size:1.5em !important;}
-.video1-480-780{margin-top:20%;}
-.imgResponsiveTictacticas{width:65%;margin:2.5%;}
+.video2 {
+	padding-bottom: 2%;
 }
-@media screen and (min-width:780px) and (max-width:1199px){.imgResponsiveTictacticas{width:50%;margin:2.5%;}
-.video1-780-1024{width:55%;}
-.video2-780-1024{}
+#section4 {
+		background: url('https://unsanvalentindiferente.com.mx/assets/img/productos/tictac-productos.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
 }
-@media screen and (min-width:480px) and (max-width:780px){.imgResponsiveTictacticas{width:60%;margin:2.5%;}
-.video1-480-780{margin-top:5%;width:64% !important;margin-bottom:4%;}
+.boton-legales-mobile {
+	font-size: 2em;
+		position: absolute;
+		bottom: 3%;
+		right: 5%;
+		border: 2px solid #ffffff;
+		border-radius: 20px;
+		padding: 10px;
+		color: #fff;
 }
-@media screen and (max-width:480px){.imgResponsiveTictacticas{width:40%;margin:2.5%;}
-.video1-480-780{margin-top:15%;}
-.video1-480{width:85%;margin-top:6%;height:auto;}
+.boton-legales-mobile:hover {
+	color: #fff !important;
+	text-decoration: none;
 }
-#container-products{position:relative;height:700px;}
-.cajitas{width:15%;}
-.yerbabuena{position:absolute;top:50%;left:22%;width:12.5%;}
-.naranja{position:absolute;top:55%;left:32%;z-index:3;width:12.5%;}
-.arandano{width:16%;position:absolute;top:60%;left:42%;z-index:5;}
-.fresa{position:absolute;top:55%;left:55.5%;z-index:3;width:12.5%;}
-.menta{position:absolute;top:50%;left:65.5%;width:12.5%;}
-.texto-arandano-frambuesa{position:relative;top:10%;left:40%;width:20%;}
-.frescura-diferente{position:relative;top:105%;left:40%;width:20%;}
-.cajitas{opacity:0.4;transition:.5s ease;}
-.cajitas:hover{opacity:1;z-index:99999;}
-.cajitasActive{opacity:1;transition:.5s ease;}
-.cajitasActive:hover{opacity:1;z-index:99999;}
-.frutas{width:95%;position:absolute;top:0;left:0;bottom:0;right:0;}
-@media only screen and (min-width:1024px) and (max-width:1399px){.texto-arandano-frambuesa{position:relative;top:5%;left:40%;width:20%;}
-.yerbabuena{position:absolute;top:25%;left:22%;width:12.5%;}
-.menta{position:absolute;top:25%;left:65.5%;width:12.5%;}
-.naranja{position:absolute;top:30%;left:32%;z-index:3;width:12.5%;}
-.fresa{position:absolute;top:30%;left:55.5%;z-index:3;width:12.5%;}
-.arandano{width:16%;position:absolute;top:35%;left:42%;z-index:5;}
-.frescura-diferente{position:relative;top:60%;left:40%;width:20%;}
+.boton-legales {
+	font-size: 1.2em;
+	position: fixed;
+		bottom: 2%;
+		right: 1.2%;
+		border: 2px solid #ffffff;
+		border-radius: 20px;
+		padding: 10px;
+		z-index: 99999;
+		color: #fff;
 }
-@media screen and (min-width:780px) and (max-width:1199px){}
-@media screen and (min-width:480px) and (max-width:780px){#container-products{position:relative;height:600px;}
-.cajitas{width:25% !important;}
-.texto-arandano-frambuesa{position:relative;top:16%;left:35%;width:30%;}
-.frescura-diferente{top:100%;width:35%;left:35%;}
-.yerbabuena{position:absolute;top:35%;left:6%;}
-.menta{position:absolute;top:35%;left:70%;}
-.naranja{position:absolute;top:50%;left:22%;z-index:3;}
-.fresa{position:absolute;top:50%;left:54%;z-index:3;}
-.arandano{position:absolute;top:70%;left:38%;z-index:5;}
+.boton-legales:hover {
+	color: #fff !important;
+	text-decoration: none;
 }
-@media screen and (max-width:480px){#container-products{position:relative;height:600px;}
-.cajitas{width:40% !important;}
-.texto-arandano-frambuesa{width:45%;left:26%;}
-.frescura-diferente{width:40%;left:30%;}
-.yerbabuena{position:absolute;top:15%;left:1%;}
-.menta{position:absolute;top:15%;left:60%;}
-.naranja{position:absolute;top:70%;left:0%;}
-.fresa{position:absolute;top:70%;left:60%;}
-.arandano{position:absolute;top:40%;left:30%;z-index:5;}
+.section { margin: 0;}
+.controlArrow {
+	z-index: 500;
+	opacity: 0.5;
 }
-@media screen and (max-width:375px){.texto-arandano-frambuesa{position:relative;top:15%;left:25%;width:50%;z-index:900;}
-.frescura-diferente{position:relative;top:48%;left:16%;width:70%;z-index:900;}
-.yerbabuena{position:absolute;top:8%;left:1%;}
-.naranja{position:absolute;top:60%;left:0%;}
-.arandano{position:absolute;top:33%;left:30%;z-index:5;}
-.fresa{position:absolute;top:60%;left:60%;}
-.menta{position:absolute;top:8%;left:60%;}
+.controlArrow:hover { opacity: 1;}
+@media (max-width: 768px) {
+	.container { margin:0 10px;}
+	h1{ font-size: 26px !important;	}
+	p, label{ font-size: 16px !important; }
+}
+@media  (min-width: 769px) and (max-width: 980px) {
+	h1{ font-size: 34px !important;	}
+	p, label{ font-size: 20px !important; }
+}
+@media (min-width: 981px) {
+	h1{ font-size: 48px !important;	}
+	p, label{ font-size: 24px !important; }
+}
+.imagenMenuResponsive {
+	height: 35px;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 9999;
+}
+.imagenMenuResponsiveInt {
+			width: 98%;
+}
+.sidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	background: #74199e;
+	background: -moz-linear-gradient(top, #74199e 0%, #c5005a 100%);
+	background: -webkit-linear-gradient(top, #74199e 0%,#c5005a 100%);
+	background: linear-gradient(to bottom, #74199e 0%,#c5005a 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#74199e', endColorstr='#c5005a',GradientType=0 );
+	/*background: -moz-linear-gradient(left, rgba(0,0,0,0) 1%, rgba(92,8,138,0.82) 50%);
+	background: -webkit-linear-gradient(left, rgba(0,0,0,0) 1%,rgba(92,8,138,0.82) 50%);
+	background: linear-gradient(to right, rgba(0,0,0,0) 1%,rgba(92,8,138,0.82) 50%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#d15c088a',GradientType=1 );*/
+	overflow-x: hidden;
+	overflow-: hidden;
+	transition: 0.5s;
+	padding-top: 60px;
+	z-index: 99999;
+}
+.logo-tictac-menu-mobile {
+	width: 60px;
+}
+.sidenav a {
+	display: block;
+	transition: 0.3s;
+	padding-left: 5%;
+}
+.sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 4.5em;
+	margin-left: 50px;
+	color: #fff;
+	text-decoration: none;
+	}
+#main {
+	transition: margin-left .5s;
+}
+@media screen and (max-height: 450px) {
+	.sidenav {
+		padding-top: 15px;
+	}
+}
+@media screen and (max-width: 991px) {
+	.boton-legales {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 779px) and (max-width: 1199px) {
+.logotipo {
+	margin-bottom: -1%;
+	margin-top: 5%;
+	width: 15%;
+}
+.h1 {
+	color: #FFFFFF;
+	font-size: 2.5em !important;
+	text-transform: uppercase;
+	z-index: 100;
+}
+.lampara {
+	height: 250px;
+	position: fixed;
+	left: 32%;
+}
+.banca {
+	height: 250px;
+	position: fixed;
+	left: 35%;
+}
+.basura {
+	height: 250px;
+	position: fixed;
+	left: 50%;
+}
+.UnSanValentinDiferente {
+	width: 75%;
+	position: fixed;
+	top: 60%;
+	left: 10%;
+}
+}
+@media screen and (min-width: 480px) and (max-width: 780px) {
+.logotipo {
+	margin-bottom: 3%;
+	margin-top: 10%;
+	width: 25%;
+}
+.h1 {
+	color: #FFFFFF;
+	font-size: 3em !important;
+	text-transform: uppercase;
+	z-index: 100;
+}
+.lampara {
+	height: 250px;
+	position: fixed;
+	left: 32%;
+}
+.banca {
+	height: 250px;
+	position: fixed;
+	left: 35%;
+}
+.basura {
+	height: 250px;
+	position: fixed;
+	left: 50%;
+}
+.UnSanValentinDiferente {
+	width: 90%;
+	position: fixed;
+	top: 60%;
+	left: 5%;
+}
+}
+@media screen and (max-width: 479px) {
+.logotipo {
+	margin-bottom: 3%;
+	margin-top: 10%;
+	width: 25%;
+}
+.h1 {
+	color: #FFFFFF;
+	font-size: 3em !important;
+	text-transform: uppercase;
+	z-index: 100;
+}
+.lampara {
+	height: 250px;
+	position: fixed;
+	left: 24%;
+}
+.banca {
+	height: 250px;
+	position: fixed;
+	left: 29%;
+}
+.basura {
+	height: 250px;
+	position: fixed;
+	left: 56%;
+}
+.UnSanValentinDiferente {
+	width: 90%;
+	position: fixed;
+	top: 54%;
+	left: 5%;
+}
+}
+/*iPhone´s*/
+@media screen and (max-width: 375px) {
+				/*inicio*/
+				.logotipo {
+	margin-bottom: 3%;
+	margin-top: 10%;
+	width: 20%;
+}
+.lampara {
+	height: 230px;
+	position: fixed;
+	left: 20%;
+}
+.banca {
+	height: 230px;
+	position: fixed;
+	left: 25%;
+}
+.basura {
+	height: 230px;
+	position: fixed;
+	left: 60%;
+}
+.UnSanValentinDiferente {
+	width: 80%;
+	position: fixed;
+	top: 54%;
+	left: 5%;
+}
+.h1 {
+	color: #FFFFFF;
+	font-size: 1.3em !important;
+	text-transform: uppercase;
+	z-index: 100;
+}
+.UnSanValentinDiferente {
+	width: 90%;
+	position: fixed;
+	top: 64%;
+	left: 5%;
+}
+		}
+		@media screen and (max-width: 320px) {
+				/*inicio*/
+				.logotipo {
+	margin-bottom: 3%;
+	margin-top: 10%;
+	width: 20%;
+}
+.h1 {
+	color: #FFFFFF;
+	font-size: 1.2em !important;
+	text-transform: uppercase;
+	z-index: 100;
+}
+.lampara-banca-basura {
+	margin-top: -8px;
+}
+.lampara {
+	height: 250px;
+	position: fixed;
+	left: 16%;
+}
+.banca {
+	height: 250px;
+	position: fixed;
+	left: 20%;
+}
+.basura {
+	height: 250px;
+	position: fixed;
+	left: 60%;
+}
+.UnSanValentinDiferente {
+	width: 90%;
+	position: fixed;
+	top: 68%;
+	left: 5%;
+}
+.scroll {
+	width: 15px;
+	position: fixed;
+	bottom: 0;
+	}
+}
+
+/*POSTALES*/
+
+@media (min-width: 1200px){
+	.container{
+		width:1000px !important;
+	}
+}
+.tituloPostales {
+		position: fixed;
+		left: 29%;
+}
+.copyPostales {
+	font-size: 1.8em !important;
+}
+.collectionPostales {
+		margin-top: 2em;
+}
+.positionRelativePostales{
+	position: relative;
+	left: 11%;
+	z-index: 1;
+}
+.positionRelativePostales2 {
+	position: relative;
+	left: -4%;
+}
+.grayscale{
+		/* filter: url(filters.svg#grayscale); Firefox 3.5+ */
+		filter: gray; /* IE5+ */
+		-webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+		-webkit-transition: all .8s ease-in-out;
+	}
+	.grayscale:hover {
+		filter: none;
+		-webkit-filter: grayscale(0);
+		-webkit-transform: scale(1.01);
+}
+			@media only screen and (min-width: 1024px) and (max-width : 1199px) {
+					.positionRelativeTictacticas {
+		position: relative;
+		left: -14%;
+		z-index: 1;
+		width: 75%;
+	}
+	.positionRelativePostales2 {
+		position: absolute;
+		top: 0%;
+		left: 30%;
+	}
+	.postales2md {
+		left: 15%;
+	}
+			}
+			@media screen and (min-width: 780px) and (max-width: 1024px) {
+				.positionRelativeTictacticas {
+		position: relative;
+		left: -14%;
+		z-index: 1;
+		width: 75%;
+	}
+	.positionRelativePostales2 {
+		position: absolute;
+		top: 0%;
+		left: 30%;
+	}
+	.postales1xs {
+		width: 95%;
+		left: -6%;
+	}
+	.postales2xs {
+		left: 50%;
+		width: 127%;
+	}
+	.collectionPostales {
+		margin-top: 15%;
+	}
+			}
+@media screen and (min-width: 480px) and (max-width: 780px) {
+				.positionRelativeTictacticas {
+		position: relative;
+		left: -14%;
+		z-index: 1;
+		width: 75%;
+	}
+	.positionRelativePostales2 {
+		position: absolute;
+		top: 0%;
+		left: 30%;
+	}
+	.postales1xs {
+		width: 95%;
+		left: -6%;
+	}
+	.postales2xs {
+		left: 50%;
+		width: 127%;
+	}
+	.collectionPostales {
+		margin-top: 15%;
+	}
+	.controlArrow.prev {
+		/*display: none !important;*/
+		left: 40% !important;
+		border-width: 38.5px 0 38.5px 34px;
+		border-color: transparent transparent transparent #fff;
+	}
+			}
+			@media screen and (max-width: 480px) {
+				.positionRelativeTictacticas {
+		position: relative;
+		left: -14%;
+		z-index: 1;
+		width: 75%;
+	}
+	.positionRelativePostales2 {
+		position: absolute;
+		top: 0%;
+		left: 30%;
+	}
+	.postales1xs {
+		width: 95%;
+		left: -6%;
+	}
+	.postales2xs {
+		left: 50%;
+		width: 127%;
+	}
+	.collectionPostales {
+		margin-top: 50%;
+	}
+
+	
+			}
+			/*iPhone´s*/
+@media screen and (max-width: 375px) {
+	/*postales*/
+	.copyPostales {
+		font-size: 1.3em !important;
+	}
+	.collectionPostales {
+		margin-top: 27%;
+	}
+	.postales1xs {
+		width: 121%;
+		left: -24%;
+	}
+	.postales2xs {
+		left: 45%;
+		width: 168%;
+	}
+			}
+			@media screen and (max-width: 320px) {
+				.copyPostales {
+			font-size: 1.3em !important;
+	}
+	
+			}
+#postales {margin-bottom: 2%;}
+
+/*GRID*/
+
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: ;
+	grid-gap: 10px;
+}
+.grid-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+:first-child {
+	grid-column: span 2;
+	grid-row: span 2;
+}
+:nth-child(3) {
+	grid-column: span 2;
+	grid-row: span 2;
+}
+.grid-mobile {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr ;
+	grid-template-rows: ;
+	grid-gap: 10px;
+}
+.grid-item-mobile {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+:first-child {
+	grid-column: span 2;
+	grid-row: span 2;
+}
+:last-child {
+	grid-column: span 1;
+	grid-row: span 1;
+}
+/*GRID*/
+
+/*ECOMMERCE*/
+/*iPhone´s*/
+@media screen and (max-width: 375px) {
+	.ecommerce-title {
+		font-size: 2em;
+		margin-top: 15%;
+		color: white;
+	}
+	.thin-cintillo {
+		font-size: .8em !important;
+	}
+	.boton-comprar-globo {
+		border-style: solid;
+		border-width: thin;
+		border-color: #ff3e70;
+		background-color: transparent;
+		color: #ff3e70;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 11px;
+		margin: 15px 35px;
+		cursor: pointer;
+		border-radius: 60px;
+		float: left;
+	}
+
+	.boton-comprar-choco {
+		border-style: solid;
+		border-width: thin;
+		border-color: #9e4934;
+		background-color: transparent;
+		color: #9e4934;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 11px;
+		cursor: pointer;
+		border-radius: 60px;
+		float: left;
+		/*top: -18%;*/
+	}
+}
+
+/* tictacticas */
+
+.tictacticas-proximamente {
+			text-transform: uppercase;
+			color: #f7a0bf;
+			font-size: 4.5em;
+}
+@media screen and (max-width: 320px){
+	.tictacticas-proximamente {
+			font-size: 2em;
+	}
+}
+@media screen and (max-width: 375px){
+	.tictacticas-proximamente {
+			font-size: 2em;
+	}
+}
+@media screen and (max-width: 380px){
+	.tictacticas-proximamente {
+			font-size: 2em;
+	}
+}
+@media screen and (max-width: 425px){
+	.tictacticas-proximamente {
+			font-size: 3.5em;
+	}
+}
+@media screen and (max-width: 375px){
+	.tictacticas {
+		text-transform: uppercase;
+		margin-top: 15%;
+		color: #f7a0bf;
+	}
+	.tictacticasP {
+		color: #FFFFFF;
+		font-size: 1.5em !important;
+	}
+	.video1-480-780 {
+		margin-top: 20%;
+	}
+	.imgResponsiveTictacticas {
+		width: 65%;
+		margin: 2.5%;
+	}
+}
+
+
+@media screen and (min-width: 780px) and (max-width: 1199px) {
+			.imgResponsiveTictacticas {
+	width: 50%;
+	margin: 2.5%;
+}
+.video1-780-1024 {
+	width: 55%;
+}
+.video2-780-1024 {
+			}
+		}
+@media screen and (min-width: 480px) and (max-width: 780px) {
+.imgResponsiveTictacticas {
+	width: 60%;
+	margin: 2.5%;
+}
+.video1-480-780 {
+	margin-top: 5%;
+	width: 64% !important;
+	margin-bottom: 4%;
+}
+		}
+@media screen and (max-width: 480px) {
+.imgResponsiveTictacticas {
+	width: 40%;
+	margin: 2.5%;
+}
+.video1-480-780 {
+	margin-top: 15%;
+}
+.video1-480 {
+	width: 85%;
+	margin-top: 6%;
+	height: auto;
+}
+}
+
+/* Productos */
+
+#container-products {
+	position: relative;
+		height: 700px;
+}
+.cajitas {
+	width: 15%;
+}
+.yerbabuena {
+		position: absolute;
+		top: 50%;
+		left: 22%;
+		width: 12.5%;
+}
+.naranja{
+		position: absolute;
+		top: 55%;
+		left: 32%;
+		z-index: 3;
+		width: 12.5%;
+}
+.arandano {
+		width: 16%;
+		position: absolute;
+		top: 60%;
+		left: 42%;
+		z-index: 5;
+}
+.fresa {
+		position: absolute;
+		top: 55%;
+		left: 55.5%;
+		z-index: 3;
+		width: 12.5%;
+}
+.menta{
+	position: absolute;
+		top: 50%;
+		left: 65.5%;
+		width: 12.5%;
+}
+.texto-arandano-frambuesa {
+		position: relative;
+		top: 10%;
+		left: 40%;
+		width: 20%;
+}
+.frescura-diferente {
+		position: relative;
+		top: 105%;
+		left: 40%;
+		width: 20%;
+}
+.cajitas {
+	opacity: 0.4;
+	transition: .5s ease;
+}
+.cajitas:hover {
+	opacity: 1;
+	z-index: 99999;
+}
+.cajitasActive {
+	opacity: 1;
+	transition: .5s ease;
+}
+.cajitasActive:hover {
+	opacity: 1;
+	z-index: 99999;
+}
+.frutas {
+		width: 95%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+}
+@media only screen and (min-width: 1024px) and (max-width : 1399px) {
+	.texto-arandano-frambuesa {
+		position: relative;
+		top: 5%;
+		left: 40%;
+		width: 20%;
+	}
+	.yerbabuena {
+		position: absolute;
+		top: 25%;
+		left: 22%;
+		width: 12.5%;
+	}
+	.menta {
+		position: absolute;
+		top: 25%;
+		left: 65.5%;
+		width: 12.5%;
+	}
+	.naranja {
+		position: absolute;
+		top: 30%;
+		left: 32%;
+		z-index: 3;
+		width: 12.5%;
+	}
+	.fresa {
+		position: absolute;
+		top: 30%;
+		left: 55.5%;
+		z-index: 3;
+		width: 12.5%;
+	}
+	.arandano {
+		width: 16%;
+		position: absolute;
+		top: 35%;
+		left: 42%;
+		z-index: 5;
+	}
+	.frescura-diferente {
+		position: relative;
+		top: 60%;
+		left: 40%;
+		width: 20%;
+	}
+}
+@media screen and (min-width: 780px) and (max-width: 1199px) {
+}
+@media screen and (min-width: 480px) and (max-width: 780px) {
+	#container-products {
+		position: relative;
+		height: 600px;
+	}
+	.cajitas {
+		width: 25% !important;
+	}
+	.texto-arandano-frambuesa {
+			position: relative;
+			top: 16%;
+			left: 35%;
+			width: 30%;
+	}
+	.frescura-diferente {
+			top: 100%;
+			width: 35%;
+			left: 35%;
+	}
+	.yerbabuena {
+		position: absolute;
+		top: 35%;
+		left: 6%;
+	}
+	.menta {
+		position: absolute;
+		top: 35%;
+		left: 70%;
+	}
+	.naranja {
+		position: absolute;
+		top: 50%;
+		left: 22%;
+		z-index: 3;
+	}
+	.fresa {
+		position: absolute;
+		top: 50%;
+		left: 54%;
+		z-index: 3;
+	}
+	.arandano {
+		position: absolute;
+		top: 70%;
+		left: 38%;
+		z-index: 5;
+	}
+}
+@media screen and (max-width: 480px) {
+	#container-products {
+		position: relative;
+		height: 600px;
+	}
+	.cajitas {
+		width: 40% !important;
+	}
+	.texto-arandano-frambuesa {
+			width: 45%;
+			left: 26%;
+	}
+	.frescura-diferente {
+			width: 40%;
+			left: 30%;
+	}
+	.yerbabuena {
+		position: absolute;
+		top: 15%;
+		left: 1%;
+	}
+	.menta {
+		position: absolute;
+		top: 15%;
+		left: 60%;
+	}
+	.naranja {
+		position: absolute;
+		top: 70%;
+		left: 0%;
+	}
+	.fresa {
+		position: absolute;
+		top: 70%;
+		left: 60%;
+	}
+	.arandano {
+		position: absolute;
+		top: 40%;
+		left: 30%;
+		z-index: 5;
+	}
+}
+@media screen and (max-width: 375px){
+	.texto-arandano-frambuesa {
+			position: relative;
+			top: 15%;
+			left: 25%;
+			width: 50%;
+			z-index: 900;
+	}
+	.frescura-diferente {
+			position: relative;
+			top: 48%;
+			left: 16%;
+			width: 70%;
+			z-index: 900;
+	}
+	.yerbabuena {
+		position: absolute;
+		top: 8%;
+		left: 1%;
+	}
+	.naranja {
+		position: absolute;
+		top: 60%;
+		left: 0%;
+	}
+	.arandano {
+		position: absolute;
+		top: 33%;
+		left: 30%;
+		z-index: 5;
+	}
+	.fresa {
+		position: absolute;
+		top: 60%;
+		left: 60%;
+	}
+	.menta {
+		position: absolute;
+		top: 8%;
+		left: 60%;
+	}
 }
